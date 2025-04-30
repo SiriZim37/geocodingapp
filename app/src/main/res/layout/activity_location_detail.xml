@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <com.tlt.georepo.view.ToolbarWidget
+            android:id="@+id/toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="@string/location_detail"
+            app:toolbarSize="normal" />
+
+    <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nestedscrollview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                    android:id="@+id/header"
+                    android:layout_marginTop="@dimen/margin_small"
+                    style="@style/MyCardView_Margin_Normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/padding_normal">
+
+                    <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/txt_company_name"
+                            style="@style/Text_Bold_Large"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:text="บริษัท โตโยต้ามหานคร จำกัด" />
+
+
+                    <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/txt_distance"
+                            style="@style/Text_Bold_Medium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:textColor="@color/text_normal_lighter"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_weight="1"
+                            tools:text="2.3 กม."/>
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                    android:id="@+id/body"
+                    style="@style/MyCardView_Margin_Normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/header">
+
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_normal">
+
+                    <!--<georepoew.DrawableTextViewWidget-->
+                            <!--android:id="@+id/txt_type"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--app:iconDrawable="@drawable/ic_question_orange"-->
+                            <!--app:layout_constraintEnd_toEndOf="parent"-->
+                            <!--app:layout_constraintStart_toStartOf="parent"-->
+                            <!--app:layout_constraintTop_toTopOf="parent"-->
+                            <!--app:text="@string/location_detail_office" />-->
+
+
+                    <com.tlt.georepo.view.DrawableTextViewWidget
+                            android:id="@+id/txt_contract"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:iconDrawable="@drawable/ic_question_orange"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:text="@string/txt_extContract" />
+
+
+                    <com.tlt.georepo.view.DrawableTextViewWidget
+                            android:id="@+id/txt_reg_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:iconDrawable="@drawable/ic_question_orange"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/txt_contract"
+                            app:text="@string/txt_regNo" />
+
+                    <com.tlt.georepo.view.DrawableTextViewWidget
+                            android:id="@+id/txt_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:iconDrawable="@drawable/ic_pin_orange"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/txt_reg_no"
+                            app:text="@string/location_detail_address" />
+
+
+                    <com.tlt.georepo.view.DrawableTextViewWidget
+                            android:id="@+id/txt_unpaid_amt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:iconDrawable="@drawable/ic_building_orange"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/txt_address"
+                            app:text="@string/txt_unpaid_amt" />
+
+                    <com.tlt.georepo.view.DrawableTextViewWidget
+                            android:id="@+id/txt_tel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_small"
+                            app:iconDrawable="@drawable/ic_phone_orange"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/txt_unpaid_amt"
+                            app:text="@string/location_detail_tel"/>
+
+                    <!--<georepoew.DrawableTextViewWidget-->
+                            <!--android:id="@+id/txt_time"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="@dimen/margin_small"-->
+                            <!--app:iconDrawable="@drawable/ic_clock_orange"-->
+                            <!--app:layout_constraintEnd_toEndOf="parent"-->
+                            <!--app:layout_constraintStart_toStartOf="parent"-->
+                            <!--app:layout_constraintTop_toBottomOf="@id/txt_tel"-->
+                            app:text="@string/location_detail_time" />
+
+                    <!--<georepoew.DrawableTextViewWidget-->
+                            <!--android:id="@+id/txt_website"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="@dimen/margin_small"-->
+                            <!--app:iconDrawable="@drawable/ic_globe_orange"-->
+                            <!--app:layout_constraintEnd_toEndOf="parent"-->
+                            <!--app:layout_constraintStart_toStartOf="parent"-->
+                            <!--app:layout_constraintTop_toBottomOf="@id/txt_tel"-->
+                            <!--app:text="@string/location_detail_website" />-->
+
+                    <View
+                            android:id="@+id/divider"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/margin_normal"
+                            android:background="@color/unactive"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/txt_tel" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/btnAcceptJob"
+                            style="@style/Text_Bold_Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="35dp"
+                            android:drawablePadding="4dp"
+                            android:text="@string/btn_select_allJob"
+                            android:background="@drawable/selector_btn_confirm_red"
+                            android:textColor="@color/white"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/divider" />
+
+                    <!--<android.support.v7.widget.AppCompatTextView-->
+                            <!--android:id="@+id/location_tel"-->
+                            <!--style="@style/Text_Bold_Medium"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="35dp"-->
+                            <!--android:layout_marginEnd="@dimen/margin_large"-->
+                            <!--android:drawableStart="@drawable/ic_phone_green"-->
+                            <!--android:drawablePadding="4dp"-->
+                            <!--android:text="@string/location_tel"-->
+                            <!--android:textColor="@color/teal_500"-->
+                            <!--app:layout_constraintEnd_toStartOf="@id/location_direction"-->
+                            <!--app:layout_constraintTop_toBottomOf="@id/divider" />-->
+
+                    <Space
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/margin_small"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/btnAcceptJob" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>

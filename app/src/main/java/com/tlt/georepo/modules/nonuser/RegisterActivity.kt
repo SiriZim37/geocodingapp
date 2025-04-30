@@ -1,0 +1,282 @@
+package com.tlt.georepo.modules.nonuser
+
+import android.app.AlertDialog
+import android.app.DatePickerDialog
+import android.app.ProgressDialog
+import android.arch.lifecycle.ViewModelProviders
+import android.content.Context
+import android.content.DialogInterface
+import android.content.Intent
+import android.graphics.Color
+import android.os.Bundle
+import android.util.Log
+import android.view.LayoutInflater
+import android.view.MotionEvent
+import android.view.View
+import android.view.WindowManager
+import android.view.inputmethod.InputMethodManager
+import android.widget.*
+import com.tlt.georepo.R
+import com.tlt.georepo.activity.GeoLabTestActivity
+import com.tlt.georepo.activity.GeoUploadFileActivity
+import com.tlt.georepo.common.base.BaseActivity
+import com.tlt.georepo.manager.api.GeoApiManager
+import com.tlt.georepo.manager.db.DatabaseManager
+import com.tlt.georepo.model.request.RegistPost
+import com.tlt.georepo.model.request.UploadImagesRequest
+import com.tlt.georepo.util.LocaleManager
+import kotlinx.android.synthetic.main.fragment_dialog_is_exit_temp.view.*
+import kotlinx.android.synthetic.main.register_layout_3.*
+import java.text.SimpleDateFormat
+import java.util.*
+import kotlin.collections.ArrayList
+
+class RegisterActivity : BaseActivity() {
+
+    private val apiManager by lazy { GeoApiManager.getInstance() }
+    var birthDate = Calendar.getInstance()
+    var startWokingDate = Calendar.getInstance()
+    var completionDate = Calendar.getInstance()
+    var companyName = ""
+    var isStarted = false
+    var names: ArrayList<String> = ArrayList()
+    var code: ArrayList<String> = ArrayList()
+    private var pDialog: ProgressDialog? = null
+    var status = 0
+    var strBirthdate = ""
+    //    var strStartWorkingDate = ""
+//    var strCompletionDate = ""
+    val request = RegistPost()
+    private val viewModel by lazy {
+        ViewModelProviders.of(this).get(RegisterViewModel::class.java)
+    }
+
+    private val isflagRegist by lazy {
+        intent.getBooleanExtra(RegisterActivity.FLAG_REGIST, false) ?: "false"
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.register_layout_3)
+        window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN)
+        initInstances()
+    }
+
+    override fun dispatchTouchEvent(ev: MotionEvent?): Boolean {
+        if (currentFocus != null) {
+            val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            imm.hideSoftInputFromWindow(currentFocus!!.windowToken, 0)
+        }
+        return super.dispatchTouchEvent(ev)
+    }
+
+    private fun initInstances() {
+//        if (isflagRegist == false) {
+//            showAlertLang()
+//        }
+        btn_regist.setOnClickListener {
+            //signUp to service API
+//            btn_regist.isEnabled = false
+//            validateData()
+
+            GeoLabTestActivity.open(this@RegisterActivity)
+
+        }
+
+        viewModel.whenRegisuccess.observe(this, android.arch.lifecycle.Observer {
+            TermsAndConditions.open(this@RegisterActivity)
+            btn_regist.isEnabled = true
+        })
+        viewModel.whenRegisFail.observe(this, android.arch.lifecycle.Observer {
+            showAlert(R.string.error_regist)
+            btn_regist.isEnabled = true
+        })
+
+        tv_th.setOnClickListener {
+            localization("th")
+        }
+
+        tv_en.setOnClickListener {  localization("en")}
+
+        getDataSpinner()
+
+        val birthDateSetListener = DatePickerDialog.OnDateSetListener { view, year, monthOfYear, dayOfMonth ->
+            birthDate.set(Calendar.YEAR, year)
+            birthDate.set(Calendar.MONTH, monthOfYear)
+            birthDate.set(Calendar.DAY_OF_MONTH, dayOfMonth)
+            val myFormat = "yyyy-MM-dd" // mention the format you need
+            val sdf = SimpleDateFormat(myFormat, Locale.US)
+            bd_datePicker.text = sdf.format(birthDate.time)
+            strBirthdate = bd_datePicker.text.toString()
+//            bd_datePicker.text = datePickerSet(birthDate,bd_datePicker)
+
+        }
+
+        bd_datePicker.setOnClickListener {
+            DatePickerDialog(
+                this@RegisterActivity, birthDateSetListener,
+                birthDate.get(Calendar.YEAR),
+                birthDate.get(Calendar.MONTH),
+                birthDate.get(Calendar.DAY_OF_MONTH)
+            ).show()
+        }
+
+
+
+    }
+
+    override fun onBackPressedSupport() {
+        exitDialog()
+    }
+
+    private fun exitDialog() {
+        try {
+            val mDialogView = LayoutInflater.from(this).inflate(R.layout.fragment_dialog_is_exit_temp, null)
+            val mBuilder = AlertDialog.Builder(this!!).setView(mDialogView)
+            val mAlertDialog = mBuilder.show()
+            mDialogView.btn_cancel.setOnClickListener {
+                mAlertDialog.dismiss()
+            }
+            mDialogView.btn_confirm.setOnClickListener {
+                mAlertDialog.dismiss()
+                finishAffinity()
+            }
+        } catch (e: Exception) {
+            e.message
+        }
+    }
+
+    private fun getDataSpinner() {
+        var companies = DatabaseManager.getInstance().getMasterSpinner()!!
+        for (i in companies) {
+            names.add(i.cOMPANYTH!!)
+            code.add(i.cOMPCODE!!)
+        }
+        setSpinner(names, code)
+    }
+
+    private fun setSpinner(
+        result: ArrayList<String>?,
+        code: ArrayList<String>
+    ) {
+        Log.e("setSpinner", result!!.size.toString())
+        val spinner = findViewById<Spinner>(R.id.spinner_company_regist)
+        if (spinner != null) {
+            val arrayAdapter = ArrayAdapter(this, R.layout.custom_spinner_display, result)
+            spinner.adapter = arrayAdapter
+            arrayAdapter.setDropDownViewResource(R.layout.custom_spinner)
+            spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+                override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
+                    (parent.getChildAt(0) as TextView).setTextColor(Color.GRAY)
+                    companyName = code[position]
+                    Log.e("onItemSelected", spinner.selectedItem.toString())
+                }
+
+                override fun onNothingSelected(parent: AdapterView<*>) {
+                }
+            }
+        }
+    }
+
+    private fun validateData() {
+
+        if (
+            ed_firstname.text!!.isEmpty() || ed_lastname.text!!.isEmpty() || ed_email.text!!.isEmpty() ||
+            ed_phone.text!!.isEmpty() || strBirthdate.isEmpty() ||
+            !viewModel.isValidPhone(ed_phone.text!!) ||
+            !viewModel.isValidEmail(ed_email.text!!)
+            || companyName.isEmpty()
+        ) {
+            Log.e("isInValidPhone", viewModel.isValidPhone(ed_phone.text!!).toString())
+            Log.e("isINValidPhone", ed_phone.text.toString())
+            showAlert(R.string.error_invalid_regist)
+            btn_regist.isEnabled = true
+        } else {
+            Log.e("isValidPhone", ed_phone.text.toString())
+            viewModel.Register(getRequestRegist())
+        }
+    }
+
+    fun getRequestRegist(): RegistPost {
+        var request = RegistPost()
+        request.pselect = ""
+        request.pkeY1 = ed_firstname.text.toString()
+        request.pkeY2 = ed_lastname.text.toString()
+        request.pkeY3 = ed_email.text.toString()
+        request.pkeY4 = ed_idCard.text.toString()
+        request.pkeY5 = ed_phone.text.toString()
+        request.pkeY6 = strBirthdate
+        request.pkeY7 = companyName
+        request.pkeY8 = ""
+        request.pkeY9 = ""
+        return request
+    }
+
+
+
+    fun showAlert(id: Int) {
+        val dialogBuilder = AlertDialog.Builder(this)
+        val error = viewModel.setLanguage(id)
+        val bt = viewModel.setLanguage(R.string.bt_ok)
+        dialogBuilder.setMessage(error)
+            .setCancelable(false)
+            .setPositiveButton(bt, DialogInterface.OnClickListener { dialog, id ->
+                dialog.dismiss()
+            })
+
+        val alert = dialogBuilder.create()
+        alert.show()
+    }
+
+
+    companion object {
+        private const val FLAG_REGIST = "FLAG_REGIST"
+        fun open(context: Context) {
+            val intent = Intent(context, RegisterActivity::class.java)
+            context.startActivity(intent)
+        }
+
+        fun openAfterRegist(context: Context) {
+            val intent = Intent(context, RegisterActivity::class.java)
+            intent.putExtra(RegisterActivity.FLAG_REGIST, true)
+            context.startActivity(intent)
+        }
+    }
+
+
+    fun showAlertLang() {
+        val dialogBuilder = AlertDialog.Builder(this)
+        dialogBuilder.setMessage(
+            "Select your language \n" +
+                    "เลือกภาษา"
+        )
+            .setCancelable(false)
+            .setPositiveButton("English", DialogInterface.OnClickListener { dialog, id ->
+                localization("en")
+                dialog.dismiss()
+
+            })
+            .setNegativeButton("ภาษาไทย", DialogInterface.OnClickListener { dialog, id ->
+                dialog.cancel()
+
+                localization("th")
+                dialog.dismiss()
+
+
+            })
+        val alert = dialogBuilder.create()
+//        alert.setTitle("Select your language \nเลือกภาษา")
+        alert.show()
+    }
+
+    fun localization(lang: String) {
+        if (lang.equals("en")) {
+            LocaleManager.setNewLocale(this, LocaleManager.LANGUAGE_KEY_ENGLISH)
+        } else {
+            LocaleManager.setNewLocale(this, LocaleManager.LANGUAGE_KEY_THAI)
+        }
+        RegisterActivity.openAfterRegist(this)
+    }
+
+
+}

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tlt.georepo.modules.otp.OTPActivity">
+
+    <com.tlt.georepo.view.ToolbarWidget
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_menubars"
+        app:title="@string/repoHome"
+        app:toolbarSize="medium" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/toolbar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/const1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="50dp"
+            android:layout_weight="0.4"
+            android:background="@color/darkblue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/toolbar">
+
+            <com.tlt.georepo.view.TLTButton
+                android:id="@+id/btn_total"
+                style="@style/Text_Bold_Large"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/select_job_menu_gray"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="0/0"
+                android:textAllCaps="false"
+                android:textColor="@color/darkblue"
+                android:textSize="@dimen/home_content_margin_horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <!--<FrameLayout-->
+            <!--android:id="@+id/content_container"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="0dp"-->
+            <!--app:layout_constraintBottom_toTopOf="@id/bottom_navigation"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+            <!--<com.aurelhubert.ahbottomnavigation.AHBottomNavigation-->
+            <!--android:id="@+id/bottom_navigation"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--tools:background="#ff00ff"-->
+            <!--tools:layout_height="?attr/actionBarSize" />-->
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/keyboard_number_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:background="@color/white"
+            android:paddingTop="@dimen/margin_20">
+
+            <com.tlt.georepo.view.TLTButton
+                android:id="@+id/btn_newjob"
+                style="@style/Text_Bold_Large"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:background="@drawable/select_job_menu_green"
+                android:padding="8dp"
+                android:paddingStart="@dimen/margin_normal"
+                android:paddingEnd="@dimen/margin_normal"
+                android:text="0/0"
+                android:textAllCaps="false"
+                android:textColor="@drawable/selector_text_normal"
+                android:textSize="@dimen/home_content_margin_horizontal"
+                app:layout_constraintEnd_toStartOf="@id/space_installment_tax"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_total" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:text="NEW JOB"
+                android:textAllCaps="false"
+                android:textColor="@color/darkblue"
+                app:layout_constraintEnd_toStartOf="@+id/space_insurance_other"
+                app:layout_constraintHorizontal_bias="0.532"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_newjob" />
+
+            <Space
+                android:id="@+id/space_installment_tax"
+                android:layout_width="@dimen/margin_normal"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@id/btn_onhand"
+                app:layout_constraintStart_toEndOf="@id/btn_newjob" />
+
+            <com.tlt.georepo.view.TLTButton
+                android:id="@+id/btn_onhand"
+                style="@style/Text_Bold_Large"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:background="@drawable/select_job_menu_blue"
+                android:padding="8dp"
+                android:paddingStart="@dimen/margin_normal"
+                android:paddingEnd="@dimen/margin_normal"
+                android:text="0/0"
+                android:textAllCaps="false"
+                android:textColor="@drawable/selector_text_normal"
+                android:textSize="@dimen/home_content_margin_horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/space_installment_tax"
+                app:layout_constraintTop_toTopOf="@id/btn_newjob" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="ON HAND"
+                android:textAllCaps="false"
+                android:textColor="@color/darkblue"
+                app:layout_constraintBottom_toTopOf="@+id/btn_waiting"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.441"
+                app:layout_constraintStart_toEndOf="@+id/space_insurance_other"
+                app:layout_constraintTop_toBottomOf="@+id/btn_onhand"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <com.tlt.georepo.view.TLTButton
+                android:id="@+id/btn_cancel"
+                style="@style/Text_Bold_Large"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/margin_large"
+                android:background="@drawable/select_job_menu_red"
+                android:padding="8dp"
+                android:paddingStart="@dimen/margin_normal"
+                android:paddingEnd="@dimen/margin_normal"
+                android:text="0/0"
+                android:textAllCaps="false"
+                android:textColor="@drawable/selector_text_normal"
+                android:textSize="@dimen/home_content_margin_horizontal"
+                app:layout_constraintEnd_toStartOf="@id/space_insurance_other"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_newjob" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:text="CANCEL"
+                android:textColor="@color/darkblue"
+                app:layout_constraintEnd_toStartOf="@+id/space_insurance_other"
+                app:layout_constraintHorizontal_bias="0.558"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_cancel" />
+
+            <Space
+                android:id="@+id/space_insurance_other"
+                android:layout_width="@dimen/margin_normal"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@id/btn_onhand"
+                app:layout_constraintStart_toEndOf="@id/btn_newjob" />
+
+            <com.tlt.georepo.view.TLTButton
+                android:id="@+id/btn_waiting"
+                style="@style/Text_Bold_Large"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:background="@drawable/select_job_menu_yellow"
+                android:padding="8dp"
+                android:paddingStart="@dimen/margin_normal"
+                android:paddingEnd="@dimen/margin_normal"
+                android:text="0/0"
+                android:textAllCaps="false"
+                android:textColor="@drawable/selector_text_normal"
+                android:textSize="@dimen/home_content_margin_horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.516"
+                app:layout_constraintStart_toEndOf="@id/space_insurance_other"
+                app:layout_constraintTop_toTopOf="@id/btn_cancel" />
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:text="WAITING"
+                android:textColor="@color/darkblue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.427"
+                app:layout_constraintStart_toEndOf="@+id/space_insurance_other"
+                app:layout_constraintTop_toBottomOf="@+id/btn_waiting" />
+
+            <Space
+                android:id="@+id/space3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_waiting" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/const1"
+            app:srcCompat="@drawable/logo_app" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

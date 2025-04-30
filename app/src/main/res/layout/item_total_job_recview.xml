@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            style="@style/MyCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp">
+
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <!--<android.support.v7.widget.AppCompatImageView-->
+                    <!--android:id="@+id/image"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:scaleType="fitCenter"-->
+                    <!--android:adjustViewBounds="true"-->
+                    <!--app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--app:layout_constraintStart_toStartOf="parent"-->
+                    <!--app:layout_constraintTop_toTopOf="parent"-->
+                    <!--tools:srcCompat="@drawable/promobanner_1" />-->
+
+            <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/title"
+                    style="@style/Text_Bold_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_job_status_no"
+                    android:padding="@dimen/padding_small"
+                    android:paddingStart="@dimen/padding_normal"
+                    android:paddingEnd="@dimen/padding_normal"
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="No"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/title2"
+                    style="@style/Text_Bold_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_job_status"
+                    android:padding="@dimen/padding_small"
+                    android:paddingStart="@dimen/padding_normal"
+                    android:paddingEnd="@dimen/padding_normal"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="STATUS" />
+
+
+
+            <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/status"
+                    style="@style/Text_Bold_Small"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:gravity="start"
+                    tools:text="detail"
+                    android:padding="@dimen/padding_small"
+                    android:textColor="@color/appintro_description"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title" />
+
+            <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/status2"
+                    style="@style/Text_Bold_Small"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:gravity="start"
+                    tools:text="description"
+                    android:padding="@dimen/padding_small"
+                    android:textColor="@color/appintro_description"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/status" />
+
+            <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/datetime"
+                    style="@style/Text_Bold_Small"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:gravity="end"
+                    tools:text="Date - Time"
+                    android:padding="@dimen/padding_small"
+                    android:textColor="@color/appintro_description"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/status2" />
+
+
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

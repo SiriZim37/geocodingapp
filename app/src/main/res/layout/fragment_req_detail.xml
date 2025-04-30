@@ -1,0 +1,1539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nestedscrollview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_normal"
+                android:orientation="vertical">
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                            style="@style/MyCardView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp">
+
+                        <android.support.constraint.ConstraintLayout
+                                android:id="@+id/top_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="@dimen/margin_normal"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="10dp">
+
+                            <android.support.constraint.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/txt_top_customer">
+                                <android.support.v7.widget.AppCompatTextView
+                                        android:id="@+id/txt_date"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="8dp"
+                                        android:fontFamily="@font/custom_bold"
+                                        android:gravity="center_vertical"
+                                        android:includeFontPadding="false"
+                                        android:textColor="#b3b3b3"
+                                        android:textSize="15sp"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        tools:text="11 ม.ค. 2561" />
+
+
+                                <!--<android.support.v7.widget.AppCompatTextView-->
+                                <!--android:id="@+id/txt_cust_name"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_gravity="center"-->
+                                <!--android:layout_marginStart="8dp"-->
+                                <!--android:fontFamily="@font/custom_bold"-->
+                                <!--android:includeFontPadding="false"-->
+                                <!--android:text="@string/txtCustName"-->
+                                <!--android:textColor="@color/text_normal"-->
+                                <!--android:textSize="@dimen/text_large_size"-->
+                                <!--android:layout_marginTop="8dp"-->
+                                <!--app:layout_constraintStart_toStartOf="parent"-->
+                                <!--app:layout_constraintTop_toBottomOf="@+id/txt_date"/>-->
+
+
+                                <android.support.v7.widget.AppCompatTextView
+                                        android:id="@+id/h_reg_no"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="right"
+                                        android:fontFamily="@font/custom_bold"
+                                        android:includeFontPadding="false"
+                                        android:textColor="@color/text_disable"
+                                        android:textSize="@dimen/car_contract_text_content"
+                                        android:text="@string/txt_regNo"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintBottom_toBottomOf="@+id/txt_reg_no"
+                                        app:layout_constraintTop_toTopOf="@+id/txt_reg_no"/>
+
+                                <android.support.v7.widget.AppCompatTextView
+                                        android:id="@+id/txt_reg_no"
+                                        android:layout_width="0dp"
+                                        android:layout_height="28dp"
+                                        android:gravity="right"
+                                        android:fontFamily="@font/custom_bold"
+                                        android:includeFontPadding="false"
+                                        android:textColor="@color/text_disable"
+                                        android:textSize="@dimen/car_contract_text_content"
+                                        android:paddingLeft="@dimen/padding_small"
+                                        android:text="กต - 1528 กรุงเทพมหานคร"
+                                        tools:text="กต - 1528 กรุงเทพมหานคร"
+                                        android:layout_marginTop="@dimen/margin_20"
+                                        app:layout_constraintStart_toEndOf="@id/h_reg_no"
+                                        app:layout_constraintTop_toBottomOf="@+id/txt_date"/>
+
+
+                                <android.support.v7.widget.AppCompatTextView
+                                        android:id="@+id/h_car_model"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="right"
+                                        android:fontFamily="@font/custom_bold"
+                                        android:includeFontPadding="false"
+                                        android:textColor="@color/text_disable"
+                                        android:textSize="@dimen/car_contract_text_content"
+                                        android:text="@string/txtd_MODEL_DESC"
+                                        app:layout_constraintTop_toBottomOf="@+id/txt_reg_no"
+                                        app:layout_constraintStart_toStartOf="parent"/>
+
+                                <android.support.v7.widget.AppCompatTextView
+                                        android:id="@+id/txt_car_model"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="right"
+                                        android:paddingLeft="@dimen/padding_small"
+                                        android:fontFamily="@font/custom_bold"
+                                        android:includeFontPadding="false"
+                                        android:textColor="@color/text_disable"
+                                        android:textSize="@dimen/car_contract_text_content"
+                                        android:text="VIOS"
+                                        app:layout_constraintStart_toEndOf="@id/h_car_model"
+                                        app:layout_constraintTop_toBottomOf="@+id/txt_reg_no"/>
+
+                                <android.support.v7.widget.AppCompatTextView
+                                        android:id="@+id/txt_car_color"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="right"
+                                        android:fontFamily="@font/custom_bold"
+                                        android:includeFontPadding="false"
+                                        android:textColor="@color/text_disable"
+                                        android:textSize="@dimen/car_contract_text_content"
+                                        android:text="(สีเทา)"
+                                        android:layout_marginStart="8dp"
+                                        app:layout_constraintStart_toEndOf="@+id/txt_car_model"
+                                        app:layout_constraintTop_toTopOf="@+id/txt_car_model"/>
+
+
+                                <android.support.v7.widget.AppCompatTextView
+                                        android:id="@+id/h_chasis_no"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="right"
+                                        android:fontFamily="@font/custom_bold"
+                                        android:includeFontPadding="false"
+                                        android:textColor="@color/text_disable"
+                                        android:textSize="@dimen/car_contract_text_content"
+                                        android:text="@string/txtd_CHASIS_NO"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toBottomOf="@+id/txt_car_model"/>
+
+                                <android.support.v7.widget.AppCompatTextView
+                                        android:id="@+id/txt_chasis_no"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="right"
+                                        android:fontFamily="@font/custom_bold"
+                                        android:includeFontPadding="false"
+                                        android:textColor="@color/text_disable"
+                                        android:textSize="@dimen/car_contract_text_content"
+                                        android:text="MR053HY9305260748"
+                                        android:layout_marginStart="8dp"
+                                        app:layout_constraintTop_toTopOf="@+id/h_chasis_no"
+                                        app:layout_constraintStart_toEndOf="@+id/h_chasis_no"/>
+
+
+                                <android.support.v7.widget.AppCompatTextView
+                                        android:id="@+id/h_engine_no"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="right"
+                                        android:fontFamily="@font/custom_bold"
+                                        android:includeFontPadding="false"
+                                        android:textColor="@color/text_disable"
+                                        android:textSize="@dimen/car_contract_text_content"
+                                        android:text="@string/txtd_ENGINE_NO"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toBottomOf="@+id/txt_chasis_no"/>
+
+                                <android.support.v7.widget.AppCompatTextView
+                                        android:id="@+id/txt_engine_no"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="right"
+                                        android:fontFamily="@font/custom_bold"
+                                        android:includeFontPadding="false"
+                                        android:textColor="@color/text_disable"
+                                        android:textSize="@dimen/car_contract_text_content"
+                                        android:text="1NZ-AAAAAA"
+                                        android:layout_marginStart="8dp"
+                                        app:layout_constraintStart_toEndOf="@+id/h_engine_no"
+                                        app:layout_constraintTop_toTopOf="@+id/h_engine_no"/>
+
+
+                            </android.support.constraint.ConstraintLayout>
+                        </android.support.constraint.ConstraintLayout>
+                    </android.support.v7.widget.CardView>
+                </FrameLayout>
+
+                <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/ic_car_contract"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="top|center_horizontal"
+                            app:srcCompat="@drawable/top_history_menu" />
+                </FrameLayout>
+            </FrameLayout>
+
+
+            <FrameLayout
+                    android:id="@+id/layout_contractdetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_12">
+
+                <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                            style="@style/MyCardView"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="0dp">
+
+                        <android.support.constraint.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="8dp"
+                                android:background="@color/white">
+
+
+
+                            <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/m_contract_tatus"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    app:srcCompat="@drawable/ic_book_red"
+                                    app:layout_constraintTop_toTopOf="@+id/h_contract_tatus"
+                                    app:layout_constraintBottom_toBottomOf="@+id/h_contract_tatus"
+                                    app:layout_constraintStart_toStartOf="parent"
+                            />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/h_contract_tatus"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="29dp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:gravity="left"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="@string/txtd_CONTRACT_STATUS"
+                                    android:layout_marginStart="8dp"
+                                    app:layout_constraintStart_toEndOf="@+id/m_contract_tatus"
+                                    android:layout_marginTop="@dimen/margin_large"
+                                    app:layout_constraintTop_toTopOf="parent"/>
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/txt_contract_status"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:gravity="right"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="@string/txtd_CONTRACT_STATUS"
+                                    android:layout_marginEnd="8dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/h_contract_tatus"
+                                    app:layout_constraintStart_toEndOf="@+id/h_contract_tatus"
+                                    android:layout_marginStart="16dp"/>
+
+
+                            <!--<android.support.v7.widget.AppCompatImageView-->
+                                    <!--android:id="@+id/m_contract_status_desc"-->
+                                    <!--android:layout_width="15dp"-->
+                                    <!--android:layout_height="15dp"-->
+                                    <!--app:srcCompat="@drawable/ic_book_red"-->
+                                    <!--app:layout_constraintTop_toTopOf="@+id/h_contract_status_desc"-->
+                                    <!--app:layout_constraintBottom_toBottomOf="@+id/h_contract_status_desc"-->
+                                    <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+                            <!--<android.support.v7.widget.AppCompatTextView-->
+                                    <!--android:id="@+id/h_contract_status_desc"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_gravity="center"-->
+                                    <!--android:fontFamily="@font/custom_bold"-->
+                                    <!--android:includeFontPadding="false"-->
+                                    <!--android:gravity="left"-->
+                                    <!--android:textColor="@color/text_disable"-->
+                                    <!--android:textSize="@dimen/car_contract_text_content"-->
+                                    <!--android:text="@string/txtd_CONTRACT_STATUS_DESC"-->
+                                    <!--android:layout_marginStart="8dp"-->
+                                    <!--app:layout_constraintStart_toEndOf="@id/m_contract_status_desc"-->
+                                    <!--app:layout_constraintTop_toBottomOf="@+id/txt_contract_status"/>-->
+
+
+                            <!--<android.support.v7.widget.AppCompatTextView-->
+                                    <!--android:id="@+id/txt_contract_status_desc"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_gravity="center"-->
+                                    <!--android:fontFamily="@font/custom_bold"-->
+                                    <!--android:includeFontPadding="false"-->
+                                    <!--android:gravity="right"-->
+                                    <!--android:textColor="@color/text_disable"-->
+                                    <!--android:textSize="@dimen/car_contract_text_content"-->
+                                    <!--android:text="H"-->
+                                    <!--android:layout_marginEnd="8dp"-->
+                                    <!--app:layout_constraintEnd_toEndOf="parent"-->
+                                    <!--app:layout_constraintTop_toTopOf="@+id/h_contract_status_desc"-->
+                                    <!--app:layout_constraintStart_toEndOf="@+id/h_contract_status_desc"-->
+                                    <!--android:layout_marginStart="16dp"/>-->
+
+
+                            <!--<android.support.v7.widget.AppCompatImageView-->
+                            <!--android:id="@+id/m_branch"-->
+                            <!--android:layout_width="15dp"-->
+                            <!--android:layout_height="15dp"-->
+                            <!--app:srcCompat="@drawable/ic_book_red"-->
+                            <!--app:layout_constraintTop_toTopOf="@+id/h_branch"-->
+                            <!--app:layout_constraintBottom_toBottomOf="@+id/h_branch"-->
+                            <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+                            <!--<android.support.v7.widget.AppCompatTextView-->
+                            <!--android:id="@+id/h_branch"-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:fontFamily="@font/custom_bold"-->
+                            <!--android:includeFontPadding="false"-->
+                            <!--android:gravity="left"-->
+                            <!--android:textColor="@color/text_disable"-->
+                            <!--android:textSize="@dimen/car_contract_text_content"-->
+                            <!--android:text="@string/txtd_BRANCH"-->
+                            <!--android:layout_marginStart="8dp"-->
+                            <!--app:layout_constraintStart_toEndOf="@id/m_branch"-->
+                            <!--app:layout_constraintTop_toBottomOf="@+id/txt_contract_status"/>-->
+
+
+                            <!--<android.support.v7.widget.AppCompatTextView-->
+                            <!--android:id="@+id/txt_branch"-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:fontFamily="@font/custom_bold"-->
+                            <!--android:includeFontPadding="false"-->
+                            <!--android:gravity="right"-->
+                            <!--android:textColor="@color/text_disable"-->
+                            <!--android:textSize="@dimen/car_contract_text_content"-->
+                            <!--android:text="H"-->
+                            <!--android:layout_marginEnd="8dp"-->
+                            <!--app:layout_constraintEnd_toEndOf="parent"-->
+                            <!--app:layout_constraintTop_toTopOf="@+id/h_branch"-->
+                            <!--app:layout_constraintStart_toEndOf="@+id/h_branch"-->
+                            <!--android:layout_marginStart="16dp"/>-->
+
+                            <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/m_reg"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    app:srcCompat="@drawable/ic_book_red"
+                                    app:layout_constraintTop_toTopOf="@+id/h_contract_no"
+                                    app:layout_constraintBottom_toBottomOf="@+id/h_contract_no"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/h_contract_no"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:gravity="left"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="@string/txtd_CONTRACT_NO"
+                                    android:layout_marginStart="8dp"
+                                    app:layout_constraintStart_toEndOf="@id/m_reg"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_contract_status"/>
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/txt_contract_no"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="636767T"
+                                    android:layout_marginEnd="8dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/h_contract_no"
+                                    app:layout_constraintStart_toEndOf="@+id/h_contract_no"
+                                    android:layout_marginStart="16dp"/>
+
+
+                            <!--<android.support.v7.widget.AppCompatImageView-->
+                                    <!--android:id="@+id/m_address"-->
+                                    <!--android:layout_width="15dp"-->
+                                    <!--android:layout_height="15dp"-->
+                                    <!--app:srcCompat="@drawable/ic_book_red"-->
+                                    <!--app:layout_constraintTop_toTopOf="@+id/h_contract_type"-->
+                                    <!--app:layout_constraintBottom_toBottomOf="@+id/h_contract_type"-->
+                                    <!--app:layout_constraintStart_toStartOf="parent"/>-->
+
+                            <!--<android.support.v7.widget.AppCompatTextView-->
+                                    <!--android:id="@+id/h_contract_type"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_gravity="center"-->
+                                    <!--android:fontFamily="@font/custom_bold"-->
+                                    <!--android:includeFontPadding="false"-->
+                                    <!--android:gravity="left"-->
+                                    <!--android:textColor="@color/text_disable"-->
+                                    <!--android:textSize="@dimen/car_contract_text_content"-->
+                                    <!--app:layout_constraintTop_toBottomOf="@+id/txt_contract_no"-->
+                                    <!--android:text="@string/txtd_CONTRACT_TYPE"-->
+                                    <!--android:layout_marginStart="8dp"-->
+                                    <!--app:layout_constraintStart_toEndOf="@id/m_address"-->
+                            <!--/>-->
+
+
+                            <!--<android.support.v7.widget.AppCompatTextView-->
+                                    <!--android:id="@+id/txt_contract_type"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:gravity="right"-->
+                                    <!--android:fontFamily="@font/custom_bold"-->
+                                    <!--android:includeFontPadding="false"-->
+                                    <!--android:textColor="@color/text_disable"-->
+                                    <!--android:textSize="@dimen/car_contract_text_content"-->
+                                    <!--android:text="P"-->
+                                    <!--app:layout_constraintTop_toTopOf="@+id/h_contract_type"-->
+                                    <!--app:layout_constraintStart_toEndOf="@+id/h_contract_type"-->
+                                    <!--android:layout_marginStart="16dp" android:layout_marginEnd="8dp"-->
+                                    <!--app:layout_constraintEnd_toEndOf="parent"/>-->
+
+
+                            <!--<android.support.v7.widget.AppCompatImageView-->
+                                    <!--android:id="@+id/m_contract_type_desc"-->
+                                    <!--android:layout_width="15dp"-->
+                                    <!--android:layout_height="15dp"-->
+                                    <!--app:srcCompat="@drawable/ic_book_red"-->
+                                    <!--app:layout_constraintTop_toTopOf="@+id/h_contract_type_desc"-->
+                                    <!--app:layout_constraintBottom_toBottomOf="@+id/h_contract_type_desc"-->
+                                    <!--app:layout_constraintStart_toStartOf="parent"-->
+                            <!--/>-->
+
+                            <!--<android.support.v7.widget.AppCompatTextView-->
+                                    <!--android:id="@+id/h_contract_type_desc"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_gravity="center"-->
+                                    <!--android:fontFamily="@font/custom_bold"-->
+                                    <!--android:includeFontPadding="false"-->
+                                    <!--android:gravity="left"-->
+                                    <!--android:textColor="@color/text_disable"-->
+                                    <!--android:textSize="@dimen/car_contract_text_content"-->
+                                    <!--android:text="@string/txtd_CONTRACT_TYPE_DESC"-->
+                                    <!--android:layout_marginStart="8dp"-->
+                                    <!--app:layout_constraintStart_toEndOf="@+id/m_contract_type_desc"-->
+                                    <!--app:layout_constraintTop_toBottomOf="@+id/txt_contract_no"/>-->
+
+                            <!--<android.support.v7.widget.AppCompatTextView-->
+                                    <!--android:id="@+id/txt_contract_type_desc"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:gravity="right"-->
+                                    <!--android:fontFamily="@font/custom_bold"-->
+                                    <!--android:includeFontPadding="false"-->
+                                    <!--android:textColor="@color/text_disable"-->
+                                    <!--android:textSize="@dimen/car_contract_text_content"-->
+                                    <!--android:text="0903333333"-->
+                                    <!--app:layout_constraintEnd_toEndOf="parent"-->
+                                    <!--app:layout_constraintTop_toTopOf="@+id/h_contract_type_desc"-->
+                                    <!--app:layout_constraintStart_toEndOf="@+id/h_contract_type_desc"-->
+                                    <!--android:layout_marginStart="16dp"-->
+                                    <!--android:layout_marginEnd="8dp"/>-->
+
+
+
+
+                            <!--<android.support.v7.widget.AppCompatImageView-->
+                                    <!--android:id="@+id/m_hp_amt"-->
+                                    <!--android:layout_width="15dp"-->
+                                    <!--android:layout_height="15dp"-->
+                                    <!--app:srcCompat="@drawable/ic_book_red"-->
+                                    <!--app:layout_constraintTop_toTopOf="@+id/h_hp_amt"-->
+                                    <!--app:layout_constraintBottom_toBottomOf="@+id/h_hp_amt"-->
+                                    <!--app:layout_constraintEnd_toStartOf="@+id/h_hp_amt"-->
+                                    <!--android:layout_marginEnd="8dp"-->
+                                    <!--app:layout_constraintStart_toStartOf="parent"-->
+                            <!--/>-->
+
+                            <!--<android.support.v7.widget.AppCompatTextView-->
+                                    <!--android:id="@+id/h_hp_amt"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_gravity="center"-->
+                                    <!--android:fontFamily="@font/custom_bold"-->
+                                    <!--android:includeFontPadding="false"-->
+                                    <!--android:gravity="left"-->
+                                    <!--android:textColor="@color/text_disable"-->
+                                    <!--android:textSize="@dimen/car_contract_text_content"-->
+                                    <!--android:text="@string/txtd_HP_AMT"-->
+                                    <!--app:layout_constraintTop_toBottomOf="@+id/txt_contract_no"-->
+                                    <!--android:layout_marginStart="8dp"-->
+                                    <!--app:layout_constraintStart_toEndOf="@+id/m_hp_amt"/>-->
+
+                            <!--<android.support.v7.widget.AppCompatTextView-->
+                                    <!--android:id="@+id/txt_hp_amt"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:gravity="right"-->
+                                    <!--android:fontFamily="@font/custom_bold"-->
+                                    <!--android:includeFontPadding="false"-->
+                                    <!--android:textColor="@color/text_disable"-->
+                                    <!--android:textSize="@dimen/car_contract_text_content"-->
+                                    <!--android:text="0"-->
+                                    <!--app:layout_constraintEnd_toEndOf="parent"-->
+                                    <!--app:layout_constraintTop_toTopOf="@+id/h_hp_amt"-->
+                                    <!--app:layout_constraintStart_toEndOf="@+id/h_hp_amt"-->
+                                    <!--android:layout_marginStart="16dp"-->
+                                    <!--android:layout_marginEnd="8dp"/>-->
+
+                            <!--<android.support.v7.widget.AppCompatImageView-->
+                                    <!--android:id="@+id/m_out_standing"-->
+                                    <!--android:layout_width="15dp"-->
+                                    <!--android:layout_height="15dp"-->
+                                    <!--app:srcCompat="@drawable/ic_book_red"-->
+                                    <!--app:layout_constraintTop_toTopOf="@+id/h_out_standing"-->
+                                    <!--app:layout_constraintBottom_toBottomOf="@+id/h_out_standing"-->
+                                    <!--app:layout_constraintEnd_toStartOf="@+id/h_out_standing"-->
+                                    <!--android:layout_marginEnd="8dp"-->
+                                    <!--app:layout_constraintStart_toStartOf="parent"-->
+                            <!--/>-->
+
+                            <!--<android.support.v7.widget.AppCompatTextView-->
+                                    <!--android:id="@+id/h_out_standing"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_gravity="center"-->
+                                    <!--android:fontFamily="@font/custom_bold"-->
+                                    <!--android:includeFontPadding="false"-->
+                                    <!--android:gravity="left"-->
+                                    <!--android:textColor="@color/text_disable"-->
+                                    <!--android:textSize="@dimen/car_contract_text_content"-->
+                                    <!--app:layout_constraintTop_toBottomOf="@+id/txt_contract_no"-->
+                                    <!--android:text="@string/txtD_OVD_AMT"-->
+                                    <!--android:layout_marginStart="8dp"-->
+                                    <!--app:layout_constraintStart_toEndOf="@id/m_out_standing"-->
+                            <!--/>-->
+
+                            <!--<android.support.v7.widget.AppCompatTextView-->
+                                    <!--android:id="@+id/txt_out_standing"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:gravity="right"-->
+                                    <!--android:fontFamily="@font/custom_bold"-->
+                                    <!--android:includeFontPadding="false"-->
+                                    <!--android:textColor="@color/text_disable"-->
+                                    <!--android:textSize="@dimen/car_contract_text_content"-->
+                                    <!--android:text="0"-->
+                                    <!--app:layout_constraintEnd_toEndOf="parent"-->
+                                    <!--app:layout_constraintTop_toTopOf="@+id/h_out_standing"-->
+                                    <!--app:layout_constraintStart_toEndOf="@+id/h_out_standing"-->
+                                    <!--android:layout_marginStart="16dp"-->
+                                    <!--android:layout_marginEnd="8dp"/>-->
+
+
+                            <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/m_overdue_day"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    app:srcCompat="@drawable/ic_book_red"
+                                    app:layout_constraintTop_toTopOf="@+id/h_overdue_day"
+                                    app:layout_constraintBottom_toBottomOf="@+id/h_overdue_day"
+                                    app:layout_constraintEnd_toStartOf="@+id/h_overdue_day"
+                                    android:layout_marginEnd="8dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                            />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/h_overdue_day"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:gravity="left"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_contract_no"
+                                    android:text="@string/txtd_OVERDUE_DAYS"
+                                    android:layout_marginStart="8dp"
+                                    app:layout_constraintStart_toEndOf="@id/m_overdue_day"
+                            />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/txt_overdue_day"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="0"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/h_overdue_day"
+                                    app:layout_constraintStart_toEndOf="@+id/h_overdue_day"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginEnd="8dp"/>
+
+
+                            <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/m_installment_due_amt"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    app:srcCompat="@drawable/ic_book_red"
+                                    app:layout_constraintTop_toTopOf="@+id/h_installment_due_amt"
+                                    app:layout_constraintBottom_toBottomOf="@+id/h_installment_due_amt"
+                                    app:layout_constraintEnd_toStartOf="@+id/h_installment_due_amt"
+                                    android:layout_marginEnd="8dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                            />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/h_installment_due_amt"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:gravity="left"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_overdue_day"
+                                    android:text="@string/txtd_INSTALLMENT_DUE_AMT"
+                                    android:layout_marginStart="8dp"
+                                    app:layout_constraintStart_toEndOf="@id/m_installment_due_amt"
+                            />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/txt_installment_due_amt"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="0"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/h_installment_due_amt"
+                                    app:layout_constraintStart_toEndOf="@+id/h_installment_due_amt"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginEnd="8dp"/>
+
+
+
+
+
+                            <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/m_penalty_date"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    app:srcCompat="@drawable/ic_book_red"
+                                    app:layout_constraintTop_toTopOf="@+id/h_penalty_date"
+                                    app:layout_constraintBottom_toBottomOf="@+id/h_penalty_date"
+                                    app:layout_constraintEnd_toStartOf="@+id/h_penalty_date"
+                                    android:layout_marginEnd="8dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                            />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/h_penalty_date"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:gravity="left"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="@string/txtd_PENALTY_DATE"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_installment_due_amt"
+                                    android:layout_marginStart="8dp"
+                                    app:layout_constraintStart_toEndOf="@+id/m_penalty_date"/>
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/txt_penalty_date"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="0"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/h_penalty_date"
+                                    app:layout_constraintStart_toEndOf="@+id/h_penalty_date"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginEnd="8dp"/>
+
+
+                            <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/m_penalty_amount"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    app:srcCompat="@drawable/ic_book_red"
+                                    app:layout_constraintTop_toTopOf="@+id/h_penalty_amount"
+                                    app:layout_constraintBottom_toBottomOf="@+id/h_penalty_amount"
+                                    app:layout_constraintEnd_toStartOf="@+id/h_penalty_amount"
+                                    android:layout_marginEnd="8dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                            />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/h_penalty_amount"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:gravity="left"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="@string/txtd_PENALTY_AMT"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_penalty_date"
+                                    android:layout_marginStart="8dp"
+                                    app:layout_constraintStart_toEndOf="@+id/m_penalty_amount"/>
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/txt_penalty_amount"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="0"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/h_penalty_amount"
+                                    app:layout_constraintStart_toEndOf="@+id/h_penalty_amount"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginEnd="8dp"/>
+
+
+
+                            <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/m_other_amount"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    app:srcCompat="@drawable/ic_book_red"
+                                    app:layout_constraintTop_toTopOf="@+id/h_other_amount"
+                                    app:layout_constraintBottom_toBottomOf="@+id/h_other_amount"
+                                    app:layout_constraintEnd_toStartOf="@+id/h_other_amount"
+                                    android:layout_marginEnd="8dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                            />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/h_other_amount"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:gravity="left"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="@string/txtd_OTHERS_AMT"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_penalty_amount"
+                                    android:layout_marginStart="8dp"
+                                    app:layout_constraintStart_toEndOf="@+id/m_other_amount"/>
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/txt_other_amount"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="0"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/h_other_amount"
+                                    app:layout_constraintStart_toEndOf="@+id/h_other_amount"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginEnd="8dp"/>
+
+
+
+                            <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/m_total_ovd_amt"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    app:srcCompat="@drawable/ic_book_red"
+                                    app:layout_constraintTop_toTopOf="@+id/h_total_ovd_amt"
+                                    app:layout_constraintBottom_toBottomOf="@+id/h_total_ovd_amt"
+                                    app:layout_constraintEnd_toStartOf="@+id/h_total_ovd_amt"
+                                    android:layout_marginEnd="8dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                            />
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/h_total_ovd_amt"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:gravity="left"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="@string/txtd_TOTAL_OVD_AMT"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_other_amount"
+                                    android:layout_marginStart="8dp"
+                                    app:layout_constraintStart_toEndOf="@+id/m_total_ovd_amt"/>
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/txt_total_ovd_amt"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="0"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/h_total_ovd_amt"
+                                    app:layout_constraintStart_toEndOf="@+id/h_total_ovd_amt"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginEnd="8dp"/>
+
+
+                            <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/m_paid_to_item"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    app:srcCompat="@drawable/ic_book_red"
+                                    app:layout_constraintTop_toTopOf="@+id/h_paid_to_item"
+                                    app:layout_constraintBottom_toBottomOf="@+id/h_paid_to_item"
+                                    app:layout_constraintEnd_toStartOf="@+id/h_paid_to_item"
+                                    android:layout_marginEnd="8dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                            />
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/h_paid_to_item"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:gravity="left"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="@string/txtd_PAID_TO_ITEM"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_total_ovd_amt"
+                                    android:layout_marginStart="8dp"
+                                    app:layout_constraintStart_toEndOf="@+id/m_paid_to_item"/>
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/txt_paid_to_item"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="0"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/h_paid_to_item"
+                                    app:layout_constraintStart_toEndOf="@+id/h_paid_to_item"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginEnd="8dp"/>
+
+
+                            <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/m_paid_date"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    app:srcCompat="@drawable/ic_book_red"
+                                    app:layout_constraintTop_toTopOf="@+id/h_paid_date"
+                                    app:layout_constraintBottom_toBottomOf="@+id/h_paid_date"
+                                    app:layout_constraintEnd_toStartOf="@+id/h_paid_date"
+                                    android:layout_marginEnd="8dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                            />
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/h_paid_date"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:gravity="left"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="@string/txtd_PAID_DATE"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_paid_to_item"
+                                    android:layout_marginStart="8dp"
+                                    app:layout_constraintStart_toEndOf="@+id/m_paid_date"/>
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/txt_paid_date"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="0"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/h_paid_date"
+                                    app:layout_constraintStart_toEndOf="@+id/h_paid_date"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginEnd="8dp"/>
+
+
+                            <!--<android.support.v7.widget.AppCompatImageView-->
+                                    <!--android:id="@+id/m_last_paid_amt"-->
+                                    <!--android:layout_width="15dp"-->
+                                    <!--android:layout_height="15dp"-->
+                                    <!--app:srcCompat="@drawable/ic_book_red"-->
+                                    <!--app:layout_constraintTop_toTopOf="@+id/h_last_paid_amt"-->
+                                    <!--app:layout_constraintBottom_toBottomOf="@+id/h_last_paid_amt"-->
+                                    <!--app:layout_constraintEnd_toStartOf="@+id/h_last_paid_amt"-->
+                                    <!--android:layout_marginEnd="8dp"-->
+                                    <!--app:layout_constraintStart_toStartOf="parent"-->
+                            <!--/>-->
+
+
+                            <!--<android.support.v7.widget.AppCompatTextView-->
+                                    <!--android:id="@+id/h_last_paid_amt"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_gravity="center"-->
+                                    <!--android:fontFamily="@font/custom_bold"-->
+                                    <!--android:includeFontPadding="false"-->
+                                    <!--android:gravity="left"-->
+                                    <!--android:textColor="@color/text_disable"-->
+                                    <!--android:textSize="@dimen/car_contract_text_content"-->
+                                    <!--android:text="@string/txtd_LAST_PAID_AMT"-->
+                                    <!--app:layout_constraintTop_toBottomOf="@+id/txt_paid_date"-->
+                                    <!--android:layout_marginStart="8dp"-->
+                                    <!--app:layout_constraintStart_toEndOf="@+id/m_last_paid_amt"/>-->
+
+                            <!--<android.support.v7.widget.AppCompatTextView-->
+                                    <!--android:id="@+id/txt_last_paid_amt"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:gravity="right"-->
+                                    <!--android:fontFamily="@font/custom_bold"-->
+                                    <!--android:includeFontPadding="false"-->
+                                    <!--android:textColor="@color/text_disable"-->
+                                    <!--android:textSize="@dimen/car_contract_text_content"-->
+                                    <!--android:text="0"-->
+                                    <!--app:layout_constraintEnd_toEndOf="parent"-->
+                                    <!--app:layout_constraintTop_toTopOf="@+id/h_last_paid_amt"-->
+                                    <!--app:layout_constraintStart_toEndOf="@+id/h_last_paid_amt"-->
+                                    <!--android:layout_marginStart="16dp"-->
+                                    <!--android:layout_marginEnd="8dp"/>-->
+
+
+                            <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/m_overdue_item"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    app:srcCompat="@drawable/ic_book_red"
+                                    app:layout_constraintTop_toTopOf="@+id/h_overdue_item"
+                                    app:layout_constraintBottom_toBottomOf="@+id/h_overdue_item"
+                                    app:layout_constraintEnd_toStartOf="@+id/h_overdue_item"
+                                    android:layout_marginEnd="8dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                            />
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/h_overdue_item"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:gravity="left"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="@string/txtd_OVERDUE_ITEM"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_paid_date"
+                                    android:layout_marginStart="8dp"
+                                    app:layout_constraintStart_toEndOf="@+id/m_overdue_item"/>
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/txt_overdue_item"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="0"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/h_overdue_item"
+                                    app:layout_constraintStart_toEndOf="@+id/h_overdue_item"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginEnd="8dp"/>
+
+
+
+                            <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/m_overdue_item_from"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    app:srcCompat="@drawable/ic_book_red"
+                                    app:layout_constraintTop_toTopOf="@+id/h_overdue_item_from"
+                                    app:layout_constraintBottom_toBottomOf="@+id/h_overdue_item_from"
+                                    app:layout_constraintEnd_toStartOf="@+id/h_overdue_item_from"
+                                    android:layout_marginEnd="8dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                            />
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/h_overdue_item_from"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:gravity="left"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="@string/txtd_OVERDUE_ITEM_FROM"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_overdue_item"
+                                    android:layout_marginStart="8dp"
+                                    app:layout_constraintStart_toEndOf="@+id/m_overdue_item_from"/>
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/txt_overdue_item_from"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="0"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/h_overdue_item_from"
+                                    app:layout_constraintStart_toEndOf="@+id/h_overdue_item_from"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginEnd="8dp"/>
+
+
+
+                            <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/m_overdue_date_from"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    app:srcCompat="@drawable/ic_book_red"
+                                    app:layout_constraintTop_toTopOf="@+id/h_overdue_date_from"
+                                    app:layout_constraintBottom_toBottomOf="@+id/h_overdue_date_from"
+                                    app:layout_constraintEnd_toStartOf="@+id/h_overdue_date_from"
+                                    android:layout_marginEnd="8dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                            />
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/h_overdue_date_from"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:gravity="left"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="@string/txtd_OVERDUE_DATE_FROM"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_overdue_item_from"
+                                    android:layout_marginStart="8dp"
+                                    app:layout_constraintStart_toEndOf="@+id/m_overdue_date_from"/>
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/txt_overdue_date_from"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="0"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/h_overdue_date_from"
+                                    app:layout_constraintStart_toEndOf="@+id/h_overdue_date_from"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginEnd="8dp"/>
+
+
+
+                            <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/m_overdue_item_to"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    app:srcCompat="@drawable/ic_book_red"
+                                    app:layout_constraintTop_toTopOf="@+id/h_overdue_item_to"
+                                    app:layout_constraintBottom_toBottomOf="@+id/h_overdue_item_to"
+                                    app:layout_constraintEnd_toStartOf="@+id/h_overdue_item_to"
+                                    android:layout_marginEnd="8dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                            />
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/h_overdue_item_to"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:gravity="left"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="@string/txtd_OVERDUE_ITEM_TO"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_overdue_date_from"
+                                    android:layout_marginStart="8dp"
+                                    app:layout_constraintStart_toEndOf="@+id/m_overdue_item_to"/>
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/txt_overdue_item_to"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="0"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/h_overdue_item_to"
+                                    app:layout_constraintStart_toEndOf="@+id/h_overdue_item_to"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginEnd="8dp"/>
+
+
+                            <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/m_overdue_date_to"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    app:srcCompat="@drawable/ic_book_red"
+                                    app:layout_constraintTop_toTopOf="@+id/h_overdue_date_to"
+                                    app:layout_constraintBottom_toBottomOf="@+id/h_overdue_date_to"
+                                    app:layout_constraintEnd_toStartOf="@+id/h_overdue_date_to"
+                                    android:layout_marginEnd="8dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                            />
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/h_overdue_date_to"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:gravity="left"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="@string/txtd_OVERDUE_DATE_TO"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_overdue_item_to"
+                                    android:layout_marginStart="8dp"
+                                    app:layout_constraintStart_toEndOf="@+id/m_overdue_date_to"/>
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/txt_overdue_date_to"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="0"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/h_overdue_date_to"
+                                    app:layout_constraintStart_toEndOf="@+id/h_overdue_date_to"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginEnd="8dp"/>
+
+                            <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/m_installment_amt"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    app:srcCompat="@drawable/ic_book_red"
+                                    app:layout_constraintTop_toTopOf="@+id/h_installment_amt"
+                                    app:layout_constraintBottom_toBottomOf="@+id/h_installment_amt"
+                                    app:layout_constraintEnd_toStartOf="@+id/h_installment_amt"
+                                    android:layout_marginEnd="8dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                            />
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/h_installment_amt"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:gravity="left"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                  android:text="@string/txtd_INSTALLMENT_AMT"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_overdue_date_to"
+                                    android:layout_marginStart="8dp"
+                                    app:layout_constraintStart_toEndOf="@+id/m_installment_amt"/>
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/txt_installment_amt"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="0"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/h_installment_amt"
+                                    app:layout_constraintStart_toEndOf="@+id/h_installment_amt"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginEnd="8dp"/>
+
+
+
+
+                            <!--<android.support.v7.widget.AppCompatImageView-->
+                                    <!--android:id="@+id/m_payment_type"-->
+                                    <!--android:layout_width="15dp"-->
+                                    <!--android:layout_height="15dp"-->
+                                    <!--app:srcCompat="@drawable/ic_book_red"-->
+                                    <!--app:layout_constraintTop_toTopOf="@+id/h_payment_type"-->
+                                    <!--app:layout_constraintBottom_toBottomOf="@+id/h_payment_type"-->
+                                    <!--app:layout_constraintEnd_toStartOf="@+id/h_payment_type"-->
+                                    <!--android:layout_marginEnd="8dp"-->
+                                    <!--app:layout_constraintStart_toStartOf="parent"-->
+                            <!--/>-->
+
+
+                            <!--<android.support.v7.widget.AppCompatTextView-->
+                                    <!--android:id="@+id/h_payment_type"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_gravity="center"-->
+                                    <!--android:fontFamily="@font/custom_bold"-->
+                                    <!--android:includeFontPadding="false"-->
+                                    <!--android:gravity="left"-->
+                                    <!--android:textColor="@color/text_disable"-->
+                                    <!--android:textSize="@dimen/car_contract_text_content"-->
+                                    <!--android:text="@string/txtd_PAYMENT_TYPE"-->
+                                    <!--app:layout_constraintTop_toBottomOf="@+id/txt_installment_amt"-->
+                                    <!--android:layout_marginStart="8dp"-->
+                                    <!--app:layout_constraintStart_toEndOf="@+id/m_payment_type"/>-->
+
+                            <!--<android.support.v7.widget.AppCompatTextView-->
+                                    <!--android:id="@+id/txt_payment_type"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:gravity="right"-->
+                                    <!--android:fontFamily="@font/custom_bold"-->
+                                    <!--android:includeFontPadding="false"-->
+                                    <!--android:textColor="@color/text_disable"-->
+                                    <!--android:textSize="@dimen/car_contract_text_content"-->
+                                    <!--android:text="0"-->
+                                    <!--app:layout_constraintEnd_toEndOf="parent"-->
+                                    <!--app:layout_constraintTop_toTopOf="@+id/h_payment_type"-->
+                                    <!--app:layout_constraintStart_toEndOf="@+id/h_payment_type"-->
+                                    <!--android:layout_marginStart="16dp"-->
+                                    <!--android:layout_marginEnd="8dp"/>-->
+
+
+
+                            <!--<android.support.v7.widget.AppCompatImageView-->
+                                    <!--android:id="@+id/m_payment_desc"-->
+                                    <!--android:layout_width="15dp"-->
+                                    <!--android:layout_height="15dp"-->
+                                    <!--app:srcCompat="@drawable/ic_book_red"-->
+                                    <!--app:layout_constraintTop_toTopOf="@+id/h_payment_desc"-->
+                                    <!--app:layout_constraintBottom_toBottomOf="@+id/h_payment_desc"-->
+                                    <!--app:layout_constraintEnd_toStartOf="@+id/h_payment_desc"-->
+                                    <!--android:layout_marginEnd="8dp"-->
+                                    <!--app:layout_constraintStart_toStartOf="parent"-->
+                            <!--/>-->
+
+
+                            <!--<android.support.v7.widget.AppCompatTextView-->
+                                    <!--android:id="@+id/h_payment_desc"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_gravity="center"-->
+                                    <!--android:fontFamily="@font/custom_bold"-->
+                                    <!--android:includeFontPadding="false"-->
+                                    <!--android:gravity="left"-->
+                                    <!--android:textColor="@color/text_disable"-->
+                                    <!--android:textSize="@dimen/car_contract_text_content"-->
+                                    <!--android:text="@string/txtd_PAYMENT_DESC"-->
+                                    <!--app:layout_constraintTop_toBottomOf="@+id/txt_payment_type"-->
+                                    <!--android:layout_marginStart="8dp"-->
+                                    <!--app:layout_constraintStart_toEndOf="@+id/m_payment_desc"/>-->
+
+                            <!--<android.support.v7.widget.AppCompatTextView-->
+                                    <!--android:id="@+id/txt_payment_desc"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:gravity="right"-->
+                                    <!--android:fontFamily="@font/custom_bold"-->
+                                    <!--android:includeFontPadding="false"-->
+                                    <!--android:textColor="@color/text_disable"-->
+                                    <!--android:textSize="@dimen/car_contract_text_content"-->
+                                    <!--android:text="0"-->
+                                    <!--app:layout_constraintEnd_toEndOf="parent"-->
+                                    <!--app:layout_constraintTop_toTopOf="@+id/h_payment_desc"-->
+                                    <!--app:layout_constraintStart_toEndOf="@+id/h_payment_desc"-->
+                                    <!--android:layout_marginStart="16dp"-->
+                                    <!--android:layout_marginEnd="8dp"/>-->
+
+
+
+                            <!--<android.support.v7.widget.AppCompatImageView-->
+                                    <!--android:id="@+id/m_bollon_amt"-->
+                                    <!--android:layout_width="15dp"-->
+                                    <!--android:layout_height="15dp"-->
+                                    <!--app:srcCompat="@drawable/ic_book_red"-->
+                                    <!--app:layout_constraintTop_toTopOf="@+id/h_bollon_amt"-->
+                                    <!--app:layout_constraintBottom_toBottomOf="@+id/h_bollon_amt"-->
+                                    <!--app:layout_constraintEnd_toStartOf="@+id/h_bollon_amt"-->
+                                    <!--android:layout_marginEnd="8dp"-->
+                                    <!--app:layout_constraintStart_toStartOf="parent"-->
+                            <!--/>-->
+
+
+                            <!--<android.support.v7.widget.AppCompatTextView-->
+                                    <!--android:id="@+id/h_bollon_amt"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_gravity="center"-->
+                                    <!--android:fontFamily="@font/custom_bold"-->
+                                    <!--android:includeFontPadding="false"-->
+                                    <!--android:gravity="left"-->
+                                    <!--android:textColor="@color/text_disable"-->
+                                    <!--android:textSize="@dimen/car_contract_text_content"-->
+                                    <!--android:text="@string/txtd_BALLOON_AMT"-->
+                                    <!--app:layout_constraintTop_toBottomOf="@+id/txt_expect_sts_date"-->
+                                    <!--android:layout_marginStart="8dp"-->
+                                    <!--app:layout_constraintStart_toEndOf="@+id/m_bollon_amt"/>-->
+
+                            <!--<android.support.v7.widget.AppCompatTextView-->
+                                    <!--android:id="@+id/txt_bollon_amt"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:gravity="right"-->
+                                    <!--android:fontFamily="@font/custom_bold"-->
+                                    <!--android:includeFontPadding="false"-->
+                                    <!--android:textColor="@color/text_disable"-->
+                                    <!--android:textSize="@dimen/car_contract_text_content"-->
+                                    <!--android:text="0"-->
+                                    <!--app:layout_constraintEnd_toEndOf="parent"-->
+                                    <!--app:layout_constraintTop_toTopOf="@+id/h_bollon_amt"-->
+                                    <!--app:layout_constraintStart_toEndOf="@+id/h_bollon_amt"-->
+                                    <!--android:layout_marginStart="16dp"-->
+                                    <!--android:layout_marginEnd="8dp"/>-->
+
+
+                            <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/m_last_due_date"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    app:srcCompat="@drawable/ic_book_red"
+                                    app:layout_constraintTop_toTopOf="@+id/h_last_due_date"
+                                    app:layout_constraintBottom_toBottomOf="@+id/h_last_due_date"
+                                    app:layout_constraintEnd_toStartOf="@+id/h_last_due_date"
+                                    android:layout_marginEnd="8dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                            />
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/h_last_due_date"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:gravity="left"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="@string/txtd_LAST_DUE_DATE"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_installment_amt"
+                                    android:layout_marginStart="8dp"
+                                    app:layout_constraintStart_toEndOf="@+id/m_last_due_date"/>
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/txt_last_due_date"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="0"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/h_last_due_date"
+                                    app:layout_constraintStart_toEndOf="@+id/h_last_due_date"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginEnd="8dp"/>
+
+
+
+                            <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/m_total_term"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    app:srcCompat="@drawable/ic_book_red"
+                                    app:layout_constraintTop_toTopOf="@+id/h_total_term"
+                                    app:layout_constraintBottom_toBottomOf="@+id/h_total_term"
+                                    app:layout_constraintEnd_toStartOf="@+id/h_total_term"
+                                    android:layout_marginEnd="8dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                            />
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/h_total_term"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:gravity="left"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="@string/txtd_EXPECT_SUING_DATE"
+                                    app:layout_constraintTop_toBottomOf="@+id/txt_last_due_date"
+                                    android:layout_marginStart="8dp"
+                                    app:layout_constraintStart_toEndOf="@+id/m_total_term"/>
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/txt_expect_sts_date"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:fontFamily="@font/custom_bold"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/text_disable"
+                                    android:textSize="@dimen/car_contract_text_content"
+                                    android:text="0"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/h_total_term"
+                                    app:layout_constraintStart_toEndOf="@+id/h_total_term"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginEnd="8dp"/>
+
+
+                        </android.support.constraint.ConstraintLayout>
+                    </android.support.v7.widget.CardView>
+                </FrameLayout>
+
+                <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                >
+
+                    <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tag_contract_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/shape_tag_header"
+                            android:fontFamily="@font/custom_bold"
+                            android:includeFontPadding="false"
+                            android:text="@string/contrat_detail"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                </FrameLayout>
+            </FrameLayout>
+
+
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>

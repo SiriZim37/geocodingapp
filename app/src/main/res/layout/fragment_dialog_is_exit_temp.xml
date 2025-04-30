@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:background="#3fff00ff">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="@dimen/dialog_padding_horizontal"
+        android:layout_marginStart="@dimen/dialog_padding_horizontal"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:paddingBottom="30dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:paddingTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.tlt.georepo.view.TLTTextView
+                android:id="@+id/TLTTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/custom_bold"
+                android:gravity="center"
+                android:text="@string/is_exit_dialog_description"
+                android:textSize="@dimen/header2_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.tlt.georepo.view.TLTButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_white"
+            android:fontFamily="@font/custom_bold"
+            android:gravity="center"
+            android:text="@string/callcenter_dialog_btn_cancel"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/header2_text_size"
+            app:layout_constraintEnd_toStartOf="@+id/spacer"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TLTTextView" />
+
+        <android.support.v4.widget.Space
+            android:id="@+id/spacer"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            app:layout_constraintEnd_toStartOf="@id/btn_confirm"
+            app:layout_constraintHorizontal_weight="0.1"
+            app:layout_constraintStart_toEndOf="@id/btn_cancel"
+            app:layout_constraintTop_toBottomOf="@+id/TLTTextView" />
+
+        <com.tlt.georepo.view.TLTButton
+            android:id="@+id/btn_confirm"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/selector_btn_confirm_green"
+            android:fontFamily="@font/custom_bold"
+            android:gravity="center"
+            android:text="@string/otp_btn_confirm"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/header2_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/spacer"
+            app:layout_constraintTop_toBottomOf="@+id/TLTTextView" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

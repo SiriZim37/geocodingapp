@@ -1,0 +1,3 @@
+include ':app'
+rootProject.name = 'georepo'
+include ':app', ':line-sdk-4.0.8'

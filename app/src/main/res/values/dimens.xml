@@ -1,0 +1,90 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_medium">22dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_xxlarge">56dp</dimen>
+    <dimen name="margin_xlarge">40dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+    <dimen name="padding_normal">16dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_xsmall">4dp</dimen>
+    <dimen name="chat_bubble_padding">10dp</dimen>
+
+    <dimen name="pincode_circle_pin_size">12dp</dimen>
+    <dimen name="pincode_circle_pin_spacing">16dp</dimen>
+
+    <dimen name="pincode_number_size">30sp</dimen>
+    <dimen name="form_text_size">20sp</dimen>
+
+    <dimen name="header_text_size">20sp</dimen>
+    <dimen name="header2_text_size">20sp</dimen>
+    <dimen name="title_toolbar">20sp</dimen>
+    <dimen name="appintro_description">17sp</dimen>
+    <dimen name="tablayout_font_size">17sp</dimen>
+    <dimen name="car_contract_text_content">18sp</dimen>
+
+    <dimen name="toolbar_normal_height">56dp</dimen>
+    <dimen name="toolbar_medium_height">100dp</dimen>
+    <dimen name="toolbar_large_height">160dp</dimen>
+
+    <dimen name="text_button_size">20sp</dimen>
+    <dimen name="text_extra_large_size">22sp</dimen>
+    <dimen name="text_large_size">20sp</dimen>
+    <dimen name="text_xlarge_size">25sp</dimen>
+    <dimen name="text_medium_size">17sp</dimen>
+    <dimen name="text_small_size">15sp</dimen>
+    <dimen name="text_extra_small_size">13sp</dimen>
+    <dimen name="text_xxlarge_size">30sp</dimen>
+
+    <dimen name="keyboard_pincode_spacing">10dp</dimen>
+    <dimen name="home_content_margin_horizontal">40dp</dimen>
+    <dimen name="home_btn_social_size">70dp</dimen>
+    <dimen name="home_img_banner_height">130dp</dimen>
+
+    <dimen name="sidebarmenu_cover_height">180dp</dimen>
+    <dimen name="toolbar_large_content_margin_top">56dp</dimen>
+    <dimen name="toolbar_large_content_card_margin_top">46dp</dimen>
+
+    <dimen name="home_banner_padding_start">32dp</dimen>
+    <dimen name="home_banner_padding_end">32dp</dimen>
+
+    <dimen name="otp_underline_width">65dp</dimen>
+    <dimen name="dialog_padding_horizontal">16dp</dimen>
+    <dimen name="car_contract_content_margin">20dp</dimen>
+
+    <dimen name="mycar_btn_payment_size">120dp</dimen>
+    <dimen name="mycar_thumbnail_size">80dp</dimen>
+    <dimen name="drawable_padding">8dp</dimen>
+    <dimen name="mycar_margin_btn_check_payment">24dp</dimen>
+    <dimen name="btn_insurance_size">55dp</dimen>
+
+    <dimen name="insurance_history_item_decoration_size">0.8dp</dimen>
+    <dimen name="insurance_history_item_decoration_margin">24dp</dimen>
+    <dimen name="btn_circular_size">140dp</dimen>
+    <dimen name="fab_size">65dp</dimen>
+    <dimen name="question_and_answer_margin">24dp</dimen>
+    <dimen name="form_job_margin">24dp</dimen>
+    <dimen name="location_filter_height">136dp</dimen>
+
+
+    <dimen name="mycar_thumbnail_tutorial_size">60dp</dimen>
+    <dimen name="tutorial_text_size_normal">13sp</dimen>
+    <dimen name="tutorial_text_size_small">11sp</dimen>
+    <dimen name="tutorial_image_mock_size">120dp</dimen>
+
+    <dimen name="map_card_vertical_margin">8dp</dimen>
+    <dimen name="map_card_horizontal_margin">12dp</dimen>
+
+
+    <dimen name="activity_main_corner_menu">150dp</dimen>
+
+</resources>

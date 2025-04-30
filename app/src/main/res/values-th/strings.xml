@@ -1,0 +1,1193 @@
+<resources>
+    <string name="freeze_bottom_sheet_behavior" translatable="false">
+        com.tlt.georepo.view.bottomsheet.FreezeBottomSheet
+    </string>
+
+    <string name="google_maps_key">AIzaSyCDXfNxbKtMdixlksfkyygnsJsikGSVjDA</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="language_thai">TH</string>
+    <string name="language_english">EN</string>
+
+    <string name="language_thai_display">ภาษาไทย</string>
+    <string name="language_english_display">English</string>
+
+    <string name="facebook_app_id">2102363810002053</string>
+    <string name="fb_login_protocol_scheme">fb2102363810002053</string>
+
+    <string name="loading">Loading</string>
+    <string name="currency">%1$s Baht</string>
+    <string name="error_cant_back">Can\'t back</string>
+    <string name="error_not_empty">Phone number is incorrect</string>
+    <string name="error_email_pattern">Email address is incorrect</string>
+    <string name="error_password_not_match">Sorry, PIN code is incorrect.</string>
+    <string name="error_password_require_6_digits">Sorry, Set PIN with 6 digits.</string>
+    <string name="error_idcard_pattern">ID no. or Passport no. is incorrect, please enter again.</string>
+
+    <string name="open_email_app">Choose email app</string>
+    <string name="home_title">Loan Calculation</string>
+
+    <string name="otp_dialog_description">The system will send OTP to your phone number</string>
+    <string name="otp_dialog_btn_confirm">Confirm</string>
+    <string name="otp_dialog_btn_cancel">Cancel</string>
+
+    <string name="otp_btn_confirm">ตกลง</string>
+
+    <string name="default_notification_channel_id">tlt_develop</string>
+
+    <string name="pincode_title_header">กรุณาใส่รหัส Pin</string>
+    <string name="pincode_forgot_pin">ลืมรหัสผ่าน</string>
+    <string name="register_title">ลงทะเบียน</string>
+    <string name="quotation_title">Request Quotation</string>
+
+    <string name="setuppincode_title">ตั้งรหัสผ่าน Pin</string>
+    <string name="register_success_title">Set PIN Code</string>
+    <string name="fingerprint_setting_title">ตั้งค่าลายนิ้วมือ</string>
+    <string name="filter_car_title">Select Car</string>
+
+    <string name="verifyemail_title">Verification</string>
+    <string name="verifyemail_title_header">Confirm Email</string>
+    <string name="verifyemail_description">To process the registration, please press the "Confirm my email" button  to
+        confirm your email.
+    </string>
+    <string name="verifyemail_confirm_text">Confirm my email</string>
+    <string name="verifyemail_txt_not_yet_receive_email">Have not received email?</string>
+    <string name="verifyemail_btn_resend_email">Resend</string>
+
+    <string name="verifyemail_success_title_header">Welcome</string>
+    <string name="verifyemail_success_description">You have already confirmed your email. Please press the below button
+        for continue the registration process.
+    </string>
+    <string name="verifyemail_success_confirm_text">Go back to setting page</string>
+
+    <string name="verifyemail_fail_title_header">Cannot confirm email</string>
+    <string name="verifyemail_fail_description">Link for email confirmation has been expired. please press the button to
+        confirm your email again
+    </string>
+
+    <string name="policy_title_header">Terms and conditions</string>
+    <string name="policy_confirm_text">Next</string>
+    <string name="policy_accept_term_and_condition">Agree on terms and conditions</string>
+    <string name="policy_unaccept_term_and_condition">Not Agree on terms and conditions</string>
+
+    <string name="selectphone_header_title">Please select the mobile number to sent OTP for a verification</string>
+    <string name="selectphone_contact_staff">Please contact Call Center agent</string>
+    <string name="selectphone_phone_not_found">In case your mobile number is not found, please press "Contact Call
+        Center Agent" for modify your mobile number.
+    </string>
+
+    <string name="callcenter_dialog_description">Contact Call Center\n%1$s</string>
+    <string name="callcenter_dialog_btn_cancel">ยกเลิก</string>
+    <string name="callcenter_dialog_btn_call">Call</string>
+
+    <string name="otp_header_title">Enter OTP to verification</string>
+    <string name="otp_did_not_get_otp">Have not received OTP code.</string>
+    <string name="otp_resend_otp">Resend</string>
+    <string name="otp_entered_incorrect">The OTP entered is incorrect.</string>
+    <string name="otp_timeout_otp">OTP code has been expired. Please press "Resend" button.</string>
+
+    <string name="register_success_header_title">Registration is completed</string>
+    <string name="register_success_description">For the safety to access your information. Please set the PIN for use in
+        next time.
+    </string>
+    <string name="register_success_confirm_text">Set the PIN</string>
+
+    <string name="setuppincode_header_title">ตั้งรหัสผ่าน Pin จำนวน 6 ตัว</string>
+    <string name="setuppincode_confirm_text">ยืนยัน</string>
+
+    <string name="fingerprint_setting_description">Would you like to access the application with the Touch ID?</string>
+
+    <string name="registerform_title_header">Please fill out the hirer is information for registeration</string>
+    <string name="registerform_email_hint">Email.</string>
+    <string name="registerform_id_card_hint">Insert ID Card number 13-digit</string>
+    <string name="registerform_birthdate_hint">Birthdate</string>
+    <string name="registerform_personal_id_type_title">Select type of data</string>
+    <string name="registerform_btn_next">Next</string>
+    <string name="registerform_radio_id_card">ID card number</string>
+    <string name="registerform_radio_passport">Passport number</string>
+    <string name="registerform_passport_hint">Insert Passport number</string>
+    <string name="registerform_txt_description">ID no. or Passport no. will be used for verify vehicle is information
+        only
+    </string>
+    <string name="registerform_txt_id_card_description">Please insert your ID card number or Passport number which have
+        been given in the Car Financial contract.
+    </string>
+
+    <string name="fingerprint_setting_confirm_text">Yes, access the app with my finger print.</string>
+    <string name="fingerprint_setting_skip_text">Skip, Go to the main page.</string>
+    <string name="fingerprint_dialog_description">Access with the Touch ID\nor press "Cancel" to go back to use the
+        password pin
+    </string>
+    <string name="fingerprint_wait_scan">Please scan your finger for authentication</string>
+    <string name="fingerprint_scan_fail">Please try again.</string>
+    <string name="fingerprint_scan_success">Connected the ID touch</string>
+    <string name="fingerprint_dialog_btn_confirm">Go to the main page.</string>
+    <string name="fingerprint_auth_dialog_btn_cancel">Cancel</string>
+    <string name="fingerprint_dialog_please_try_again">Please try again.</string>
+
+    <string name="setuppincode_password_hint">รหัส Pin</string>
+    <string name="setuppincode_password_confirm_hint">ยืนยันรหัส Pin</string>
+
+    <!--<string name="home_content_title">Register for TLT customer</string>-->
+    <!--<string name="home_btn_register_by_email">Register with Email</string>-->
+    <!--<string name="home_alternative_register">Or register via</string>-->
+    <!--<string name="home_email_hint">Please enter your Email</string>-->
+    <!--<string name="sidebar_menu_installment">Installment</string>-->
+    <!--<string name="sidebar_menu_tax">Tax</string>-->
+    <!--<string name="sidebar_menu_insurance">Insurance</string>-->
+    <!--<string name="sidebar_menu_cal_installment">Loan Calculation</string>-->
+    <!--<string name="sidebar_menu_news">News &amp; Promotion</string>-->
+    <!--<string name="sidebar_menu_location">Contact Us</string>-->
+    <!--<string name="sidebar_menu_chat">Live chat</string>-->
+    <!--<string name="sidebar_menu_office_location">Branches and Dealer\'s Location</string>-->
+    <!--<string name="sidebar_menu_document_download">Download Documents</string>-->
+    <!--<string name="sidebar_menu_question">FAQ</string>-->
+    <!--<string name="sidebar_menu_policy">Terms and Conditions</string>-->
+    <!--<string name="sidebar_menu_setting">Setting</string>-->
+    <!--<string name="sidebar_menu_debug">Test Mode</string>-->
+    <!--<string name="sidebar_menu_logout">Sign Out</string>-->
+
+
+    <!--<string name="installment_status_title">My car</string>-->
+    <!--<string name="payment_history_title">Payment History</string>-->
+    <!--<string name="notification_title">การแจ้งเตือน</string>-->
+
+    <!--<string name="my_car_txt_contract">My contract</string>-->
+    <!--<string name="my_car_txt_detail_installment">Installment detail</string>-->
+    <!--<string name="my_car_txt_status_installment">Installment Status</string>-->
+    <!--<string name="my_car_txt_full_payment">Paid term</string>-->
+    <!--<string name="my_car_txt_balance">Outstanding term</string>-->
+    <!--<string name="my_car_txt_period">%1$s term</string>-->
+    <!--<string name="my_car_txt_total_payment">Payment Amount <![CDATA[<font color="%2$s">%1$s</font>]]> Baht</string>-->
+    <!--<string name="my_car_txt_period_payment">Installment as of %1$s</string>-->
+    <!--<string name="my_car_txt_contract_number">Contract number : %1$s</string>-->
+
+    <!--<string name="appintro_tutorial_1_title">To make your life easier with the function that covers all services for the-->
+        <!--convenience of our customer.-->
+    <!--</string>-->
+    <!--<string name="appintro_tutorial_2_title">You can check your personal information such as payment term, current-->
+        <!--outstanding balanced, car registration. Including pay annual car tax via the application.-->
+    <!--</string>-->
+    <!--<string name="appintro_tutorial_3_title">Moreover, TLT Simply will be the channel for us to communicate easier and-->
+        <!--faster.-->
+    <!--</string>-->
+    <!--<string name="appintro_tutorial_1_description">ปัจฉิมนิเทศ-->
+        <!--เพียวซีอีโอสเปกแช่แข็งบาร์บีคิว\nพิซซ่าซาดิสม์เยอบีร่าบลอนด์ซีเรียส เวสต์รวมมิตร\nโปรโมชั่นคอมเพล็กซ์-->
+        <!--มาม่าป่าไม้รากหญ้าฮิบรูเห่ย\nแจ๊กพ็อตหงวนยอมรับ-->
+    <!--</string>-->
+    <!--<string name="appintro_tutorial_2_description">@string/appintro_tutorial_1_description</string>-->
+    <!--<string name="appintro_tutorial_3_description">@string/appintro_tutorial_1_description</string>-->
+    <!--<string name="appintro_btn_skip">Skip</string>-->
+
+    <!--<string name="contractcar_title">My contract</string>-->
+    <!--<string name="edit_mailing_address_title">Edit information</string>-->
+    <!--<string name="edit_address_tab_title">Change address</string>-->
+    <!--<string name="edit_email_tab_title">Change the email</string>-->
+
+    <!--<string name="account_closing_header">Calculate payoff amount</string>-->
+    <!--<string name="account_closing_date">As of the date %1$s</string>-->
+    <!--<string name="account_closing_baht">Baht</string>-->
+    <!--<string name="account_closing_interest_refinance">Interest to refinance</string>-->
+    <!--<string name="account_closing_active_staff_contact">Contact Sabuy-jai refinance agent-->
+        <!--<a href="tel:026605800">02–660-5800</a>-->
+    <!--</string>-->
+    <!--<string name="account_closing_inactive_staff_contact">Customer cannot check payoff amount at the moment.\nPlease-->
+        <!--contact the call center-->
+        <!--<a href="tel:026605555">02-660-5555</a>-->
+    <!--</string>-->
+    <!--<string name="account_closing_description">* Payoff amount exclude ownership transfer fees\n* If customers do not-->
+        <!--complete the closing account on the specified date, please check the payoff amount again. The payoff amount is-->
+        <!--varied due to the time change-->
+    <!--</string>-->
+    <string name="refinance_diaglog_btn_confirm">Enter</string>
+
+    <!--<string name="edit_email_header">Telephone number and mail</string>-->
+    <!--<string name="edit_address_header">Change my address</string>-->
+    <!--<string name="edit_email_email_hint">Email</string>-->
+    <!--<string name="edit_email_phonenumber_hint">Telephone</string>-->
+    <!--<string name="edit_email_btn_confirm">Confirm</string>-->
+
+    <!--<string name="edit_address_address_hint">Housing no.</string>-->
+    <!--<string name="edit_address_soi_hint">Soi</string>-->
+    <!--<string name="edit_address_road_hint">Street</string>-->
+    <!--<string name="edit_address_district_hint">Amphoe</string>-->
+    <!--<string name="edit_address_city_hint">City</string>-->
+    <!--<string name="edit_address_subdistrict_hint">District</string>-->
+    <!--<string name="edit_address_postcode_hint">Postal code</string>-->
+    <!--<string name="edit_address_btn_confirm">Confirm</string>-->
+    <!--<string name="edit_address_btn_upload">Upload</string>-->
+    <!--<string name="edit_address_title_description">Upload a copy of ID card to confirm the change of address</string>-->
+    <!--<string name="edit_address_subtitle_description">Customer needs to upload a copy of ID card with a signature and the-->
+        <!--word "Confirm details in the copy" and "Request for the change of address"-->
+    <!--</string>-->
+
+    <!--<string name="installment_detail_title">Installment detail</string>-->
+    <!--<string name="installment_detail_car_no">Contract number</string>-->
+    <!--<string name="installment_detail_payment">Installment amount</string>-->
+    <!--<string name="installment_detail_currency">%1$s Baht</string>-->
+    <!--<string name="installment_detail_next_due_date">Next installment due date on %1$s</string>-->
+    <!--<string name="installment_detail_total_payment">Payment amount <![CDATA[<font color="%2$s">%1$s</font>]]>Baht-->
+    <!--</string>-->
+    <!--<string name="installment_detail_payment_method">Payment channel</string>-->
+    <!--<string name="installment_detail_account_bank">Bank name</string>-->
+    <!--<string name="installment_detail_account_number">Bank account number</string>-->
+    <!--<string name="installment_detail_note_can_not_check">Your installment details and history cannot be identified at-->
+        <!--the moment. Please contact Call center-->
+        <!--<a href="tel:026605555">02-660-5555</a>-->
+    <!--</string>-->
+    <!--<string name="installment_detail_contact_staff">*Other payments details, please contact Call center-->
+        <!--<a href="tel:026605555">02-660-5555</a>-->
+    <!--</string>-->
+
+    <!--<string name="notify_title_header">รายการแจ้งเตือน</string>-->
+    <!--<string name="notify_default_filter">Total</string>-->
+    <string name="notify_btn_see_more">แสดง</string>
+    <string name="notify_filter_dialog_btn_confirm">Enter</string>
+    <string name="notify_filter_dialog_title">Select Time Period</string>
+    <string name="notice_dialog_text_dont_show_again">Don\'t show again.</string>
+    <string name="notice_dialog_confirm">Detail</string>
+    <string name="notify_remove">Remove</string>
+
+    <!--<string name="tax_renew_dialog_title">Select the year to renew a car tax</string>-->
+    <!--<string name="tax_renew_dialog_default">Current year</string>-->
+    <!--<string name="tax_expire">The car tax is expired</string>-->
+    <!--<string name="tax_slide_update_tax">Slide to update the status of tax year\nif customers have renewed by-->
+        <!--themselves-->
+    <!--</string>-->
+    <!--<string name="tax_slide_update_tax_success">Thank you for updating. Your tax renewal will be updated next day.-->
+    <!--</string>-->
+    <!--<string name="tax_payment">List of payment</string>-->
+    <!--<string name="tax_amount_tax">Tax amount</string>-->
+    <!--<string name="tax_service_charge">Service fee</string>-->
+    <!--<string name="tax_aol">Compulsory insurance</string>-->
+    <!--<string name="tax_penalty">Penalty amount</string>-->
+    <!--<string name="tax_note_plz_check_address">Please check your address to receive the tax label before making a-->
+        <!--payment-->
+    <!--</string>-->
+    <!--<string name="tax_check_transport">Verify the tax label\'s delivery status</string>-->
+    <!--<string name="tax_address_to_transport">Address to receive the tax label</string>-->
+    <!--<string name="tax_staff_contact">If customers would like to renew a car tax, please contact Call Center-->
+        <!--<a href="tel:026605555">02-660-5555</a>-->
+    <!--</string>-->
+    <!--<string name="tax_note">* The information regarding the tax renewal is from the TLT database (not included the-->
+        <!--penalty fee from the police station). If the information is not correct please modify the data or contact Call-->
+        <!--Center-->
+        <!--<a href="tel:026605555">02-660-5555</a>-->
+    <!--</string>-->
+    <!--<string name="tax_document_delivery_title">Tax label delivery</string>-->
+    <!--<string name="tax_document_register_number">Tracking number %1$s</string>-->
+    <!--<string name="tax_delivery_in_between_proceed">On the\nprocess</string>-->
+    <!--<string name="tax_delivery_transport_tax_label">Tax label\nwas delivered</string>-->
+    <!--<string name="tax_delivery_thaipost_website">-->
+        <!--<a href='https://thailandpost.online/'>https://thailandpost.online/</a>-->
+    <!--</string>-->
+    <!--<string name="tax_delivery_check_delivery">Verify a tax label delivery status</string>-->
+    <!--<string name="tax_delivery_address_to_delivery">The address to deliver tax label documents</string>-->
+    <!--<string name="tax_contract_number">Contract number : %1$s</string>-->
+    <!--<string name="tax_currency">%1$s Baht</string>-->
+    <!--<string name="tax_total_payment">Total payment <![CDATA[<font color="%2$s">%1$s</font>]]> Baht</string>-->
+    <!--<string name="tax_cannot_pay_text">You can’t pay tax and\nupdate the status of tax year</string>-->
+    <!--<string name="tax_updating_payment_title">Updating tax payment</string>-->
+    <!--<string name="tax_delivery_no_data">No delivery tax document information</string>-->
+
+    <string name="resetpincode_title">Change PIN number</string>
+    <string name="pincode_incorrect">รหัสผ่านไม่ถูกต้องกรุณาลองใหม่อีกครั้ง</string>
+    <string name="pincode_incorrect_3_times">รหัส PIN ไม่ถูกต้องใส่ได้อีก2ครั้ง</string>
+    <string name="pincode_incorrect_4_times">รหัส PIN ไม่ถูกต้องใส่ได้อีก1ครั้ง</string>
+    <!--<string name="resetpincode_title_header">ใส่รหัส PIN เดิม</string>-->
+    <!--<string name="resetpincode_success_title_header">Your new PIN number is success</string>-->
+    <!--<string name="resetpincode_success_description">System has changed pin successfully</string>-->
+    <!--<string name="resetpincode_success_confirm_text">Go back to the main page</string>-->
+    <!--<string name="forgotpincode_title">Forgot password</string>-->
+    <!--<string name="forgotpincode_title_header">If you forgot the Password. please insert your ID card Mo. or Passport No.-->
+        <!--to verify your identity and set up a new PIN-->
+    <!--</string>-->
+    <!--<string name="forgotpincode_description">If you forgot the Password. please insert your ID card No. and Passport No.-->
+        <!--to verify your identity and set up a new PIN-->
+    <!--</string>-->
+    <!--<string name="forgotpincode_confirm_text">Next</string>-->
+    <!--<string name="forgotpincode_id_card_hint">ID no. or Passport no.</string>-->
+    <!--<string name="car_contract_btn_detail">Details</string>-->
+    <!--<string name="tax_no_have_payment">No payment record</string>-->
+    <!--<string name="edit_address_use_address_every_contract">Use this address in all contract</string>-->
+    <!--<string name="edit_tax_delivery_address_note">* This change of mailing address is temporarily for customers to-->
+        <!--receive the tax label documents only. Other documents will be delivered to the current mailing address of-->
+        <!--customers-->
+    <!--</string>-->
+    <!--<string name="mycar_updating_status">Updating payment amount</string>-->
+    <!--<string name="mycar_nopay">No unpaid payment amount</string>-->
+    <!--<string name="mycar_legal_other_description">Customer cannot check payment history at the moment. Please contact the-->
+        <!--call center-->
+        <!--<a href="tel:026605555">02-660-5555</a>-->
+    <!--</string>-->
+    <!--<string name="mycar_direct_debit_description">Please deposit money to your account 1 business day prior to Direct-->
+        <!--Debit due date.-->
+    <!--</string>-->
+
+    <!--<string name="edit_address_success_dialog_title">Thank you for your changing address update</string>-->
+    <!--<string name="edit_address_success_dialog_description">The company will send SMS to confirm with customer when the-->
+        <!--address has been changed-->
+    <!--</string>-->
+    <!--<string name="edit_installment_email_success_dialog_title">Thank you for the email and telephone number update-->
+    <!--</string>-->
+    <!--<string name="edit_tax_address_success_dialog_title">Change your address delivery of tax label document is-->
+        <!--successful.-->
+    <!--</string>-->
+    <!--<string name="edit_tax_email_success_dialog_title">Thank you for the email and telephone number update</string>-->
+    <string name="noncustomer_register">Register / Login</string>
+    <string name="auth_attempt_over_limit_dialog_description">คุณใส่รหัส PIN ผิดครบ 5 ครั้งแล้ว</string>
+    <string name="is_exit_dialog_description">คุณต้องการที่จะออกจากระบบหรือไม่?</string>
+    <!--<string name="facebook">Facebook</string>-->
+    <!--<string name="google">Google</string>-->
+    <!--<string name="line">Line</string>-->
+
+    <!--<string name="insurance_title">Insurance</string>-->
+    <!--<string name="insurance_quotation">Request Quotation</string>-->
+    <!--<string name="insurance_btn_detail">Insurance\nInformation</string>-->
+    <!--<string name="insurance_btn_status">Policy\nStatus</string>-->
+    <!--<string name="insurance_btn_quotation">Request\nQuotation</string>-->
+    <!--<string name="insurance_btn_quotation_2">Request Quotation</string>-->
+    <!--<string name="insurance_prohibit_detail">Please contact your insurance agent or dealer</string>-->
+    <!--<string name="insurance_checking">Updating</string>-->
+    <!--<string name="insurance_contract_number">Contract number : %1$s</string>-->
+    <!--<string name="insurance_total_pay">Total Amount <![CDATA[<font color="%2$s">%1$s</font>]]> Baht</string>-->
+    <!--<string name="insurance_contactus">Contact</string>-->
+    <!--<string name="insurance_accident">Claim Center</string>-->
+    <!--<string name="insurance_emergency">Emergency Call</string>-->
+    <!--<string name="insurance_service_center">Dealer</string>-->
+    <!--<string name="insurance_contactus_information">Contact Us</string>-->
+    <!--<string name="insurance_club_customer">TIB Club</string>-->
+    <!--<string name="insurance_club_description">Join activity and get special promotion, Exclusive for you</string>-->
+
+    <!--&lt;!&ndash; INSURANCE INFORMATION&ndash;&gt;-->
+    <!--<string name="insurance_information_title">Insurance Information</string>-->
+    <!--<string name="insurance_information_company">Company</string>-->
+    <!--<string name="insurance_information_no">Policy No.</string>-->
+    <!--<string name="insurance_information_type">Type of Policy</string>-->
+    <!--<string name="insurance_information_end_of_protection">Expire Date</string>-->
+    <!--<string name="insurance_information_current_year">This Year</string>-->
+    <!--<string name="insurance_information_expire_detail">Your Policy will Expire in</string>-->
+    <!--<string name="insurance_information_recommend_premium">Recommended</string>-->
+    <!--<string name="insurance_information_faqs">Contact Us</string>-->
+    <!--<string name="insurance_information_history">History</string>-->
+    <!--<string name="insurance_information_protection_type">Type of Policy</string>-->
+    <!--<string name="insurance_information_insurance">Coverage</string>-->
+    <!--<string name="insurance_information_condition">Repair Condition</string>-->
+
+    <!--<string name="insurance_information_all_message">View</string>-->
+    <!--<string name="insurance_information_hide_message">Hide</string>-->
+
+    <!--<string name="recommend_total_value_message">ยอดชำระ</string>-->
+    <!--<string name="recommend_quotation_or_promotion_message">Request Quotation</string>-->
+
+    <!--<string name="status_insurance_message">Policy Status</string>-->
+    <!--<string name="status_insurance_date">Your policy was sent on</string>-->
+    <!--<string name="status_insurance_thaipost">Check mail delivery</string>-->
+    <!--<string name="status_insurance_no_policy">No policy status information\nplease contact staff-->
+        <!--<a href="tel:026605999">02-660-5999</a>-->
+    <!--</string>-->
+
+    <!--<string name="status_insurance_web_url">https://thailandpost.online/</string>-->
+
+    <!--<string name="tib_club_title">TIB Club</string>-->
+    <!--<string name="tib_club_event_other">Activity</string>-->
+
+    <!--&lt;!&ndash;iten_insurance&ndash;&gt;-->
+    <!--<string name="iten_insurance">Info %d</string>-->
+    <!--<string name="item_insurance_company">Company</string>-->
+    <!--<string name="item_insurance_converageType">Type of Policy</string>-->
+    <!--<string name="item_insurance_payment">How to Pay</string>-->
+
+    <!--&lt;!&ndash;activity_quotation&ndash;&gt;-->
+    <!--<string name="activity_quotation_title">Quotation Form</string>-->
+    <!--<string name="activity_quotation_topic_1">1. Customer Info</string>-->
+    <!--<string name="activity_quotation_topic_2">2. Insurance Info</string>-->
+    <!--<string name="activity_quotation_topic_3">3. Detail</string>-->
+    <!--<string name="activity_quotation_btn_add">Add a Form Insurance Info</string>-->
+    <!--<string name="activity_quotation_hint_add">Click "Add Form" to request insurance information.\nFor comparison with-->
+        <!--many companies-->
+    <!--</string>-->
+    <!--<string name="activity_quotation_btn_converageType">-->
+        <!--<u>What type of policy</u>-->
+    <!--</string>-->
+    <!--<string name="activity_quotation_radio_1">Call back later</string>-->
+    <!--<string name="activity_quotation_radio_2">Request Quotation by Email</string>-->
+    <!--<string name="activity_quotation_btn_submit">Request Quotation</string>-->
+    <!--<string name="activity_quotation_name">Your Name</string>-->
+    <!--<string name="activity_quotation_phone">Phone number</string>-->
+    <!--<string name="activity_quotation_email">Email</string>-->
+    <!--<string name="activity_quotation_car_number">Registration No.</string>-->
+    <!--<string name="activity_quotation_car_city">Province</string>-->
+    <!--<string name="activity_quotation_car_series">Model Car</string>-->
+
+    <!--<string name="activity_quotation_name_tv">Name : %1$s</string>-->
+    <!--<string name="activity_quotation_car_number_city_tv">Registration No. : %1$s</string>-->
+    <!--<string name="activity_quotation_car_number_contract_tv">Contract : %1$s</string>-->
+    <!--<string name="activity_quotation_car_series_tv">Model Car : %1$s</string>-->
+    <!--<string name="quotation_insurance_company_hint">Company</string>-->
+    <!--<string name="quotation_insurance_policy_hint">Type of Policy</string>-->
+    <!--<string name="quotation_insurance_payment_method_hint">How to Pay</string>-->
+
+    <!--<string name="receipt_title">Payment</string>-->
+    <!--<string name="receipt_header_paid_success">Payment successful</string>-->
+    <!--<string name="receipt_payment_installment_success">Payment successful</string>-->
+    <!--<string name="receipt_payment_tax_success">Payment successful</string>-->
+    <!--<string name="receipt_description_insatllment_paid_success">You may check a copy of receipt within the next 2 days-->
+    <!--</string>-->
+    <!--<string name="receipt_description_insurance_paid_success">You will get policy\nwithin 14 days</string>-->
+    <!--<string name="receipt_description_tax_paid_success"></string>-->
+    <!--<string name="receipt_fullname">Name</string>-->
+    <!--<string name="receipt_car_license">Registration No.</string>-->
+    <!--<string name="receipt_contract_number">Contract</string>-->
+    <!--<string name="receipt_payment_method">Payment channel</string>-->
+    <!--<string name="receipt_total_paid">Total Amount</string>-->
+    <!--<string name="receipt_send_mail">Email</string>-->
+    <!--<string name="receipt_save_slip">Save</string>-->
+    <!--<string name="receipt_contactus">Thank you for your payment\nIf you have any question, please contact-->
+        <!--<a href="tel:026605555">02-660-5555</a>-->
+    <!--</string>-->
+    <!--<string name="insurance_payment_detail_title">Payment Detail</string>-->
+    <!--<string name="insurance_payment_detail_btn">Pay for\nInsurance</string>-->
+
+    <!--&lt;!&ndash;activity_insurance_payment_detail&ndash;&gt;-->
+    <!--<string name="insurance_payment_budget_pre">Total Premium</string>-->
+    <!--<string name="insurance_payment_budget_baht">Baht</string>-->
+    <!--<string name="insurance_type_protection_tv">Type of Policy</string>-->
+    <!--<string name="insurance_budget_tv">Coverage</string>-->
+    <!--<string name="insurance_condition_tv">Repair Condition</string>-->
+    <!--<string name="insurance_error_tv">Sorry,you can not renew your insurance now Please contact TIB Call center-->
+        <!--<a href="tel:026605999">02-660-5999</a>-->
+    <!--</string>-->
+
+    <!--&lt;!&ndash; PAYMENT &ndash;&gt;-->
+    <!--<string name="payment_title">Payment</string>-->
+    <!--<string name="payment_summary_list">List of Payment</string>-->
+    <!--<string name="payment_insurance">Insurance Premium</string>-->
+    <!--<string name="payment_method_title">Payment Channels</string>-->
+    <!--<string name="payment_summary">Total Amount</string>-->
+    <!--<string name="summary_insurance_payment_title">Payment</string>-->
+    <!--<string name="summary_insurance_payment_header">List of Payment</string>-->
+    <!--<string name="summary_insurance_payment_item_paid">Premium</string>-->
+
+    <!--<string name="insurance_expire_day">%1$s Days</string>-->
+    <!--<string name="insurance_recommend_not_found_description">Sorry, your data not found\nIf you have any question,-->
+        <!--please contact\n-->
+        <!--<a href="tel:026605999">02-660-5999</a>-->
+    <!--</string>-->
+
+    <!--<string name="insurance_status_tracking_no">Tracking Number %1$s</string>-->
+
+    <!--<string name="insurance_nodata_description">Sorry, your data not found\ncall center-->
+        <!--<a href="tel:026605999">02-660-5999</a>-->
+    <!--</string>-->
+    <!--<string name="insurance_information_nodata">No data\nSorry, your data not found.</string>-->
+
+    <!--&lt;!&ndash; HOTLINE &ndash;&gt;-->
+    <!--<string name="hotline_accident">Claim Center</string>-->
+    <!--<string name="hotline_emergency_call">Emergency Call</string>-->
+    <!--<string name="hotline_service_center">Dealer</string>-->
+    <!--<string name="hotline_contact_us">Contact Us</string>-->
+    <!--<string name="hotline_accident_header">Claim Hot Line 24 Hrs.</string>-->
+    <!--<string name="hotline_emergency_header">Emergency numbers</string>-->
+
+    <!--<string-array name="hotline_menu_list">-->
+        <!--<item>@string/hotline_accident</item>-->
+        <!--<item>@string/hotline_emergency_call</item>-->
+        <!--<item>@string/hotline_service_center</item>-->
+        <!--<item>@string/hotline_contact_us</item>-->
+    <!--</string-array>-->
+
+    <string name="hotline_contact_us_topic">Subject *</string>
+    <string name="hotline_contact_us_detail">Message *</string>
+    <string name="hotline_contact_us_upload">Upload (if you have)</string>
+    <string name="hotline_contact_us_upload_limit_size">Support file types ; jpeg, jpg, png</string>
+    <string name="hotline_contact_us_request_question">ส่ง</string>
+
+    <!--<string name="hotline_service_location_description">Press the button below to enter\nthe menu Branches and Dealer\'s-->
+        <!--Location-->
+    <!--</string>-->
+    <!--<string name="hotline_service_location_confirm">Branches and Dealer\'s Location</string>-->
+
+    <!--&lt;!&ndash; Attach CTPL Insurance &ndash;&gt;-->
+    <!--<string name="tax_txt_skip">Skip, I will upload documents later</string>-->
+    <!--<string name="attach_ctpl_support">Support file types : jpeg, jpg, png</string>-->
+    <!--<string name="attach_ctpl_description">Upload evidence, showing a covered insurance in accordance with the-->
+        <!--compulsory insurance.\nSince you have not paid for the compulsory insurance.-->
+    <!--</string>-->
+    <!--<string name="attach_ctpl_title">Upload document</string>-->
+    <!--<string name="attach_ctpl_title_2">Upload the compulsory insurance document</string>-->
+    <!--<string name="attach_ctpl_date_mock">11 ม.ค. 2561</string>-->
+    <!--<string name="attach_ctpl_status_title">Status : %1$s</string>-->
+    <!--<string name="attach_ctpl_not_attach">The document is not uploading</string>-->
+    <!--<string name="attach_ctpl_attach">Checking documents</string>-->
+    <!--<string name="attach_ctpl_button">Confirm uploading documents</string>-->
+
+    <!--&lt;!&ndash; Attach Vehicle inspection Insurance &ndash;&gt;-->
+    <!--<string name="attach_inspection_support">Support file types ; jpeg, jpg, png</string>-->
+    <!--<string name="attach_inspection_description">A vehicle inspection certificate) since your vehicle is aged more than-->
+        <!--7 years-->
+    <!--</string>-->
+    <!--<string name="attach_inspection_title">Upload document</string>-->
+    <!--<string name="attach_inspection_title_2">Upload a vehicle inspection certificate</string>-->
+    <!--<string name="attach_inspection_date_mock">11 ม.ค. 2561</string>-->
+    <!--<string name="attach_inspection_status_title">Status : %1$s</string>-->
+    <!--<string name="attach_inspection_not_attach">The document is not uploading</string>-->
+    <!--<string name="attach_inspection_attach">Checking documents</string>-->
+    <!--<string name="attach_inspection_button">Confirm uploading documents</string>-->
+    <!--<string name="attach_inspection_choice_title">Or upload documents via LINE / Email</string>-->
+    <!--<string name="attach_inspection_via_line">LINE</string>-->
+    <!--<string name="attach_inspection_via_email">อีเมล</string>-->
+
+    <!--&lt;!&ndash; Attach NGV CNG &ndash;&gt;-->
+    <!--<string name="attach_ngv_title">An actual letter of engineering approval certification</string>-->
+    <!--<string name="attach_ngv_title_2">Engineering approval certification</string>-->
+    <!--<string name="attach_ngv_description">Since your vehicle has changed the gas system to NGV</string>-->
+    <!--<string name="attach_ngv_address">Toyota Leasing (Thailand).Co.,Ltd\n34 Suntower building. Bangkok 10905</string>-->
+    <!--<string name="attach_ngv_ems_title">Insert your EMS number to track the document status</string>-->
+    <!--<string name="attach_ngv_please_send_title">Please send documents via EMS to&#8230;</string>-->
+    <!--<string name="attach_ems_number_hint">EMS Number</string>-->
+    <!--<string name="attach_ngv_button">Confirm EMS Number</string>-->
+
+    <!--<string name="hotline_contactus_hint_fullname">Your Name</string>-->
+    <!--<string name="hotline_contactus_hint_tel">Phone No. *</string>-->
+    <!--<string name="hotline_contactus_hint_email">Email</string>-->
+    <!--<string name="hotline_contactus_hint_detail">ตัวอย่างข้อความในกล่องข้อความ</string>-->
+    <!--<string name="summary_payment_add_summary">Add payment list or adjust the payment amount</string>-->
+    <!--<string name="summary_edit_payment_title">Add Payment List</string>-->
+    <!--<string name="summary_edit_payment_confirm">Confirm</string>-->
+    <!--<string name="summary_edit_payment_add_new">Add Other Payment</string>-->
+    <!--<string name="summary_edit_payment_price_hint">Amount</string>-->
+    <!--<string name="summary_edit_payment_select_hint">Select Other Payment</string>-->
+    <!--<string name="summary_edit_payment_total_amount">Total Amount</string>-->
+
+    <!--<string name="insurance_dialog_title">Do you want to buy the compulsory insurance</string>-->
+    <!--<string name="insurance_dialog_buy_button">Buy the compulsory insurance</string>-->
+    <!--<string name="insurance_dialog_attach_button">I have a document. Upload the compulsory insurance document</string>-->
+    <!--<string name="item_header_tv">Please prepare documents (e.g Compulsory insurance, Vehicle inspection certificate,-->
+        <!--and so on) to use for tax renewal-->
+    <!--</string>-->
+    <!--<string name="document_status_title">My document status</string>-->
+    <!--<string name="document_status_ctpl_title">Buy the compulsory insurance. or upload a document</string>-->
+    <!--<string name="document_status_inspection_title">Checking documents</string>-->
+    <!--<string name="document_status_ngv_title">Documents is uploaded successfully</string>-->
+    <!--<string name="document_status_verify_button">Check documents</string>-->
+    <!--<string name="document_status_no_item">No payment record</string>-->
+
+    <!--<string name="insurance_status_complete">Documents is uploaded successfully</string>-->
+    <!--<string name="insurance_status_pending">Checking documents</string>-->
+    <!--<string name="insurance_status_warning_ctpl">Buy the compulsory insurance. or upload a document</string>-->
+    <!--<string name="insurance_status_warning_inspection">The document is not uploading</string>-->
+    <!--<string name="insurance_status_warning_ngv">แนบหนังสือรับรองวิศวกรรมฉบับจริง</string>-->
+    <!--<string name="insurance_status_incorrect">The document is incorrect</string>-->
+
+    <!--<string name="gas_status_complete">Documents is uploaded successfully</string>-->
+    <!--<string name="gas_status_warning_inspection">The document is not uploading</string>-->
+
+    <!--<string name="payment_history_payments">Payment Amount</string>-->
+    <!--<string name="payment_history_download">Download Receipt</string>-->
+    <!--<string name="payment_history_total">%1$s Baht</string>-->
+    <!--<string name="payment_history_receipt_date">Receipt Date %1$s</string>-->
+    <!--<string name="payment_history_no_data">No payment history.</string>-->
+
+    <!--&lt;!&ndash; QR Code &ndash;&gt;-->
+    <!--<string name="qr_code_title">QR code / Barcode</string>-->
+    <!--<string name="qr_code_payment_installment_title">Car installment payment</string>-->
+    <!--<string name="qr_code_payment_insurance_title">Insurance payment</string>-->
+    <!--<string name="qr_code_payment_tax_title">Tax payment</string>-->
+    <!--<string name="qr_code_payment_other_title">Other payment</string>-->
+    <!--<string name="qr_code_payment_show_qr_message">Please present your Barcode for making a payment at the counter-->
+        <!--service-->
+    <!--</string>-->
+    <!--<string name="qr_code_payment_barcode_message">Please inform the amount of your payment at the counter service-->
+    <!--</string>-->
+    <!--<string name="qr_code_save">Save Barcode</string>-->
+    <!--<string name="qr_code_payment_list">List of Payment</string>-->
+    <!--<string name="qr_code_payment_total">Total Payment Amount</string>-->
+    <!--<string name="hotline_title">Contact</string>-->
+    <!--<string name="sidebar_menu_qrcode">Pay via QR Code / Barcode</string>-->
+    <!--<string name="ibanking_title">iBanking</string>-->
+
+    <!--<string name="btn_payment">Payment</string>-->
+    <!--<string name="btn_tax_renewal">Complete tax\nrenewal</string>-->
+    <!--<string name="btn_complete_tax_renewal">Completed</string>-->
+    <!--<string name="btn_backhome">Main page</string>-->
+    <!--<string name="btn_checking_payment_amount">Checking\npayment</string>-->
+    <!--<string name="btn_pay_installment">Checking\npayment</string>-->
+    <!--<string name="btn_pay_insurance">Pay for\nInsurance</string>-->
+    <!--<string name="btn_pay_insurance_single_line">Pay for Insurance</string>-->
+    <!--<string name="btn_pay_insurance_success">Completed</string>-->
+    <!--<string name="btn_attach_document_process">Document Sending Process</string>-->
+
+    <!--<string name="contactus_title">Contact Information</string>-->
+    <!--<string name="contactus_call_center">Call Center\n02-660-5555</string>-->
+    <!--<string name="contactus_qa">Submit questions\nand suggestions.</string>-->
+    <!--<string name="contactus_line">ToyotaLeasing\nLine official</string>-->
+    <!--<string name="contactus_facebook">ToyotaLeasing\nThailand</string>-->
+    <!--<string name="contactus_tlt">Toyota Leasing (Thailand) Co., Ltd.</string>-->
+    <!--<string name="contactus_tlt_website">www.tlt.co.th</string>-->
+    <!--<string name="contactus_tib_detail">View information</string>-->
+    <!--<string name="contactus_tlt_insurance_broker">Toyota Insurance Broker</string>-->
+    <!--<string name="contactus_line_dialog">Toyota Leasing Line Official\nis coming soon</string>-->
+    <!--<string name="contactus_facebook_dialog">Toyota Leasing Facebook Official\nจะเปิดให้บริการเร็วๆนี้</string>-->
+    <!--<string name="contactus_line_dialog_ok">OK</string>-->
+
+    <!--<string name="setting_early_notification_title">การแจ้งเตือน</string>-->
+    <!--<string name="setting_advance_notification_payment_title">Instalment due</string>-->
+    <!--<string name="seek_bar_five_day">5</string>-->
+    <!--<string name="seek_bar_seven_day">7</string>-->
+    <!--<string name="seek_bar_fifteen_day">15</string>-->
+    <!--<string name="seek_bar_thirty_day">30</string>-->
+    <!--<string name="seek_bar_sixty_day">60</string>-->
+    <!--<string name="setting_advance_notification_payment_description">Notification before Instalment due date</string>-->
+    <!--<string name="setting_advance_notification_tax_title">Tax payment due</string>-->
+    <!--<string name="setting_advance_notification_tax_description">Notification before tax expire</string>-->
+    <!--<string name="setting_advance_notification_insurance_title">Insurance payment due</string>-->
+    <!--<string name="setting_advance_notification_insurance_description">Notification before insurance expire</string>-->
+    <!--<string name="setting_account_title">User account</string>-->
+    <!--<string name="setting_account_email_description">Edit email that used in TLT Simply application</string>-->
+    <!--<string name="setting_account_car_profile_description">Upload your car picture</string>-->
+    <!--<string name="setting_account_car_profile_title">Car Profile</string>-->
+    <!--<string name="setting_news_title">Notification for News &amp; Promotions</string>-->
+    <!--<string name="setting_news_promotion_title"><![CDATA[ News & Promotion ]]></string>-->
+    <!--<string name="setting_tib_club_title">TIB Clubs</string>-->
+    <!--<string name="setting_language_title">Language</string>-->
+    <!--<string name="setting_other_security_title">Securities</string>-->
+    <!--<string name="setting_other_id_touch_title">Enabled Touch ID</string>-->
+    <!--<string name="setting_other_change_pin_title">Change PIN number</string>-->
+    <!--<string name="setting_email_pattern">Email : %1$s</string>-->
+    <!--<string name="setting_change_language_title">Language</string>-->
+
+    <!--<string name="setting_change_email_toolbar">User account</string>-->
+    <!--<string name="setting_old_email_title">Please fill your old email</string>-->
+    <!--<string name="setting_old_email_hint">Old email</string>-->
+    <!--<string name="setting_new_email_title">Please fill your new email</string>-->
+    <!--<string name="setting_new_email_hint">New Email</string>-->
+    <!--<string name="setting_change_email_confirm_button">Confirm</string>-->
+    <!--<string name="setting_email_success_toolbar">Change Email</string>-->
+    <!--<string name="setting_email_success_title">Change email is successful</string>-->
+    <!--<string name="setting_email_success_message1">Your current email</string>-->
+    <!--<string name="setting_email_success_button">Go back to setting page</string>-->
+    <!--<string name="setting_email_verify_success_title">ยืนยันอีเมลสำเร็จ</string>-->
+
+    <!--<string name="hello_blank_fragment">Hello blank fragment</string>-->
+    <!--<string name="news_toolbar">News</string>-->
+    <!--<string name="oil_price_toolbar">Oil Price Update</string>-->
+    <!--<string name="traffic_toolbar">Traffic News</string>-->
+    <!--<string name="traffic_title">JS100</string>-->
+    <!--<string name="oil_price_title">Oil Price</string>-->
+    <!--<string name="oil_price_unit">(Baht/Litre)</string>-->
+    <!--<string name="oil_price_unit_lo">(Baht/Kilogram)</string>-->
+    <!--<string name="oil_price_footer">Data from www.pttlc.com</string>-->
+    <!--<string name="news_and_promotion_news_title">News &amp; Promotion</string>-->
+    <!--<string name="news_and_promotion_detail_title">News &amp; Promotion</string>-->
+    <!--<string name="news_and_promotion_bookmark_limit_dialog">Bookmark limit 3 items</string>-->
+    <!--<string name="qrcode_all_car_title">Select list of payment</string>-->
+    <!--<string name="qrcode_txt_installment">Installment</string>-->
+    <!--<string name="qrcode_txt_tax">Tax</string>-->
+    <!--<string name="qrcode_txt_insurance">Insurance</string>-->
+    <!--<string name="qrcode_txt_others">Others</string>-->
+    <!--<string name="qrcode_ref1_txt">Ref1 : %1$s</string>-->
+    <!--<string name="qrcode_ref2_txt">Ref2 : %1$s</string>-->
+    <string name="dialog_button_ok">OK</string>
+
+    <!--<string name="quotation_staff_contact_message_dialog">Thank you for your inquiry, the staff will get back to you-->
+        <!--shortly-->
+    <!--</string>-->
+    <!--<string name="quotation_email_contact_message_dialog">ระบบได้บันทึกข้อมูลของท่านเรียบร้อยแล้ว-->
+        <!--เจ้าหน้าที่จะรีบติดต่อกลับทางอีเมล์ที่ระบุไว้-->
+    <!--</string>-->
+    <!--<string name="porlorbor_upload_success">Upload Success</string>-->
+    <!--<string name="porlorbor_upload_fail">Upload Fail</string>-->
+    <!--<string name="gas_upload_fail">Save Fail</string>-->
+    <!--<string name="gas_upload_success">Save Success</string>-->
+    <!--<string name="insurance_type_dialog_title">Type of Policy</string>-->
+    <!--<string name="insurance_type_dialog_header_1">Type 1 Policy</string>-->
+    <!--<string name="insurance_type_dialog_desc_1">Maximum coverage: Liability to damage to life, body, or health of third-->
+        <!--parties Property damage of third property Damage to the insured car due to fire/theft Damage to the insured car-->
+    <!--</string>-->
+    <!--<string name="insurance_type_dialog_header_2">ประกันภัยรถยนต์ ประเภท 2+</string>-->
+    <!--<string name="insurance_type_dialog_desc_2">คุ้มครองและรับผิดชอบเกือบเทียบเท่าประกันภัยรถ ยนต์ชั้น 1-->
+        <!--แต่จะคุ้มครองเฉพาะความเสียหายที่เกิด จากรถชนรถเท่านั้น ไม่สามารถเคลมได้ในกรณีที่ไม่ มีคู่กรณี-->
+        <!--นอกจากนั้นยังคุ้มครองกรณีไฟไหม้ และ สูญหายด้วย-->
+    <!--</string>-->
+    <!--<string name="insurance_type_dialog_header_3">ประกันภัยรถยนต์ ประเภท 2</string>-->
+    <!--<string name="insurance_type_dialog_desc_3">คุ้มครองและรับผิดชอบทั้งร่างกายและทรัพย์สินเฉพาะ ของคู่กรณี-->
+        <!--ไม่คุ้มครองรถผู้เอาประกัน ยกเว้นกรณีไฟ ไหม้ หรือสูญหาย-->
+    <!--</string>-->
+    <!--<string name="insurance_type_dialog_header_4">ประกันภัยรถยนต์ ประเภท 3+</string>-->
+    <!--<string name="insurance_type_dialog_desc_4">คุ้มครองและรับผิดชอบทั้งร่างกายและทรัพย์สินของผู้ เอาประกันภัยและคู่กรณี-->
+        <!--เฉพาะความเสียหายที่เกิดจาก รถชนรถเท่านั้น แต่ไม่คุ้มครองกรณีไฟไหม้ หรือสูญหาย-->
+    <!--</string>-->
+    <!--<string name="payment_fail_detail">เกิดเหตุขัดข้อง ชำระเงินไม่สำเร็จ</string>-->
+    <!--<string name="receipt_payment_type">Type of payment</string>-->
+    <!--<string name="receipt_payment_type_installment">Installment</string>-->
+    <!--<string name="receipt_payment_type_tax">Tax</string>-->
+    <!--<string name="receipt_payment_type_insurance">Insurance</string>-->
+    <!--<string name="receipt_save_image_success">Save completed</string>-->
+
+    <string name="location_distance">%1$s km.</string>
+    <string name="location_direction">เส้นทาง</string>
+    <string name="location_tel">โทร</string>
+    <string name="location_detail">รายละเอียด</string>
+    <string name="location_show_all">แสดงทั้งหมด</string>
+    <string name="location_hide">ซ่อน</string>
+    <string name="location_hq_filter">Office Location</string>
+    <string name="location_dealer_filter">Dealer Location</string>
+
+
+    <string name="location_detail_office">Home , Address</string>
+    <string name="location_detail_address">เลขที่ 1194/3 ถนนพหลโยธิน แขวงจอมพล เขตจตุจักร กรุงเทพมหานคร 10900</string>
+    <string name="location_detail_tel">(02) 512 0147-60, (02) 513 3195-6</string>
+    <string name="location_detail_time">ทุกวัน: 07:00 – 19:00</string>
+    <string name="location_detail_website">http://www.toyotametro.co.th/</string>
+
+    <string name="location_filter_title">Search</string>
+    <string name="location_filter_dealer_hint">Dealer</string>
+    <string name="location_filter_dealer_title">Search dealer location</string>
+    <string name="location_filter_province_hint">Select province</string>
+    <string name="location_filter_district_hint">Select district</string>
+    <string name="location_filter_office">Office</string>
+    <string name="location_filter_showroom">Showroom</string>
+    <string name="location_filter_service">Service Center</string>
+    <string name="location_filter_repair">Body &amp; Paint Center</string>
+    <string name="location_filter_dealer_nearly">Search dealer location nearby</string>
+    <string name="location_filter_search">Search</string>
+    <string name="location_office_title">All Branches (%1$s)</string>
+    <string name="location_showroom_title">Dealer (%1$s)</string>
+    <string name="location_not_found_description">Sorry we couldn\’t find any info.\nPlease search for other related</string>
+        <!--keywords-->
+    <!--</string>-->
+    <!--<string name="location_back_to_search">Back to the previous page</string>-->
+    <!--<string name="location_switch_on_location_title">Please allow the app to access your location for accuracy of search-->
+        <!--functions.-->
+    <!--</string>-->
+
+    <!--<string name="disclosure_title_header">Disclosure information</string>-->
+    <!--<string name="disclosure_accept">I agree on disclosure information</string>-->
+    <!--<string name="disclosure_unaccept">I don\'t agree on disclosure information</string>-->
+
+    <!--<string name="question_and_answer_title">Send questions and suggestions.</string>-->
+    <string name="question_and_answer_topic_hint">Select topic</string>
+    <!--<string name="question_and_answer_hint_name">Guest</string>-->
+    <!--<string name="question_and_answer_hint_email">Email</string>-->
+    <!--<string name="question_and_answer_hint_phone">Telephone No</string>-->
+    <!--<string name="question_and_answer_hint_car_license">Registration No.</string>-->
+    <!--<string name="question_and_answer_hint_detail">Question / Suggestion</string>-->
+    <string name="question_and_answer_sent_success">Thank you for your inquiry,\nthe staff will get back to you</string>
+        <!--shortly-->
+    <!--</string>-->
+
+    <!--<string name="profile_car_title">Car Profiles</string>-->
+    <!--<string name="profile_car_txt_choose_photo">Take a picture</string>-->
+    <!--<string name="profile_car_txt_reset">Use the default picture</string>-->
+    <!--<string name="profile_car_revert_image_descrption">Do you want to use the default picture?</string>-->
+    <!--<string name="profile_car_button">Yes</string>-->
+    <!--<string name="profile_car_model_txt">Car modelJob : %1$s</string>-->
+
+    <!--<string name="document_viewer_title">Download documents</string>-->
+
+    <!--<string name="policy_title">Terms and conditions</string>-->
+
+    <string name="non_customer_description">Sorry, you are not allowed to access this page\nPlease register to access
+        the data of TLT customer
+    </string>
+
+    <string name="location_responsibility">Responsible province</string>
+
+    <string name="alert_device_logon_title">You have now logged out of the system.</string>
+    <string name="alert_device_logon_description">There is another user trying to log in your account from other
+        devices. If you wish to log in again, please enter the pin code.
+    </string>
+    <string name="alert_device_logon_button">OK</string>
+
+    <string name="alert_no_internet_title">No internet connection</string>
+    <string name="alert_no_internet_description">Please check your internet connection and try again.</string>
+    <string name="alert_no_internet_button">OK</string>
+
+    <!--//special offer-->
+    <!--<string name="special_offer_toolbar_title">Special offer</string>-->
+    <!--<string name="special_offer_car_contract_title">Contract detail</string>-->
+    <!--<string name="special_offer_car_date_format">Date of data sent out : %1$s</string>-->
+
+    <!--//tutorial-->
+    <!--<string name="tutorial_guide_title_1">Main Menu</string>-->
+    <!--<string name="tutorial_guide_description_1">Need to search for the car info such as\nmy car, instalment payment, car-->
+        <!--tax\nand important documents-->
+    <!--</string>-->
+    <!--<string name="tutorial_guide_title_2">Slide the screen to see other car</string>-->
+    <!--<string name="tutorial_guide_description_2">Check each car status by slide\nthe screen or press\n“Select car”-->
+        <!--button-->
+    <!--</string>-->
+    <!--<string name="tutorial_guide_title_3">Check your payment status</string>-->
+    <!--<string name="tutorial_guide_description_3">Check your instalment\nand other service</string>-->
+
+    <!--//GetPhoneDialog-->
+    <!--<string name="get_phone_error_title">Error</string>-->
+    <!--<string name="get_phone_error_description">Email or passport id is incorrect.</string>-->
+
+    <!--//FAQ-->
+    <!--<string name="faq_title_transfer_ownership">Transfer Ownership</string>-->
+    <!--<string name="faq_title_installment_faq">Installment</string>-->
+    <!--<string name="faq_title_tax_faq">Tax</string>-->
+    <!--<string name="faq_title_insurance">Insurance</string>-->
+    <!--<string name="faq_title_credit_faq">Credit</string>-->
+    <!--<string name="faq_title_vehicle_registration">Vehicle Registration</string>-->
+    <!--<string name="faq_title_receipt">Receipt</string>-->
+    <string name="notify_text_error">No notification</string>
+    <!--<string name="live_chat_title">Live chat</string>-->
+
+
+    <!-- ********************************* NEW APP GEO REPO LEGAL ********************************* -->
+
+    <string name="title_main_menu_home">Geocoding</string>
+    <string name="open">เปิด</string>
+    <string name="close">ปิด</string>
+
+    <string name="repotxtLogin">เข้าสู่ระบบ</string>
+    <string name="repotxtSignUp">ลงทะเบียน</string>
+    <string name="repotxtRemember">จำฉันไว้</string>
+    <string name="repotxtForgot">ลืมรหัสผ่าน</string>
+    <string name="repotxtHintUsername">ชื่อผู้ใช้</string>
+    <string name="repotxtHintpassword">รหัสผ่าน</string>
+    <string name="repotxtHintRepassword">ยืนยันรหัสผ่าน</string>
+    <string name="repotxtIDcard">เลขบัตรประจำตัวประชาชน</string>
+    <string name="repotxtPhoneNumber">เบอร์โทรศัพท์</string>
+    <string name="repotxtBirthdate">วันเกิด</string>
+    <string name="repofilter_title">เลือกตำแหน่ง</string>
+    <string name="repohome_btn_Login">เข้าสู่ระบบ</string>
+    <string name="repohome_btn_SignIn">เข้าสู่ระบบ</string>
+
+    <string name="repoHome">หน้าแรก</string>
+    <string name="repoTotalJob">ประวัติงาน</string>
+    <string name="repoNewJob">งานทั้งหมด</string>
+    <string name="repoOnHand">งานในมือ</string>
+    <string name="repoCancel">งานที่ยกเลิก</string>
+    <string name="repoCollection">Job Collection</string>
+    <string name="repoAllJob">งานรอบตัวคุณ</string>
+    <string name="repoExtension">Job Extenion</string>
+
+    <string name="btn_select_allJob">เลือกงาน</string>
+    <string name="txt_extContract">AHP999999</string>
+    <string name="txt_regNo">เลขทะเบียนรถ :</string>
+    <!--<string name="txt_unpaid_amt">0.00</string>-->
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment</string>
+    <string name="hello_third_fragment">Hello third fragment</string>
+
+    <string name="location_fragment">งานที่อยู่ในมือ</string>
+    <string name="txt_job_history">ประวัติการทำงาน</string>
+    <string name="txt_job_cancel">งานที่ถูกยกเลิก</string>
+    <string name="txt_job_yourjob">งานรอบตัวฉัน</string>
+    <string name="txt_job_request">งานรอบตัวฉัน</string>
+    <string name="txt_job_request_describe">หางานที่อยู่ใกล้ตัวคุณ</string>
+    <string name="txt_job_collection">งานที่ฉันเลือก</string>
+    <string name="txt_job_collection_describe">งานทั้งหมดที่คุณเลือก</string>
+    <string name="total_job_assign">งานทั้งหมด</string>
+    <string name="job_show_Menu">แสดงรายการ</string>
+    <string name="job_hide_Menu">ซ่อนรายการ</string>
+    <string name="location_geolocation">สถานที่</string>
+    <string name="txt_job_short_assign">เริ่มทำงาน</string>
+    <string name="txt_job_extension">รอชำระเงิน</string>
+    <string name="txt_job_extension_describe">รายการนัดหมายการจ่ายเงิน</string>
+
+
+    <string name="job_ontheway">กำลังเดินทาง</string>
+    <string name="job_cancel">กำลังเดินทาง</string>
+    <string name="job_waiting">รอ</string>
+    <string name="job_histiry">ประวัติ</string>
+
+    <string name="btn_route">เส้นทาง</string>
+    <string name="btn_detail">รายละเอียด</string>
+    <string name="btn_accept">รับงาน</string>
+    <string name="btn_Navigator">มุมมองถนน</string>
+    <string name="btn_acceptLocation">ใช้ตำแหน่งนี้</string>
+
+    <string name="spinner_cancel_re">ส่งคำถามและข้อเสนอแนะ</string>
+    <string name="title_cancel_menu">ยกเลิกงาน</string>
+    <string name="txt_comment_reason">ระบุหมายเหตุ</string>
+    <string name="txt_reason">หมายเหตุ</string>
+    <string name="title_workdone_menu">รายงานการติดตาม</string>
+    <string name="title_arrive_menu">ถึงที่หมาย</string>
+    <string name="title_depart_menu">เริ่มเดินทาง</string>
+    <string name="title_canceled_menu">ยกเลิกงาน</string>
+    <string name="title_hold_menu">ถืองานต่อ</string>
+
+    <string name="txt_address">ที่อยู่</string>
+    <string name="txt_aumphor">อำเภอ</string>
+    <string name="txt_province">จังหวัด</string>
+    <string name="txt_Tumbon">ตำบล</string>
+
+    <string name="chk_confirm_location">ต้องการแก้ไขที่อยู่</string>
+    <string name="btn_goto_Map">ใช้แผนที่</string>
+    <string name="txt_add_image">อัพโหลดรูปถ่าย</string>
+
+
+    <string name="txtStreetview">มุมมองถนน</string>
+    <string name="txtAddress">ที่อยู่ :</string>
+    <string name="txtPosition">ตำแหน่ง :</string>
+
+    <!--DIALOG STRING -->
+
+    <string name="dil_title_status_confirm">สถานะงาน</string>
+    <string name="dil_title_status_depart">สถานะงาน : เริ่มงาน</string>
+    <string name="dil_title_status_arrive">สถานะงาน : ถึงที่หมาย</string>
+    <string name="dil_title_status_finish">สถานะงาน :เสร็จงาน</string>
+    <string name="dil_title_status_cancel">สถานะงาน : ยกเลิก</string>
+    <string name="dil_title_status_hold">สถานะงาน : ถืองานต่อ</string>
+    <string name="dil_msg_status_depart">คุณพร้อมสำหรับงานหรือยัง?</string>
+    <string name="dil_msg_status_arrive">คุณได้มาถึงจุดหมายแล้ว, สถานที่นี้ถูกต้องหรือไม่?</string>
+    <string name="dil_msg_status_cancel">คุณต้องการยกเลิกงานนี้หรือไม่?</string>
+    <string name="dil_msg_status_hold">สถานะงานของคุณจะถูกพักชั่วคราว กรุณาระบุระยะเวลาการถืองานต่อของคุณ (ไม่สามารถถืองานได้มากกว่า %1$s วัน)</string>
+    <string name="dil_txt_yes">ใช่</string>
+    <string name="dil_txt_no">ไม่ใช่</string>
+    <string name="dil_txt_cancel">ยกเลิก</string>
+    <string name="dil_txt_confirm">ยืนยัน</string>
+    <string name="dil_txt_deny">ปฏิเสธ</string>
+    <string name="dil_txt_correct">ถูกต้อง</string>
+    <string name="dil_txt_incorrect">ไม่ถูกต้อง</string>
+
+    <string name="txtCustName">ชื่อลูกค้า</string>
+    <string name="txt_unverify">ขอบคุณสำหรับข้อมูลของคุณ กรุณารอสักครู่หรือติดต่อ 02-999-9999</string>
+    <string name="txt_time">ระบบจะเปิดให้บริการในเวลา \n8:00 น. - 20:00 น.</string>
+
+
+    <string name="firstname">ชื่อ</string>
+    <string name="lastname">นามสกุล"</string>
+    <string name="email">อีเมลล์"</string>
+    <string name="id_card">รหัสประจำตัวประชาชน</string>
+    <string name="mobile">โทรศัพท์มือถือ"</string>
+    <string name="dd_mm_year">วว/ดด/ปป</string>
+    <string name="start_working_date">วันที่เริ่มงาน :</string>
+    <string name="completion_date_of">วันที่ผ่านการอบรม :</string>
+    <string name="sign_up">ลงทะเบียน</string>
+
+    //term and conditions and disclosure
+    <string name="i_agree_on_disclosure_information">ฉันยินยอมให้เปิดเผยข้อมูล</string>
+    <string name="i_dont_agree_on_disclosure_information">ฉันไม่ยินยอมให้เปิดเผยข้อมูล"</string>
+    //terms
+    <string name="terms_and_conditions">เงื่อนไขและข้อตกลง</string>
+    <string name="agree_terms_and_conditions">เห็นด้วยกับเงื่อนไขและข้อตกลง</string>
+    <string name="next">ต่อไป</string>
+    <string name="change_languages">เปลี่ยนภาษา</string>
+
+    <string name="verification_code">ยืนยันรหัส</string>
+    <string name="please_type_the_verification_code">กรุณายืนยันรหัส</string>
+    <string name="txt_spinner_job_detail">รายละเอียดงาน</string>
+    <string name="location_Notification">แจ้งเตือน</string>
+
+
+    <!--// comment -->
+
+    <string name="txt_location_detail">รายละเอียดสถานที่</string>
+    <string name="edit_jobdetail_hint">รายละเอียดงาน</string>
+    <string name="txt_payment_day_period_in">สัญญาชำระเงินภายในวันที่</string>
+    <string name="txt_Day"></string>
+
+    <!--//settings-->
+
+    <string name="setting_home">หน้่าแรก</string>
+    <string name="setting_setting">ตั้งค่า</string>
+    <string name="setting_logout">ออกจากระบบ</string>
+
+    <!--//on hand-->
+
+
+    <string name="onhand_details">รายละเอียด</string>
+    <string name="onhand_time">เวลา</string>
+    <string name="onhand_distant">ระยะทาง</string>
+    <string name="onhand_route">เส้นทาง</string>
+    <string name="txt_btn_collection_choose_job">เริ่มงาน!</string>
+    <string name="txt_gotowork">ไป</string>
+    <string name="txt_type_status_new">( ใหม่ )</string>
+    <string name="txt_type_status_hold">พัก</string>
+    <string name="txt_type_status_wait">รอ</string>
+    <string name="location_Collection">งานทั้งหมด</string>
+
+
+    <!--// Job Description For Detail  Screen  -->
+
+    <string name="txtD_CUSTOMER_NAME">ชื่อลูกค้า</string>
+    <string name="txtD_IDCARD">เลขบัตรประจำตัวประชาชน</string>
+    <string name="txtD_TEL_MOBILE">เบอร์มือถือ</string>
+    <string name="txtD_ADDRESS_TYPE">ประเภทที่อยู่</string>
+    <string name="txtD_REAL_ADDRESS">ที่อยู่จริง</string>
+
+    <string name="txtD_REGISTER_NO">เลขลงทะเบียน</string>
+    <string name="txtD_REGISTER_PROVINCE">จังหวัดที่ลงทะเบียน</string>
+    <string name="txtD_COLOR_DESC">รายละเอียดสี</string>
+    <string name="txtD_MODEL_DESC">หมายเลขรุ่น</string>
+    <string name="txtD_CHASIS_NO">CHASIS_NO</string>
+    <string name="txtD_ENGINE_NO">หมายเลขเครื่องยนต์</string>
+
+    <string name="txtD_BRANCH">ตัวแทน</string>
+    <string name="txtD_CONTRACT_NO">เลขที่สัญญา</string>
+    <string name="txtD_CONTRACT_TYPE">ประเภทสัญญา</string>
+    <string name="txtD_CONTRACT_TYPE_DESC">รายละเอียดประเภทสัญญา</string>
+    <string name="txtD_CONTRACT_STATUS">สถานะสัญญา</string>
+    <string name="txtD_CONTRACT_STATUS_DESC">รายละเอียดสถานะสัญญา</string>
+
+    <string name="txtD_PAYMENT_TYPE">ประเภทการชำระเงิน</string>
+    <string name="txtD_PAYMENT_DESC">รายละเอียดการชำระ</string>
+    <string name="txtD_HP_AMT">HP_AMT</string>
+    <string name="txtD_OUTSTANDING_AMT">จำนวนยอดเกิน</string>
+    <string name="txtD_TOTAL_TERM">ค่างวดทั้งหมด</string>
+    <string name="txtD_INSTALLMENT_AMT">ค่างวด</string>
+    <string name="txtD_INSTALLMENT_DUE_AMT">INSTALLMENT_DUE_AMT</string>
+    <string name="txtD_OVERDUE_DAYS">OVERDUE_DAYS</string>
+    <string name="txtD_OVERDUE_ITEM">OVERDUE_ITEM</string>
+    <string name="txtD_OVERDUE_ITEM_FROM">OVERDUE_ITEM_FROM</string>
+    <string name="txtD_OVERDUE_ITEM_TO">OVERDUE_ITEM_TO</string>
+    <string name="txtD_OVERDUE_DATE_FROM">OVERDUE_DATE_FROM</string>
+    <string name="txtD_OVERDUE_DATE_TO">OVERDUE_DATE_TO</string>
+    <string name="txtD_LAST_DUE_DATE">วันสุดท้ายของค่างวด</string>
+    <string name="txtD_PENALTY_DATE">PENALTY_DATE</string>
+    <string name="txtD_PENALTY_AMT">PENALTY_AMT</string>
+    <string name="txtD_BALLOON_AMT">BALLOON_AMT</string>
+    <string name="txtD_OTHERS_AMT">OTHERS_AMT</string>
+    <string name="txtD_TOTAL_OVD_AMT">จำนวนที่ค้างชำระ</string>
+    <string name="txtD_PAID_TO_ITEM">PAID_TO_ITEM</string>
+    <string name="txtD_PAID_DATE">วันที่จ่าย</string>
+    <string name="txtD_LAST_PAID_AMT">จำนวนชำระครั้งสุดท้าย</string>
+    <string name="txtD_OVER_DUE_AMOUNT">จำนวนที่ค้างชำระ</string>
+
+    <string name="txtHeader_pay_description">รายละเอียดค่างวด</string>
+    <string name="car_contract_no">ACC1111111</string>
+    <string name="txtD_OVD_AMT">Overdue amount</string>
+
+    <!--// ItemJobCollectionDetailResponse  -->
+    <string name="txtd_ACTION_CODE">Action code</string>
+    <string name="txtd_ACTION_REMARK">Action remark</string>
+    <string name="txtd_ADDRESS_ID">Address id</string>
+    <string name="txtd_BALLOON_AMT">ยอดบอลลูน</string>
+    <string name="txtd_BRANCH">สาขา</string>
+    <string name="txtd_CHASIS_NO">Chasis No :</string>
+    <string name="txtd_COLOR_DESC">รายละเอียดสี</string>
+    <string name="txtd_CONTRACT_NO">เลขที่สัญญา</string>
+    <string name="txtd_CONTRACT_STATUS">สถานะของสัญญา</string>
+    <string name="txtd_CONTRACT_STATUS_DESC">รายละเอียดสถานะสัญญา</string>
+    <string name="txtd_CONTRACT_TYPE">ประเภทของสัญญา</string>
+    <string name="txtd_CONTRACT_TYPE_DESC">รายละเอียดประเภทของสัญญา</string>
+    <string name="txtd_ENGINE_NO">หมายเลขเครื่อง :</string>
+    <string name="txtd_HP_AMT">จำนวณ HP</string>
+    <string name="txtd_INSTALLMENT_AMT">จำนวนค่างวด</string>
+    <string name="txtd_INSTALLMENT_DUE_AMT">จำนวนค่างวดที่ต้องจ่าย</string>
+
+    <string name="txtd_JOB_ID">รหัสงาน</string>
+    <string name="txtd_LAST_DUE_DATE">วันครบกำหนดชำระ</string>
+    <string name="txtd_LAST_PAID_AMT">จำนวนชำระครั้งสุดท้าย</string>
+    <string name="txtd_MAIN_ID">MAIN_ID</string>
+    <string name="txtd_MODEL_DESC">รายละเอียดรุ่น :</string>
+    <string name="txtd_OTHERS_AMT">จำนวนอื่นๆ</string>
+    <string name="txtd_OUTSTANDING_AMT">จำนวนที่เกิน</string>
+    <string name="txtd_OVERDUE_DATE_FROM">งวดค้างชำระตั้งแต่วันที่</string>
+    <string name="txtd_OVERDUE_DATE_TO">งวดค้างชำระจนถึงวันที่</string>
+    <string name="txtd_OVER_DUE_AMOUNT">จำนวนที่ค้างชำระ</string>
+    <string name="txtd_OVERDUE_DAYS">วันที่เลยกำหนดชำระ</string>
+    <string name="txtd_OVERDUE_ITEM">จำนวณค่างวดที่ค้าง</string>/
+    <string name="txtd_OVERDUE_ITEM_FROM">ค้างค่างวดตั้งแต่งวดที่</string>
+    <string name="txtd_OVERDUE_ITEM_TO">ค้างค่างวดจนถึงงวดที่</string>
+    <string name="txtd_PAID_DATE">วันที่ชำระเงิน</string>
+    <string name="txtd_PAID_TO_ITEM">งวดที่จ่ายล่าสุด</string>
+    <string name="txtd_PAYMENT_DESC">รายละเอียดการชำระเงิน</string>
+    <string name="txtd_PAYMENT_TYPE">ประเภทการชำระเงิน</string>
+    <string name="txtd_PENALTY_AMT">จำนวนค่าปรับ</string>
+    <string name="txtd_PENALTY_DATE">วันที่ชำระค่าปรับ</string>
+    <string name="txtd_REGISTER_NO">หมายเลขลงทะเบียน</string>
+    <string name="txtd_REGISTER_PROVINCE">จังหวัดที่ลงทะเบียน</string>
+    <string name="txtd_TOTAL_OVD_AMT">จำนวนที่ค้างชำระ</string>
+    <string name="txtd_TOTAL_TERM">งวดทั้งหมด</string>
+    <string name="txtd_JOB_REMARK_DATE">JOB_REMARK_DATE</string>
+    <string name="txtd_JOB_REMARK">หมายเหตุงาน</string>
+    <string name="txtd_ADDRESS_TYPE">ประเภทที่อยู่</string>
+    <string name="txtd_CUSTOMER_NAME">ชื่อลูกค้า</string>
+    <string name="txtd_IDCARD">บัตรประจำตัวประชาชน</string>
+    <string name="txtd_ID_PIC">ID_PIC</string>
+    <string name="txtd_LATITUDE">ละติจูด</string>
+    <string name="txtd_LONGITUDE">ลองจิจูด</string>
+    <string name="txtd_PROFILE_ID">เลขที่โปรไฟล์</string>
+    <string name="txtd_REAL_ADDRESS">ที่อยู่จริง</string>
+    <string name="txtd_RECORD_TYPE">RECORD_TYPE</string>
+    <string name="txtd_TEL_HOME">โทรศัพท์บ้าน</string>
+    <string name="txtd_TEL_MOBILE">มือถือ</string>
+    <string name="txtd_EXPECT_SUING_DATE">Expecting suing date</string>
+
+    <!--ItemNotifyPushResponse-->
+
+    <string name="txt_JOB_REMARK">หมายเหตุ</string>
+    <string name="txt_navigation">navigation</string>
+    <string name="txt_ic_color">ic_color</string>
+    <string name="txt_media">media</string>
+    <string name="txt_image">รูปภาพ</string>
+    <string name="txt_msg">ข้อความ</string>
+    <string name="txt_dateTime">dateTime</string>
+    <string name="txt_msg_type">msg_type</string>
+    <string name="txt_exp_DateTime">exp_DateTime</string>
+    <string name="txt_flag_chkbox">
+    </string>
+    <string name="txt_job_id">job_id</string>
+    <string name="txt_title">title</string>
+
+
+    <!--error alert-->
+
+    <string name="error_invalid_regist">กรุณาตรวจสอบข้อมูลให้ครบถ้วนอีกครั้ง</string>
+    <string name="error_regist">เกิดข้อผิดพลาด โปรดลองอีกครั้ง</string>
+    <string name="bt_ok">ตกลง</string>
+    <string name="error_otp">รหัส OTP ไม่ถูกต้อง กรุณาลองใหม่อีกครั้ง</string>
+    <string name="alert_loading">กำลังโหลด</string>
+    <string name="alert_waiting">กรุณารอสักครู่</string>
+    <string name="Resend_OTP">ส่งอีกครั้ง</string>
+    <string name="Name">ชื่อ</string>
+    <string name="Email">อีเมลล์</string>
+    <string name="Telephone">เบอร์โทรศัพท์</string>
+    <string name="Company">บริษัท</string>
+    <string name="Company_Code">รหัสบริษัท</string>
+    <string name="Offline_mode">โหมดความเป็นส่วนตัว</string>
+    <string name="noti_mode">การแจ้งเตือน</string>
+
+    <string name="text_sendSuccessAction">Successfully!</string>
+    <string name="text_sendWarningfillallRequire">Please fill all require!</string>
+    <string name="txt_sendfail">Sorry , it\'s send fail , Please try again.</string>
+    <string name="txt_over_day">จำนวนวันที่ค้างชำระ</string>
+    <string name="txt_unpaid_term">งวดที่ยังไม่จ่าย</string>
+    <string name="txt_check_status_approval">ตรวจสอบสถานะ</string>
+    <string name="txt_unpaid_amt">จำนวนค่างวดที่ค้างจ่าย</string>
+    <string name="profile">บัญชี</string>
+    <string name="bt_accept_job">รับงาน</string>
+    <string name="location">สถานที่</string>
+    <string name="contrat_detail">รายละเอียดสัญญา</string>
+    <string name="guarantor_h">ผู้ค้ำประกัน</string>
+    <string name="follow_up">ติดตาม</string>
+
+    <string name="dia_req_status_limit">คุณไม่สามารถรับงานได้มากกว่า 5 งาน</string>
+    <string name="dia_req_status_successful_record">ทำรายการสำเร็จ</string>
+    <string name="dia_req_status_try_again">กรุณาลองอีกครั้ง</string>
+    <string name="dia_req_status_not_found_data">ไม่พบข้อมูล กรุณาลองอีกครั้ง</string>
+    <string name="dia_req_status_please_add_job">ไม่พบข้อมูล กรุณาเพิ่มงาน</string>
+    <string name="dia_close">ตกลง</string>
+    <string name="reg_no">ทะเบียนรถ</string>
+    <string name="select_your_company">เลือกบริษัทของคุณ</string>
+    <string name="dia_req_status_please_fill_all_field">กรุณากรอกข้อมูลให้ครบถ้วน</string>
+    <string name="txtpromise_payday">ชำระเงินภายใน %1$s</string>
+
+    <string name="txt_profileTab">โปรไฟล์</string>
+    <string name="txt_detailTab">รายละเอียด</string>
+    <string name="txt_remarkTab">เพิ่มเติม</string>
+    <string name="txt_work">เริ่มงาน</string>
+    <string name="txt_lastupdate">อัพเดทล่าสุด :</string>
+    <string name="txt_hold_header">ถืองานต่อถึงวันที่</string>
+    <string name="txt_return_date">วันที่ส่งมอบรถยนต์</string>
+    <string name="txt_promise_header">สัญญาชำระเงินภายในวันที่</string>
+    <string name="alert_offine">ไม่สามารถใช้งานได้ในขนาดนี้ กรุณาปิดโหมดความเป็นส่วนตัว</string>
+    <string name="btn_confirm">ยืนยัน</string>
+
+    <string name="alert_dialog_root_title">Sorry</string>
+    <string name="alert_dialog_root_description">เครื่องของคุณไม่ปลอดภัย คุณไม่สามารถใช้แอปพลิเคชันได้</string>
+
+
+</resources>

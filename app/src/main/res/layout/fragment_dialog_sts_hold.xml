@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@android:color/transparent"
+                                             tools:background="#3fff00ff">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="@dimen/dialog_padding_horizontal"
+            android:layout_marginStart="@dimen/dialog_padding_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_white_corner_radius"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <com.tlt.georepo.view.TLTTextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/custom_bold"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/dil_title_status_hold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_large_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+                android:id="@+id/divier_title"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/unactive"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dil_msg_status_hold"
+                android:textColor="@color/grayText"
+                android:textSize="@dimen/text_medium_size"
+                android:gravity="center"
+                android:fontFamily="@font/custom_regular"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divier_title">
+
+        </android.support.v7.widget.AppCompatTextView>
+
+        s
+        <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/editHoldDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/custom_regular"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large"
+                android:inputType="phone"
+                android:background="@drawable/bg_edittext"
+                android:text="@string/dd_mm_year"
+                android:maxLength="10"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_large_size"
+                app:layout_constraintTop_toBottomOf="@+id/txtQuestion"
+                android:layout_marginTop="@dimen/margin_12"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"/>
+
+        <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/title_detail"
+                style="@style/Text_Bold_Large"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/form_job_margin"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_marginEnd="@dimen/form_job_margin"
+                android:gravity="start"
+                android:text="@string/txt_comment_reason"
+                android:textColor="@color/grayText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editHoldDay" />
+
+        <com.tlt.georepo.view.OwaspEditText
+                android:id="@+id/edittext_detail"
+                style="@style/Text_Bold_Large"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext"
+                android:gravity="top"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:lines="4"
+                android:maxLines="4"
+                android:textColor="@color/brownish_grey"
+                app:layout_constraintEnd_toEndOf="@id/title_detail"
+                app:layout_constraintStart_toStartOf="@id/title_detail"
+                app:layout_constraintTop_toBottomOf="@id/title_detail" />
+
+
+        <com.tlt.georepo.view.TLTButton
+                android:id="@+id/btn_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_green_light"
+                android:fontFamily="@font/custom_bold"
+                android:gravity="center"
+                android:padding="8dp"
+                android:paddingEnd="42dp"
+                android:paddingStart="42dp"
+                android:text="@string/btn_confirm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_button_size"
+                android:layout_marginTop="@dimen/margin_12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btn_no"
+                app:layout_constraintTop_toBottomOf="@+id/edittext_detail"/>
+
+
+        <com.tlt.georepo.view.TLTButton
+                android:id="@+id/btn_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_red"
+                android:fontFamily="@font/custom_bold"
+                android:gravity="center"
+                android:padding="8dp"
+                android:paddingEnd="42dp"
+                android:paddingStart="42dp"
+                android:text="@string/dil_txt_cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_button_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btn_yes"
+                android:layout_marginTop="@dimen/margin_12"
+                app:layout_constraintTop_toBottomOf="@+id/edittext_detail"/>
+
+
+
+</android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

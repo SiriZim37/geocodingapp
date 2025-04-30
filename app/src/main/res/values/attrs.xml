@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomRecyclerView">
+        <attr name="isShowProgressLoadmore" />
+    </declare-styleable>
+
+    <declare-styleable name="TLTTextView">
+        <attr name="fontType" />
+        <attr name="textAutoSizing" />
+    </declare-styleable>
+
+    <declare-styleable name="OwaspMaskedEditText">
+        <attr name="tlt_mask" format="string" />
+    </declare-styleable>
+
+
+    <declare-styleable name="TLTButton">
+        <attr name="fontType" />
+        <attr name="textAutoSizing" />
+    </declare-styleable>
+
+    <declare-styleable name="TLTTextInputLayout">
+        <attr name="fontType" />
+    </declare-styleable>
+
+    <declare-styleable name="ToolbarWidget">
+        <attr name="title" />
+        <attr name="menuTitle" />
+        <attr name="iconTitle" />
+        <attr name="navigationIcon" />
+        <attr name="menuIcon" />
+        <attr name="enableNavigationIcon" />
+        <attr name="toolbarSize" />
+    </declare-styleable>
+
+    <declare-styleable name="DrawableTextViewWidget">
+        <attr name="text" />
+        <attr name="iconDrawable" />
+    </declare-styleable>
+
+    <declare-styleable name="SliderWidget">
+        <attr name="minimumComplete" />
+        <attr name="minProgress" />
+        <attr name="maxProgress" />
+    </declare-styleable>
+
+    <declare-styleable name="LazyImageView">
+        <attr name="imageResource" />
+    </declare-styleable>
+
+    <declare-styleable name="AddGalleryWidget">
+        <attr name="maximumImage" />
+    </declare-styleable>
+
+    <declare-styleable name="FilterWidget">
+        <attr name="iconDrawable" />
+        <attr name="hint" />
+        <attr name="iconColor" />
+    </declare-styleable>
+
+    <declare-styleable name="SpinnerView">
+        <attr name="hint" />
+    </declare-styleable>
+
+    <declare-styleable name="CheckStatusTaxWidget">
+        <attr name="title_header" />
+        <attr name="visibility_header" />
+        <attr name="visibility_footer" />
+    </declare-styleable>
+
+    <declare-styleable name="TLTButtonWidget">
+        <attr name="iconDrawable" />
+        <attr name="title" />
+    </declare-styleable>
+
+    <!-- Attr -->
+    <attr name="isShowProgressLoadmore" />
+    <attr name="menuTitle" format="reference" />
+    <attr name="iconTitle" format="reference" />
+    <attr name="text" format="reference" />
+    <attr name="minimumComplete" format="integer" />
+    <attr name="minProgress" format="integer" />
+    <attr name="maxProgress" format="integer" />
+    <attr name="imageResource" format="reference" />
+    <attr name="maximumImage" format="integer" />
+    <attr name="hint" format="reference" />
+    <attr name="iconColor" format="reference" />
+    <attr name="iconDrawable" format="reference" />
+
+    <attr name="title_header" format="string" />
+    <attr name="menuIcon" format="reference" />
+    <attr name="enableNavigationIcon" format="boolean" />
+    <attr name="title" format="reference" />
+    <attr name="navigationIcon" format="reference" />
+    <attr name="textAutoSizing" format="boolean" />
+    <attr name="fontType" format="enum">
+        <enum name="normal" value="0" />
+        <enum name="bold" value="1" />
+        <enum name="header" value="2" />
+    </attr>
+    <attr name="toolbarSize" format="enum">
+        <enum name="normal" value="0" />
+        <enum name="medium" value="1" />
+        <enum name="large" value="2" />
+    </attr>
+    <attr name="visibility_header" format="enum">
+        <enum name="visible" value="0" />
+        <enum name="invisible" value="4" />
+        <enum name="gone" value="8" />
+    </attr>
+    <attr name="visibility_footer" format="enum">
+        <enum name="visible" value="0" />
+        <enum name="invisible" value="4" />
+        <enum name="gone" value="8" />
+    </attr>
+
+    <declare-styleable name="IndicatorSeekBar">
+        //seekBar
+        <attr name="tlt_max" format="float"/>
+        <attr name="tlt_min" format="float"/>
+        <attr name="tlt_progress" format="float"/>
+        <attr name="tlt_progress_value_float" format="boolean"/>
+        <attr name="tlt_seek_smoothly" format="boolean"/>
+        <attr name="tlt_r2l" format="boolean"/>
+        <attr name="tlt_ticks_count" format="integer"/>
+        <attr name="tlt_user_seekable" format="boolean"/>
+        <attr name="tlt_clear_default_padding" format="boolean"/>
+        <attr name="tlt_only_thumb_draggable" format="boolean"/>
+        //indicator
+        <attr name="tlt_indicator_color" format="color|reference"/>
+        <attr name="tlt_indicator_text_color" format="color|reference"/>
+        <attr name="tlt_indicator_text_size" format="dimension|reference"/>
+        <attr name="tlt_indicator_content_layout" format="reference"/>
+        <attr name="tlt_indicator_top_content_layout" format="reference"/>
+        //track
+        <attr name="tlt_track_background_size" format="dimension|reference"/>
+        <attr name="tlt_track_background_color" format="color|reference"/>
+        <attr name="tlt_track_progress_size" format="dimension|reference"/>
+        <attr name="tlt_track_progress_color" format="color|reference"/>
+        <attr name="tlt_track_rounded_corners" format="boolean"/>
+        //thumb text
+        <attr name="tlt_thumb_text_color" format="color|reference"/>
+        <attr name="tlt_show_thumb_text" format="boolean"/>
+        //thumb
+        <attr name="tlt_thumb_size" format="dimension|reference"/>
+        <attr name="tlt_thumb_color" format="color|reference"/>
+        <attr name="tlt_thumb_drawable" format="reference"/>
+        //tickMarks
+        <attr name="tlt_tick_marks_color" format="color|reference"/>
+        <attr name="tlt_tick_marks_size" format="dimension|reference"/>
+        <attr name="tlt_tick_marks_drawable" format="reference"/>
+        <attr name="tlt_tick_marks_ends_hide" format="boolean"/>
+        <attr name="tlt_tick_marks_swept_hide" format="boolean"/>
+        //tickTexts
+        <attr name="tlt_show_tick_texts" format="boolean"/>
+        <attr name="tlt_tick_texts_color" format="reference|color"/>
+        <attr name="tlt_tick_texts_size" format="dimension|reference"/>
+        <attr name="tlt_tick_texts_array" format="reference"/>
+        <attr name="tlt_tick_texts_typeface">...</attr>
+    </declare-styleable>
+</resources>

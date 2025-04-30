@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!--<georepoew.ToolbarWidget-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:navigationIcon="@drawable/ic_menubars"-->
+        <!--app:toolbarSize="large" />-->
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedscrollview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <!--<georepoew.banner.BannerWidget-->
+            <!--android:id="@+id/widget_banner"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent"-->
+            <!--tools:background="#8cff00ff"-->
+            <!--tools:layout_marginEnd="@dimen/margin_normal"-->
+            <!--tools:layout_marginStart="@dimen/margin_normal" />-->
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/img_logoapp"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/logo_app"
+                tools:layout_marginEnd="@dimen/margin_normal"
+                tools:layout_marginStart="@dimen/margin_normal" />
+
+            <!--<georepoew.TLTTextView-->
+            <!--android:id="@+id/page_title_home_register"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="@dimen/home_content_margin_horizontal"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginEnd="@dimen/home_content_margin_horizontal"-->
+            <!--android:fontFamily="@font/custom_bold"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:text="@string/home_content_title"-->
+            <!--android:textColor="@color/text_normal"-->
+            <!--android:textSize="@dimen/title_toolbar"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@id/img_logoapp" />-->
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textinput_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/home_content_margin_horizontal"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/home_content_margin_horizontal"
+                android:background="@drawable/corner_edtbox_black"
+                android:paddingBottom="@dimen/chat_bubble_padding"
+                android:textColor="@color/text_normal"
+                android:textColorHint="@color/text_hint"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_logoapp">
+
+                <com.tlt.georepo.view.OwaspEditText
+                    android:id="@+id/input_register_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawableStart="@drawable/ic_person_black_24dp"
+                    android:drawablePadding="@dimen/padding_normal"
+                    android:fontFamily="@font/custom_regular"
+                    android:hint="@string/repotxtHintUsername"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/text_normal"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/form_text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textinput_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/home_content_margin_horizontal"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/home_content_margin_horizontal"
+                android:background="@drawable/corner_edtbox_black"
+                android:paddingBottom="@dimen/chat_bubble_padding"
+                android:textColor="@color/text_normal"
+                android:textColorHint="@color/text_hint"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textinput_username">
+
+                <com.tlt.georepo.view.OwaspEditText
+                    android:id="@+id/input_register_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawableStart="@drawable/ic_verified_user_black_24dp"
+                    android:drawablePadding="@dimen/padding_normal"
+                    android:fontFamily="@font/custom_regular"
+                    android:hint="@string/repotxtHintpassword"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textColor="@color/text_normal"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/form_text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.tlt.georepo.view.TLTButton
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="@dimen/home_content_margin_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="@dimen/home_content_margin_horizontal"
+                android:background="@drawable/selector_btn_confirm_darkblue"
+                android:fontFamily="@font/custom_bold"
+                android:gravity="center"
+                android:text="@string/repohome_btn_SignIn"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_button_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textinput_password" />
+
+            <!--<georepoew.TLTTextView-->
+            <!--android:id="@+id/txt_alternative_register"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="@dimen/home_content_margin_horizontal"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginEnd="@dimen/home_content_margin_horizontal"-->
+            <!--android:fontFamily="@font/custom_regular"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:text="@string/home_alternative_register"-->
+            <!--android:textColor="@color/text_normal"-->
+            <!--android:textSize="@dimen/text_medium_size"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@id/btn_register_email" />-->
+
+            <!--<android.support.v7.widget.AppCompatImageView-->
+            <!--android:id="@+id/btn_register_facebook"-->
+            <!--android:layout_width="@dimen/home_btn_social_size"-->
+            <!--android:layout_height="@dimen/home_btn_social_size"-->
+            <!--app:layout_constraintEnd_toStartOf="@id/btn_register_google"-->
+            <!--app:layout_constraintHorizontal_chainStyle="packed"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@id/txt_alternative_register"-->
+            <!--app:srcCompat="@drawable/ripper_facebook_button" />-->
+
+            <!--<android.support.v7.widget.AppCompatImageView-->
+            <!--android:id="@+id/btn_register_google"-->
+            <!--android:layout_width="@dimen/home_btn_social_size"-->
+            <!--android:layout_height="@dimen/home_btn_social_size"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--app:layout_constraintEnd_toStartOf="@id/btn_register_line"-->
+            <!--app:layout_constraintStart_toEndOf="@id/btn_register_facebook"-->
+            <!--app:layout_constraintTop_toBottomOf="@id/txt_alternative_register"-->
+            <!--app:srcCompat="@drawable/ripper_gg_button" />-->
+
+            <!--<android.support.v7.widget.AppCompatImageView-->
+            <!--android:id="@+id/btn_register_line"-->
+            <!--android:layout_width="@dimen/home_btn_social_size"-->
+            <!--android:layout_height="@dimen/home_btn_social_size"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toEndOf="@id/btn_register_google"-->
+            <!--app:layout_constraintTop_toBottomOf="@id/txt_alternative_register"-->
+            <!--app:srcCompat="@drawable/ripper_line_button" />-->
+
+            <!--<georepoew.TLTTextView-->
+            <!--android:id="@+id/txt_facebook"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="@font/custom_bold"-->
+            <!--android:text="@string/facebook"-->
+            <!--android:textColor="@color/text_normal"-->
+            <!--android:textSize="@dimen/header_text_size"-->
+            <!--app:layout_constraintEnd_toEndOf="@id/btn_register_facebook"-->
+            <!--app:layout_constraintStart_toStartOf="@id/btn_register_facebook"-->
+            <!--app:layout_constraintTop_toBottomOf="@id/btn_register_facebook" />-->
+
+            <!--<georepoew.TLTTextView-->
+            <!--android:id="@+id/txt_google"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="@font/custom_bold"-->
+            <!--android:text="@string/google"-->
+            <!--android:textColor="@color/text_normal"-->
+            <!--android:textSize="@dimen/header_text_size"-->
+            <!--app:layout_constraintEnd_toEndOf="@id/btn_register_google"-->
+            <!--app:layout_constraintStart_toStartOf="@id/btn_register_google"-->
+            <!--app:layout_constraintTop_toBottomOf="@id/btn_register_google" />-->
+
+            <!--<georepoew.TLTTextView-->
+            <!--android:id="@+id/txt_line"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="@font/custom_bold"-->
+            <!--android:text="@string/line"-->
+            <!--android:textColor="@color/text_normal"-->
+            <!--android:textSize="@dimen/header_text_size"-->
+            <!--app:layout_constraintEnd_toEndOf="@id/btn_register_line"-->
+            <!--app:layout_constraintStart_toStartOf="@id/btn_register_line"-->
+            <!--app:layout_constraintTop_toBottomOf="@id/btn_register_line" />-->
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>

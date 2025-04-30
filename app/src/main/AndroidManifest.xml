@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.tlt.georepo">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+            android:name="android.permission.WRITE_SETTINGS"
+            tools:ignore="ProtectedPermissions" />
+
+
+    <application
+            android:name=".MainApplication"
+            android:allowBackup="true"
+            android:icon="@drawable/geo_icon"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            android:usesCleartextTraffic="true"
+            android:hardwareAccelerated="true"
+            tools:replace="android:allowBackup">
+
+        <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="AIzaSyAvdWFfnKItI4RIziUHchP_RJUwFrX2VEUf" />
+        <!-- (MILK)AIzaSyCDXfNxbKtMdixlksfkyygnsJsikGSVjDA-->
+        <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="firebase_performance_logcat_enabled"
+            android:value="true" />
+
+        <service android:name="com.tlt.georepo.manager.notification.AppFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.tlt.georepo.manager.notification.AppFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <!--<service android:name=".manager.Location.AppLocationService" android:enabled="true" android:exported="false"></service>-->
+
+
+<!--    Broadcast -->
+        <!--<receiver-->
+                <!--android:name=".manager.Location.AppLocationBroadcastReceiver"-->
+                <!--android:directBootAware="true"-->
+                <!--android:enabled="true"-->
+                <!--android:exported="true">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.BOOT_COMPLETED" />-->
+                <!--<action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--<service-->
+                <!--android:name=".manager.Location.AppLocationService"-->
+                <!--android:enabled="true"-->
+                <!--android:exported="false"-->
+                <!--android:process=":remote" />-->
+ <!--End -->
+
+
+
+
+        <meta-data
+                android:name="com.google.firebase.messaging.default_notification_channel_id"
+                android:value="@string/default_notification_channel_id"/>
+
+        <activity
+                android:name="com.tlt.georepo.modules.main.InfoActivity"
+                android:label="@string/app_name"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:screenOrientation="portrait">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN"/>-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER"/>-->
+
+<!--            </intent-filter>-->
+
+        </activity>
+
+
+        <uses-library
+                android:name="org.apache.http.legacy"
+                android:required="false" />
+        <provider
+                android:name="android.support.v4.content.FileProvider"
+                android:authorities="${applicationId}.provider"
+                android:exported="false"
+                android:grantUriPermissions="true">
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATH"
+                    android:resource="@xml/provider_paths" />
+        </provider>
+
+
+        <activity android:name="tlt.th.co.toyotaleasing.modules.deeplink.DeeplinkActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data
+                    android:host="etc"
+                    android:scheme="tlt" />
+        </intent-filter>
+        </activity>
+
+
+        <activity
+                android:name=".modules.menu.job.request.JobRequestMapActivity"
+                android:label="@string/repoAllJob"
+                android:screenOrientation="portrait">
+        </activity>
+
+
+
+        <!--        TEST FEATURE ONLINE APP     -->
+
+        <activity
+            android:name=".activity.GeoUploadFileActivity"
+            android:label="uploadfile"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.GeoLabTestActivity"
+            android:label="LabTest"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.GeoScannerQRcodeActivity"
+            android:label="uploadfile"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:replace="screenOrientation" >
+        </activity>
+
+        <activity
+            android:name=".activity.GeoSignatureActivity"
+            android:label="uploadfile"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.GeoDeepLinkWebViewActivity"
+            android:label="Deeplink"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.GeoCaptureScannerQRcodeActivity"
+            android:screenOrientation="fullSensor">
+        </activity>
+
+
+        <!--      END  TEST FEATURE ONLINE APP     -->
+
+        <activity
+                android:name=".modules.menu.job.collection.JobCollectionMainMapActivity"
+                android:label="@string/repoCollection"
+                android:screenOrientation="portrait">
+        </activity>
+
+
+
+        <activity
+                android:name=".modules.menu.job.extension.JobExtensionMainMapActivity"
+                android:label="@string/repoExtension"
+                android:screenOrientation="portrait">
+        </activity>
+
+
+        <activity
+                android:name="com.tlt.georepo.modules.menu.location.detail.LocationDetailActivity"
+                android:label="Job Detail"
+                android:screenOrientation="portrait">
+        </activity>
+
+
+        <activity
+                android:name="com.tlt.georepo.modules.menu.job.cancel.JobCancelMapListActivityImpl"
+                android:label="@string/repoCancel" >
+        </activity>
+
+
+        <activity
+                android:name="com.tlt.georepo.modules.main.MainMenuActivity"
+                android:theme="@style/AppTheme"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name="com.tlt.georepo.modules.nonuser.RegisterActivity"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+                android:name="com.tlt.georepo.modules.pincode.SetupPincodeActivity"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+                android:name="com.tlt.georepo.modules.menu.job.JobTotalActivity"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+
+        <activity
+                android:name="com.tlt.georepo.modules.menu.job.onhand.JobOnHandBtnSheetActivity"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+                android:name="com.tlt.georepo.modules.menu.job.onhand.statusmenu.CancelStatusActivity"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+                android:name="com.tlt.georepo.modules.menu.job.onhand.statusmenu.WorkDoneStatusActivity"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+
+
+
+        </activity>
+
+        <activity
+                android:name=".modules.nonuser.SignUpActivity"
+                android:label="Sign up"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".modules.nonuser.OTPActivity"
+                android:label="Sign up"
+                android:screenOrientation="portrait"/>
+
+        <activity android:name="com.tlt.georepo.modules.nonuser.ForgotPincodeActivity"
+                  android:label="Forgot Passcode"
+                  android:screenOrientation="portrait"/>
+
+        <activity android:name="com.tlt.georepo.modules.nonuser.TermsAndConditions"
+                  android:label="Terms and conditions"
+                  android:screenOrientation="portrait"/>
+
+        <activity android:name="com.tlt.georepo.modules.nonuser.Disclosure"
+                  android:label="I agree on disclosure information"
+                  android:screenOrientation="portrait"/>
+
+
+        <activity android:name="com.tlt.georepo.modules.pincode.AuthenPincodeActivity"
+                  android:label="Authen Pincode"
+                  android:screenOrientation="portrait"/>
+
+        <activity android:name=".modules.menu.job.onhand.statusmenu.GeoLocationActivity"
+                  android:label="@string/location_geolocation"
+                  android:screenOrientation="portrait"/>
+
+        <activity android:name=".modules.menu.job.onhand.statusmenu.GeoStreetViewLocationActivity"
+                  android:label="@string/location_geolocation"
+                  android:screenOrientation="portrait"/>
+
+        <activity android:name=".modules.menu.job.request.detail.subrequest.RequestMainDetailActivity"
+                  android:label="@string/location_geolocation"
+                  android:screenOrientation="portrait"/>
+
+        <activity android:name=".modules.menu.job.onhand.topmenu.SubDetailMainActivity"
+                  android:label="@string/location_detail"
+                  android:screenOrientation="portrait"/>
+
+        <activity android:name=".modules.menu.notify.NotifyMainActivity"
+                  android:label="@string/location_Notification"
+                  android:screenOrientation="portrait"/>
+
+        <activity android:name=".modules.menu.job.collection.subcollection.CollectionMainDetailActivity"
+                  android:label="@string/location_Notification"
+                  android:screenOrientation="portrait"/>
+
+        <activity android:name=".modules.menu.job.extension.subextension.ExtensionMainDetailActivity"
+                  android:label="@string/location_Notification"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".modules.menu.notify.subnotify.NotiJobMainDetailActivity"
+                  android:label="@string/location_detail"
+                  android:screenOrientation="portrait"/>
+
+
+
+
+    </application>
+
+</manifest>

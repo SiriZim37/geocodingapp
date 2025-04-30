@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <com.tlt.georepo.view.ToolbarWidget
+            android:id="@+id/toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="@string/title_workdone_menu"
+            app:toolbarSize="normal" />
+
+    <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nestedscrollview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_normal"
+                android:orientation="vertical">
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                            style="@style/MyCardView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp">
+
+                        <android.support.constraint.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="30dp"
+                                android:padding="@dimen/form_job_margin"
+                                android:orientation="vertical">
+
+
+                            <android.support.v7.widget.AppCompatButton
+                                    android:id="@+id/btn_go_to_map1"
+                                    android:background="@drawable/btn_green_light"
+                                    android:paddingRight="20dp"
+                                    android:paddingLeft="20dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_12"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="left|center"
+                                    android:drawableRight= "@drawable/ic_map"
+                                    android:text="@string/btn_goto_Map"
+                                    android:fontFamily="@font/custom_regular"
+                                    android:textColor="@color/white"
+                                    android:drawablePadding="3dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"/>
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/title_location_detail"
+                                    style="@style/Text_Bold_Large"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:gravity="start|center"
+                                    android:text="@string/txt_location_detail"
+                                    android:textColor="@color/black"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/btn_go_to_map1"
+                                    app:layout_constraintBottom_toBottomOf="@+id/btn_go_to_map1"/>
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/dok_locationdetail"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:includeFontPadding="false"
+                                    android:text="*"
+                                    android:textColor="@color/cherry_red"
+                                    android:textSize="@dimen/text_large_size"
+                                    app:layout_constraintBottom_toBottomOf="@+id/title_location_detail"
+                                    app:layout_constraintStart_toEndOf="@+id/title_location_detail"
+                                    app:layout_constraintTop_toTopOf="@id/title_location_detail" />
+
+
+                            <com.tlt.georepo.view.OwaspEditText
+                                    android:id="@+id/edittext_location_detail"
+                                    style="@style/Text_Bold_Large"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bg_edittext"
+                                    android:gravity="top"
+                                    android:inputType="textMultiLine|textNoSuggestions"
+                                    android:lines="4"
+                                    android:maxLines="10"
+                                    android:textColor="@color/brownish_grey"
+                                    app:layout_constraintStart_toStartOf="@id/title_location_detail"
+                                    app:layout_constraintEnd_toEndOf="@+id/btn_go_to_map1"
+                                    android:layout_marginTop="@dimen/margin_12"
+                                    app:layout_constraintTop_toBottomOf="@+id/btn_go_to_map1"/>
+
+
+                            <!--<com.tlt.georepo.view.OwaspEditText-->
+                                    <!--android:id="@+id/edittext_address_line_1"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:fontFamily="@font/custom_regular"-->
+                                    <!--android:hint="@string/edit_address_address_hint"-->
+                                    <!--android:inputType="textNoSuggestions"-->
+                                    <!--android:maxLength="50"-->
+                                    <!--android:maxLines="1"-->
+                                    <!--android:textColor="@color/text_normal"-->
+                                    <!--android:textColorHint="@color/text_hint"-->
+                                    <!--android:textSize="@dimen/form_text_size"-->
+                                    <!--app:layout_constraintEnd_toEndOf="parent"-->
+                                    <!--app:layout_constraintStart_toStartOf="parent"-->
+                                    <!--app:layout_constraintTop_toBottomOf="@+id/edittext_location_detail"-->
+                            <!--/>-->
+
+
+                            <!--<com.tlt.georepo.view.OwaspEditText-->
+                                    <!--android:id="@+id/edittext_address_line_2"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:fontFamily="@font/custom_regular"-->
+                                    <!--android:hint="@string/edit_address_soi_hint"-->
+                                    <!--android:inputType="textNoSuggestions"-->
+                                    <!--android:maxLength="50"-->
+                                    <!--android:maxLines="1"-->
+                                    <!--android:textColor="@color/text_normal"-->
+                                    <!--android:textColorHint="@color/text_hint"-->
+                                    <!--android:textSize="@dimen/form_text_size"-->
+                                    <!--app:layout_constraintEnd_toEndOf="parent"-->
+                                    <!--app:layout_constraintStart_toStartOf="@+id/edittext_address_line_1"-->
+                                    <!--app:layout_constraintTop_toBottomOf="@+id/edittext_address_line_1" />-->
+
+                            <!--<com.tlt.georepo.view.OwaspEditText-->
+                                    <!--android:id="@+id/edittext_address_line_3"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:fontFamily="@font/custom_regular"-->
+                                    <!--android:hint="@string/edit_address_road_hint"-->
+                                    <!--android:inputType="textNoSuggestions"-->
+                                    <!--android:maxLength="50"-->
+                                    <!--android:maxLines="1"-->
+                                    <!--android:textColor="@color/text_normal"-->
+                                    <!--android:textColorHint="@color/text_hint"-->
+                                    <!--android:textSize="@dimen/form_text_size"-->
+                                    <!--app:layout_constraintEnd_toEndOf="parent"-->
+                                    <!--app:layout_constraintStart_toStartOf="@+id/edittext_address_line_2"-->
+                                    <!--app:layout_constraintTop_toBottomOf="@+id/edittext_address_line_2" />-->
+
+                            <!--<com.tlt.georepo.view.OwaspEditText-->
+                                    <!--android:id="@+id/edittext_address_line_4"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:fontFamily="@font/custom_regular"-->
+                                    <!--android:hint="@string/edit_address_subdistrict_hint"-->
+                                    <!--android:inputType="textNoSuggestions"-->
+                                    <!--android:maxLength="50"-->
+                                    <!--android:maxLines="1"-->
+                                    <!--android:textColor="@color/text_normal"-->
+                                    <!--android:textColorHint="@color/text_hint"-->
+                                    <!--android:textSize="@dimen/form_text_size"-->
+                                    <!--app:layout_constraintEnd_toEndOf="parent"-->
+                                    <!--app:layout_constraintStart_toStartOf="@+id/edittext_address_line_3"-->
+                                    <!--app:layout_constraintTop_toBottomOf="@+id/edittext_address_line_3" />-->
+
+                            <!--<LinearLayout-->
+                                    <!--android:id="@+id/spinner_province_layout"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:orientation="vertical"-->
+                                    <!--app:layout_constraintEnd_toEndOf="parent"-->
+                                    <!--app:layout_constraintStart_toStartOf="@+id/edittext_address_line_4"-->
+                                    <!--app:layout_constraintTop_toBottomOf="@+id/edittext_address_line_4">-->
+
+                                <!--<com.tlt.georepo.view.SpinnerView-->
+                                        <!--android:id="@+id/spinner_province"-->
+                                        <!--style="@style/MySpinner"-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:textColor="@color/grey"-->
+                                        <!--android:textSize="@dimen/text_large_size"-->
+                                        <!--app:hint="@string/edit_address_city_hint" />-->
+
+                            <!--</LinearLayout>-->
+
+                            <!--<LinearLayout-->
+                                    <!--android:id="@+id/spinner_district_layout"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:orientation="vertical"-->
+                                    <!--app:layout_constraintEnd_toEndOf="parent"-->
+                                    <!--app:layout_constraintStart_toStartOf="@+id/spinner_province_layout"-->
+                                    <!--app:layout_constraintTop_toBottomOf="@+id/spinner_province_layout">-->
+
+                                <!--<com.tlt.georepo.view.SpinnerView-->
+                                        <!--android:id="@+id/spinner_district"-->
+                                        <!--style="@style/MySpinner"-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:textColor="@color/grey"-->
+                                        <!--android:textSize="@dimen/text_large_size"-->
+                                        <!--app:hint="@string/edit_address_district_hint" />-->
+
+                            <!--</LinearLayout>-->
+
+
+                            <!--<android.support.design.widget.TextInputLayout-->
+                                    <!--android:id="@+id/textinput_postcode"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_gravity="center"-->
+                                    <!--android:textColor="@color/text_normal"-->
+                                    <!--android:textColorHint="@color/text_hint"-->
+                                    <!--app:layout_constraintEnd_toEndOf="parent"-->
+                                    <!--app:layout_constraintStart_toStartOf="@+id/spinner_district_layout"-->
+                                    <!--app:layout_constraintTop_toBottomOf="@+id/spinner_district_layout">-->
+
+                                <!--<com.tlt.georepo.view.OwaspEditText-->
+                                        <!--android:id="@+id/edittext_postcode"-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:fontFamily="@font/custom_regular"-->
+                                        <!--android:hint="@string/edit_address_postcode_hint"-->
+                                        <!--android:inputType="number|textNoSuggestions"-->
+                                        <!--android:maxLength="5"-->
+                                        <!--android:maxLines="1"-->
+                                        <!--android:textColor="@color/text_normal"-->
+                                        <!--android:textColorHint="@color/text_hint"-->
+                                        <!--android:textSize="@dimen/form_text_size" />-->
+                            <!--</android.support.design.widget.TextInputLayout>-->
+
+                            <!--<android.support.v7.widget.AppCompatCheckBox-->
+                                    <!--android:id="@+id/checkbox_confirm_location"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_gravity="start"-->
+                                    <!--android:buttonTint="@color/selector_switch_track"-->
+                                    <!--android:fontFamily="@font/custom_regular"-->
+                                    <!--android:text="@string/chk_confirm_location"-->
+                                    <!--android:textColor="@color/text_normal"-->
+                                    <!--android:textSize="@dimen/text_medium_size"-->
+                                    <!--app:layout_constraintEnd_toEndOf="@+id/edittext_location_detail"-->
+                                    <!--app:layout_constraintStart_toStartOf="@+id/edittext_location_detail"-->
+                                    <!--app:layout_constraintBottom_toTopOf="@+id/edittext_location_detail"-->
+                                    <!--app:layout_constraintTop_toBottomOf="@+id/btn_go_to_map1"/>-->
+
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/title_spn_status"
+                                    style="@style/Text_Bold_Large"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_normal"
+                                    android:gravity="start"
+                                    android:text="@string/txt_spinner_job_detail"
+                                    android:textColor="@color/black"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/edittext_location_detail" />
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/dok_jobdetail"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:includeFontPadding="false"
+                                    android:text="*"
+                                    android:textColor="@color/cherry_red"
+                                    android:textSize="@dimen/text_large_size"
+                                    app:layout_constraintBottom_toBottomOf="@+id/title_spn_status"
+                                    app:layout_constraintStart_toEndOf="@+id/title_spn_status"
+                                    app:layout_constraintTop_toTopOf="@id/title_spn_status" />
+
+                            <LinearLayout
+                                    android:id="@+id/spinner_submit_layout"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="@+id/title_spn_status"
+                                    app:layout_constraintTop_toBottomOf="@+id/title_spn_status">
+
+                                    <com.tlt.georepo.view.SpinnerView
+                                        android:id="@+id/spinner_jobDetail"
+                                        style="@style/MySpinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/grey"
+                                        android:textSize="@dimen/text_large_size"
+                                        app:hint="@string/edit_jobdetail_hint" />
+
+                            </LinearLayout>
+
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/txt_dayforpay"
+                                    style="@style/Text_Bold_Large"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_normal"
+                                    android:gravity="start"
+                                    android:text="@string/txt_payment_day_period_in"
+                                    android:textColor="@color/black"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/spinner_submit_layout" />
+
+                            <TextView
+                                    android:id="@+id/editDay"
+                                    android:layout_width="0dp"
+                                    android:layout_height="35dp"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/custom_regular"
+                                    android:layout_weight="1"
+                                    android:inputType="phone"
+                                    android:background="@drawable/bg_edittext"
+                                    android:text="@string/dd_mm_year"
+                                    android:maxLength="10"
+                                    android:textColor="@color/red"
+                                    android:textSize="@dimen/text_large_size"
+                                    app:layout_constraintTop_toTopOf="@+id/txt_dayforpay"
+                                    app:layout_constraintBottom_toBottomOf="@+id/txt_dayforpay"
+                                    app:layout_constraintStart_toEndOf="@+id/txt_dayforpay"
+                                    android:layout_marginStart="16dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    android:layout_marginEnd="8dp"/>
+
+                            <!--<android.support.v7.widget.AppCompatTextView-->
+                                    <!--android:id="@+id/txt_holdDay"-->
+                                    <!--style="@style/Text_Bold_Large"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginTop="@dimen/margin_normal"-->
+                                    <!--android:gravity="start"-->
+                                    <!--android:text="@string/txt_payment_day_period_in"-->
+                                    <!--android:textColor="@color/black"-->
+                                    <!--android:enabled="false"-->
+                                    <!--app:layout_constraintStart_toStartOf="parent"-->
+                                    <!--app:layout_constraintTop_toBottomOf="@id/spinner_submit_layout" />-->
+
+                            <!--<TextView-->
+                                    <!--android:id="@+id/editHoldDay"-->
+                                    <!--android:layout_width="0dp"-->
+                                    <!--android:layout_height="35dp"-->
+                                    <!--android:gravity="center"-->
+                                    <!--android:fontFamily="@font/custom_regular"-->
+                                    <!--android:layout_weight="1"-->
+                                    <!--android:inputType="phone"-->
+                                    <!--android:background="@drawable/bg_edittext"-->
+                                    <!--android:text="@string/dd_mm_year"-->
+                                    <!--android:maxLength="10"-->
+                                    <!--android:enabled="false"-->
+                                    <!--android:textColor="@color/Gray"-->
+                                    <!--android:textSize="@dimen/text_large_size"-->
+                                    <!--app:layout_constraintTop_toTopOf="@+id/txt_dayforpay"-->
+                                    <!--app:layout_constraintBottom_toBottomOf="@+id/txt_dayforpay"-->
+                                    <!--app:layout_constraintStart_toEndOf="@+id/txt_dayforpay"-->
+                                    <!--android:layout_marginStart="16dp"-->
+                                    <!--app:layout_constraintEnd_toEndOf="parent"-->
+                                    <!--android:layout_marginEnd="8dp"/>-->
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/title_detail"
+                                    style="@style/Text_Bold_Large"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_normal"
+                                    android:gravity="start"
+                                    android:text="@string/txt_comment_reason"
+                                    android:textColor="@color/black"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/txt_dayforpay" />
+
+                            <com.tlt.georepo.view.OwaspEditText
+                                    android:id="@+id/edittext_detail"
+                                    style="@style/Text_Bold_Large"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bg_edittext"
+                                    android:gravity="top"
+                                    android:inputType="textMultiLine|textNoSuggestions"
+                                    android:lines="4"
+                                    android:maxLines="10"
+                                    android:textColor="@color/brownish_grey"
+                                    app:layout_constraintEnd_toEndOf="@id/title_detail"
+                                    app:layout_constraintStart_toStartOf="@id/title_detail"
+                                    app:layout_constraintTop_toBottomOf="@id/title_detail" />
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/title_add_image"
+                                    style="@style/Text_Bold_Large"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="@string/txt_add_image"
+                                    android:textColor="@color/black"
+                                    android:layout_marginTop="@dimen/margin_12"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/edittext_detail" />
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/dok_address"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:includeFontPadding="false"
+                                    android:text="*"
+                                    android:textColor="@color/cherry_red"
+                                    android:textSize="@dimen/text_large_size"
+                                    app:layout_constraintBottom_toBottomOf="@+id/title_add_image"
+                                    app:layout_constraintStart_toEndOf="@+id/title_add_image"
+                                    app:layout_constraintTop_toTopOf="@id/title_add_image" />
+
+                              <com.tlt.georepo.view.AddGalleryWidget
+                                    android:id="@+id/attach_upload_widget"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin_small"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/title_add_image"
+                                    app:maximumImage="6" />
+
+                            <android.support.v7.widget.AppCompatButton
+                                    android:id="@+id/btn_confirm"
+                                    style="@style/Button_Success"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/form_job_margin"
+                                    android:layout_marginEnd="@dimen/form_job_margin"
+                                    android:layout_marginBottom="10dp"
+                                    android:enabled="true"
+                                    android:text="@string/hotline_contact_us_request_question"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    android:layout_marginTop="8dp"
+                                    app:layout_constraintTop_toBottomOf="@+id/attach_upload_widget"/>
+
+                            <android.support.constraint.Barrier
+                                    android:id="@+id/barrier_btn_confirm"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:barrierDirection="bottom"
+                                    app:constraint_referenced_ids="btn_confirm" />
+
+
+                         </android.support.constraint.ConstraintLayout>
+                    </android.support.v7.widget.CardView>
+                </FrameLayout>
+
+                <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/ic_car_contract"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="top|center_horizontal"
+                            app:srcCompat="@drawable/top_history_menu" />
+                </FrameLayout>
+            </FrameLayout>
+
+            <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin_large" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>

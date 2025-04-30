@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.kyanogen.signatureview.SignatureView
+        xmlns:sign="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/signature_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        sign:penSize="5dp"
+        sign:backgroundColor="#ffffff"
+        sign:penColor="#000000"
+        sign:enableSignature="true"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_sign_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:layout_margin="30dp"
+        android:text="submit"
+        android:textColor="@android:color/white"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+
+        android:id="@+id/btn_sign_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="clear"
+        android:textColor="@android:color/white"
+        />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/img_signature"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="30dp"/>
+</LinearLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:orientation="vertical"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    tools:context=".activity.GeoSignatureActivity">-->
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/canvasLL"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:background="#fff"-->
+    <!--        android:orientation="vertical" />-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginBottom="20dp"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:layout_marginLeft="10dp"-->
+    <!--        android:orientation="horizontal">-->
+
+    <!--        <Button-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:id="@+id/btnclear"-->
+    <!--            android:text="Clear"/>-->
+
+    <!--        <Button-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:id="@+id/btnsave"-->
+    <!--            android:text="Save"/>-->
+
+    <!--    </LinearLayout>-->
+
+    <!--</LinearLayout>-->

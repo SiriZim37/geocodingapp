@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "127390079037",
+    "firebase_url": "https://georepo.firebaseio.com",
+    "project_id": "georepo",
+    "storage_bucket": "georepo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127390079037:android:127c1a945c22161c",
+        "android_client_info": {
+          "package_name": "com.tlt.georepo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127390079037-eib9gvcp2768gg3940n5luv23h1o9fnp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tlt.georepo",
+            "certificate_hash": "b56362e2068cfa44e694b84a08b71835e06b83a0"
+          }
+        },
+        {
+          "client_id": "127390079037-2hu88g0kfrskqunk40a3506ma33ldb24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5VrO_8jHRL9wWVK626dR1fRf40IN_3h4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127390079037-2hu88g0kfrskqunk40a3506ma33ldb24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

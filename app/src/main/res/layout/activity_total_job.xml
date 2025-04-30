@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.tlt.georepo.view.ToolbarWidget
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/repoTotalJob"
+        app:toolbarSize="normal"
+        tools:background="@color/bg_toolbar"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/toolbar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--<android.support.v7.widget.AppCompatTextView-->
+            <!--android:id="@+id/title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="16dp"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:fontFamily="@font/custom_bold"-->
+            <!--android:gravity="center"-->
+            <!--android:includeFontPadding="false"-->
+            <!--android:textColor="@color/brownish_grey"-->
+            <!--android:textSize="@dimen/text_large_size"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent"-->
+            <!--tools:text="ลบ1234 - กรุงเทพ" />-->
+
+            <!--<android.support.v7.widget.AppCompatTextView-->
+            <!--android:id="@+id/txt_car_license"-->
+            <!--style="@style/Text_Regular_Small"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="@font/custom_bold"-->
+            <!--android:gravity="center"-->
+            <!--android:includeFontPadding="false"-->
+            <!--android:textColor="@color/warm_grey"-->
+            <!--app:layout_constraintStart_toStartOf="@id/title"-->
+            <!--app:layout_constraintTop_toBottomOf="@id/title"-->
+            <!--tools:text="11 ก.ค. 2561" />-->
+
+            <!--<android.support.v7.widget.AppCompatImageView-->
+            <!--android:id="@+id/btn_filter"-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="16dp"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--app:layout_constraintBottom_toBottomOf="@id/title"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="@id/title"-->
+            <!--app:srcCompat="@drawable/ic_filter" />-->
+
+            <!--<android.support.v7.widget.AppCompatTextView-->
+            <!--android:id="@+id/txt_filter"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="12dp"-->
+            <!--android:fontFamily="@font/custom_bold"-->
+            <!--android:gravity="center"-->
+            <!--android:includeFontPadding="false"-->
+            <!--android:text="@string/notify_default_filter"-->
+            <!--android:textColor="@color/brownish_grey"-->
+            <!--android:textSize="@dimen/text_small_size"-->
+            <!--app:layout_constraintBottom_toBottomOf="@id/btn_filter"-->
+            <!--app:layout_constraintEnd_toStartOf="@id/btn_filter"-->
+            <!--app:layout_constraintTop_toTopOf="@id/btn_filter" />-->
+
+            <!--<View-->
+                <!--android:id="@+id/divider"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="10dp"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:background="@color/grey_2"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toBottomOf="@id/txt_car_license" />-->
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_refresh"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:listitem="@layout/item_notify" />
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/text_error"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:fontFamily="@font/custom_bold"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/notify_text_error"
+                android:textColor="@color/text_normal_lighter"
+                android:textSize="@dimen/text_medium_size"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

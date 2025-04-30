@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tlt.georepo.modules.pincode.AuthenPincodeActivity">
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_present_gift"
+        android:text="Upload Document"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnScanarcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_present_gift"
+        android:text="Scan QRcode"
+        app:layout_constraintEnd_toEndOf="@+id/btnUpload"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/btnUpload"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpload" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnsign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_present_gift"
+        android:text="Signature"
+        app:layout_constraintEnd_toEndOf="@+id/btnScanarcode"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/btnScanarcode"
+        app:layout_constraintTop_toBottomOf="@+id/btnScanarcode" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/deepLinkWV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_present_gift"
+        android:text="DeepLink WebView"
+        app:layout_constraintEnd_toEndOf="@+id/btnsign"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/btnsign"
+        app:layout_constraintTop_toBottomOf="@+id/btnsign" />
+
+</android.support.constraint.ConstraintLayout>

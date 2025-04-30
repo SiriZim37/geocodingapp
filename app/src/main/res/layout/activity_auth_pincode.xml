@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context="com.tlt.georepo.modules.pincode.AuthenPincodeActivity">
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.3"
+                android:background="@drawable/bg_toolbar_large">
+
+            <FrameLayout
+                    android:id="@+id/layout_pincode_invalid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/btn_white"
+                    android:padding="4dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:visibility="visible">
+
+                <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/txt_pincode_invalid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/custom_bold"
+                        android:gravity="center"
+                        android:text="@string/pincode_title_header"
+                        android:textColor="@color/text_normal"
+                        android:textSize="@dimen/header_text_size"
+                        app:fontType="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+            </FrameLayout>
+            <android.support.v7.widget.AppCompatTextView
+                    android:visibility="gone"
+                    android:id="@+id/text_time_authen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_time"
+                    android:paddingEnd="@dimen/margin_xlarge"
+                    android:paddingStart="@dimen/margin_xlarge"
+                    android:fontFamily="@font/rsu_regular"
+                    app:layout_constraintTop_toBottomOf="@id/layout_pincode_invalid"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_xlarge_size"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/txt_pincode_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/custom_bold"
+                    android:text="@string/pincode_title_header"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/header_text_size"
+                    app:fontType="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:visibility="invisible" />
+
+            <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/img_lock"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_pincode_title"
+                    app:srcCompat="@drawable/ic_verified_user_white_100dp"/>
+
+            <com.tlt.georepo.view.PincodeWidget
+                    android:id="@+id/pincode_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/img_lock" android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.376"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/txt_forgot_pin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    android:visibility="visible"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="20dp"
+                    android:drawableEnd="@drawable/ic_angle_right"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/custom_bold"
+                    android:gravity="center"
+                    android:text="@string/pincode_forgot_pin"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/header_text_size"
+                    app:fontType="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/pincode_view" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <com.tlt.georepo.view.KeyboardNumberWidget
+                android:id="@+id/keyboard_number_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/darkblue"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

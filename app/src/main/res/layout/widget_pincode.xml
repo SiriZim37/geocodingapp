@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/pincode_one"
+        android:layout_width="@dimen/pincode_circle_pin_size"
+        android:layout_height="@dimen/pincode_circle_pin_size"
+        android:background="@drawable/pincode_circle_shape_unactive"
+        tools:background="@drawable/pincode_circle_shape_active" />
+
+    <View
+        android:id="@+id/pincode_two"
+        android:layout_width="@dimen/pincode_circle_pin_size"
+        android:layout_height="@dimen/pincode_circle_pin_size"
+        android:layout_marginStart="@dimen/pincode_circle_pin_spacing"
+        android:background="@drawable/pincode_circle_shape_unactive"
+        tools:background="@drawable/pincode_circle_shape_active" />
+
+    <View
+        android:id="@+id/pincode_three"
+        android:layout_width="@dimen/pincode_circle_pin_size"
+        android:layout_height="@dimen/pincode_circle_pin_size"
+        android:layout_marginStart="@dimen/pincode_circle_pin_spacing"
+        android:background="@drawable/pincode_circle_shape_unactive"
+        tools:background="@drawable/pincode_circle_shape_active" />
+
+    <View
+        android:id="@+id/pincode_four"
+        android:layout_width="@dimen/pincode_circle_pin_size"
+        android:layout_height="@dimen/pincode_circle_pin_size"
+        android:layout_marginStart="@dimen/pincode_circle_pin_spacing"
+        android:background="@drawable/pincode_circle_shape_unactive" />
+
+    <View
+        android:id="@+id/pincode_five"
+        android:layout_width="@dimen/pincode_circle_pin_size"
+        android:layout_height="@dimen/pincode_circle_pin_size"
+        android:layout_marginStart="@dimen/pincode_circle_pin_spacing"
+        android:background="@drawable/pincode_circle_shape_unactive" />
+
+    <View
+        android:id="@+id/pincode_six"
+        android:layout_width="@dimen/pincode_circle_pin_size"
+        android:layout_height="@dimen/pincode_circle_pin_size"
+        android:layout_marginStart="@dimen/pincode_circle_pin_spacing"
+        android:background="@drawable/pincode_circle_shape_unactive" />
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:id="@+id/map_bottom_sheet_view"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             app:behavior_hideable="false"
+                                             app:behavior_peekHeight="200dp"
+                                             app:layout_behavior="@string/freeze_bottom_sheet_behavior">
+
+    <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_all"
+            style="@style/Text_Bold_Large"
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:background="@drawable/menu_assign"
+            android:text=""
+            android:textAllCaps="false"
+            android:textColor="@color/darkblue"
+            android:textSize="@dimen/home_content_margin_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/const2"
+            app:layout_constraintBottom_toTopOf="@+id/const2"/>
+
+
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/const1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/const2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/title"
+            app:layout_constraintTop_toBottomOf="@+id/const1">
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

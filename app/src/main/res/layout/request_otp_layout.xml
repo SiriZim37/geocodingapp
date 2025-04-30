@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context="com.tlt.georepo.modules.pincode.AuthenPincodeActivity">
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/verification_code" android:id="@+id/textView3"
+                      android:textStyle="bold"
+                      app:layout_constraintTop_toTopOf="parent"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      android:textSize="35dp"
+                      android:textColor="@color/black"
+                      android:layout_marginTop="@dimen/margin_xxlarge"
+                      android:fontFamily="@font/custom_regular"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/please_type_the_verification_code"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      android:textSize="20dp"
+                      android:textColor="@color/black"
+                      android:layout_marginTop="44dp"
+                      app:layout_constraintTop_toTopOf="@id/textView3"
+                      android:fontFamily="@font/custom_regular"
+                      app:layout_constraintHorizontal_bias="0.495" android:id="@+id/textView6"/>
+
+            <FrameLayout
+                    android:id="@+id/layout_otp_invalid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/btn_white"
+                    android:padding="4dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView6"
+                    tools:visibility="visible">
+
+                <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/txt_otp_invalid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/custom_bold"
+                        android:gravity="center"
+                        android:text="@string/pincode_title_header"
+                        android:textColor="@color/DarkRed"
+                        android:textSize="@dimen/text_xxlarge_size"
+                        app:fontType="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+            </FrameLayout>
+
+            <com.tlt.georepo.view.OTP
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="@dimen/margin_xxlarge"
+                    android:id="@+id/OTP">
+
+            </com.tlt.georepo.view.OTP>
+
+            <TextView
+                    android:id="@+id/tv_resendOTP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Resend_OTP"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/custom_bold"
+                    android:textSize="@dimen/text_large_size"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    app:layout_constraintTop_toBottomOf="@+id/OTP"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <com.tlt.georepo.view.KeyboardNumberWidget
+                android:id="@+id/keyboard_otp_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/darkblue"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

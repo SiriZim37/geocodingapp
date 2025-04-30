@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@color/color_white">
+
+    <com.tlt.georepo.view.ToolbarWidget
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/setuppincode_title"
+        app:toolbarSize="normal" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.tlt.georepo.view.TLTTextView
+                android:id="@+id/page_title_create_pin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/custom_bold"
+                android:text="@string/setuppincode_header_title"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/header_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/img_mail"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="39dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/page_title_create_pin"
+                app:srcCompat="@drawable/ic_verified_user_black_100dp" />
+
+            <com.tlt.georepo.view.TLTTextInputLayout
+                android:id="@+id/textinput_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/corner_edtbox_black"
+                android:fontFamily="@font/custom_regular"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:textColor="@color/text_normal"
+                android:textColorHint="@color/text_hint"
+                app:fontType="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_mail"
+                app:passwordToggleDrawable="@drawable/selector_button_password_visibility"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/text_hint">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/input_create_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawableStart="@drawable/ic_lock_sidebar_menu"
+                    android:drawablePadding="16dp"
+                    android:fontFamily="@font/custom_regular"
+                    android:hint="@string/setuppincode_password_hint"
+                    android:inputType="numberPassword"
+                    android:maxLength="6"
+                    android:maxLines="1"
+                    android:textColor="@color/text_normal"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/form_text_size" />
+            </com.tlt.georepo.view.TLTTextInputLayout>
+
+            <com.tlt.georepo.view.TLTTextInputLayout
+                android:id="@+id/textinput_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="10dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:fontFamily="@font/custom_regular"
+                android:textColor="@color/text_normal"
+                android:textColorHint="@color/text_hint"
+                app:fontType="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textinput_password"
+                android:background="@drawable/corner_edtbox_black">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/input_create_pin_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_lock_sidebar_menu"
+                    android:drawablePadding="16dp"
+                    android:fontFamily="@font/custom_regular"
+                    android:hint="@string/setuppincode_password_confirm_hint"
+                    android:inputType="numberPassword"
+                    android:maxLength="6"
+                    android:maxLines="1"
+                    android:textColor="@color/text_normal"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/form_text_size"
+                    android:background="@color/white"/>
+            </com.tlt.georepo.view.TLTTextInputLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_create_pin_success"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/darkred"
+                android:fontFamily="@font/custom_bold"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/setuppincode_confirm_text"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_button_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textinput_confirm_password" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_confirm" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>

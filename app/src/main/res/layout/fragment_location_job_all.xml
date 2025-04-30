@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <com.tlt.georepo.view.ToolbarWidget
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:menuTitle="@string/location_filter_title"
+            app:navigationIcon="@drawable/ic_arrow_left"
+            app:title="@string/location_hq_filter"
+            app:toolbarSize="normal" />
+
+    <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/layout_normal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        <include
+                android:id="@+id/layout_map_bottom_sheet_view_all"
+                layout="@layout/bottom_sheet_location_map_job_all" />
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_not_found"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/img_location"
+                android:layout_width="63dp"
+                android:layout_height="78dp"
+                android:layout_marginBottom="@dimen/margin_large"
+                app:layout_constraintBottom_toTopOf="@id/txt_description"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/bg_location" />
+
+        <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txt_description"
+                style="@style/Text_Bold_Medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/location_not_found_description"
+                android:textColor="@color/brownish_grey"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_search"
+                style="@style/Button_Success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:paddingStart="@dimen/margin_large"
+                android:paddingTop="@dimen/margin_small"
+                android:paddingEnd="@dimen/margin_large"
+                android:paddingBottom="@dimen/margin_small"
+                android:text="@string/location_back_to_search"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_description" />
+    </android.support.constraint.ConstraintLayout>
+
+    <!--<include-->
+            <!--android:id="@+id/layout_office_location_filter"-->
+            <!--layout="@layout/layout_location_filter"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="@dimen/location_filter_height"-->
+            <!--android:visibility="gone"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@id/toolbar"/>-->
+
+    <android.support.constraint.Group
+            android:id="@+id/group_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="layout_normal" />
+
+    <android.support.constraint.Group
+            android:id="@+id/group_not_found"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="layout_not_found" />
+</android.support.constraint.ConstraintLayout>

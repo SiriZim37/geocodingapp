@@ -1,0 +1,265 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:background="@color/white"
+              android:gravity="center"
+              android:layout_height="match_parent">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+        <RelativeLayout
+                android:id="@+id/layoutTop"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/layoutBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/layoutTop"
+
+        >
+            <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginLeft="@dimen/home_content_margin_horizontal"
+                              android:layout_marginRight="@dimen/home_content_margin_horizontal"
+                              android:orientation="vertical">
+                    <LinearLayout
+                            android:id="@+id/ln_regist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/big_white_corner_radius"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/margin_normal"
+                            android:paddingRight="@dimen/margin_normal"
+                            android:paddingBottom="@dimen/margin_xxlarge"
+                            android:paddingTop="@dimen/margin_xxlarge"
+                    >
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="horizontal"
+                                      android:layout_marginRight="@dimen/margin_normal"
+                                      android:layout_marginLeft="@dimen/margin_normal"
+                        >
+                            <EditText
+                                    android:id="@+id/ed_firstname"
+                                    android:layout_width="0dp"
+                                    android:layout_height="35dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginRight="2dp"
+                                    android:hint="Firstname"
+                                    android:drawableLeft="@drawable/profile"
+                                    android:textSize="@dimen/text_small_size"
+                                    android:lines="1"
+                                    android:drawablePadding="@dimen/margin_small"
+                                    android:fontFamily="@font/custom_regular"
+                                    android:background="@drawable/bg_edittext"/>
+                            <EditText
+                                    android:id="@+id/ed_lastname"
+                                    android:layout_width="0dp"
+                                    android:layout_height="35dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="2dp"
+                                    android:fontFamily="@font/custom_regular"
+                                    android:hint="Lastname"
+                                    android:textSize="@dimen/text_small_size"
+                                    android:lines="1"
+                                    android:background="@drawable/bg_edittext"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_marginTop="@dimen/margin_small"
+                                      android:layout_height="wrap_content"
+                                      android:layout_marginRight="@dimen/margin_normal"
+                                      android:layout_marginLeft="@dimen/margin_normal">
+
+                            <EditText
+                                    android:id="@+id/ed_email"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:fontFamily="@font/custom_regular"
+                                    android:hint="Email"
+                                    android:textSize="@dimen/text_small_size"
+                                    android:drawableLeft="@drawable/envelope"
+                                    android:drawablePadding="@dimen/margin_small"
+                                    android:lines="1"
+                                    android:background="@drawable/bg_edittext"
+                                    android:inputType="textEmailAddress"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_marginTop="@dimen/margin_small"
+                                      android:layout_height="wrap_content"
+                                      android:layout_marginRight="@dimen/margin_normal"
+                                      android:layout_marginLeft="@dimen/margin_normal">
+
+                            <EditText
+                                    android:maxLength="13"
+                                    android:id="@+id/ed_idCard"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:fontFamily="@font/custom_regular"
+                                    android:hint="ID Card"
+                                    android:textSize="@dimen/text_small_size"
+                                    android:drawableLeft="@drawable/card"
+                                    android:drawablePadding="@dimen/margin_small"
+                                    android:lines="1"
+                                    android:inputType="number"
+                                    android:background="@drawable/bg_edittext"/>
+                        </LinearLayout>
+
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_marginTop="@dimen/margin_small"
+                                      android:layout_height="wrap_content"
+                                      android:layout_marginRight="@dimen/margin_normal"
+                                      android:layout_marginLeft="@dimen/margin_normal"
+                                      android:gravity="center"
+                                      android:orientation="horizontal">
+
+                            <EditText
+                                    android:id="@+id/ed_phone"
+                                    android:layout_width="0dp"
+                                    android:layout_height="35dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginRight="2dp"
+                                    android:hint="Mobile"
+                                    android:textSize="@dimen/text_small_size"
+                                    android:maxLength="10"
+                                    android:lines="1"
+                                    android:fontFamily="@font/custom_regular"
+                                    android:drawableLeft="@drawable/phone"
+                                    android:drawablePadding="@dimen/margin_small"
+                                    android:background="@drawable/bg_edittext"/>
+                            <TextView
+                                    android:id="@+id/bd_datePicker"
+                                    android:layout_width="0dp"
+                                    android:layout_height="35dp"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/custom_regular"
+                                    android:layout_weight="1"
+                                    android:inputType="phone"
+                                    android:background="@drawable/bg_edittext"
+                                    android:text="dd/mm/year"
+                                    android:drawableLeft="@drawable/cake"
+                                    android:maxLength="10"
+                                    android:layout_marginLeft="2dp"
+                            ></TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_marginTop="@dimen/margin_small"
+                                      android:layout_height="wrap_content"
+                                      android:layout_marginRight="@dimen/margin_normal"
+                                      android:layout_marginLeft="@dimen/margin_normal">
+
+                            <Spinner
+                                    android:id="@+id/spinner_company"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:fontFamily="@font/custom_regular"
+                                    android:drawableLeft="@drawable/card"
+                                    android:dropDownWidth="match_parent"
+                                    android:minHeight="35dp"
+                                    android:drawablePadding="@dimen/margin_small"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_marginTop="@dimen/margin_small"
+                                      android:layout_height="wrap_content"
+                                      android:layout_marginRight="@dimen/margin_normal"
+                                      android:layout_marginLeft="@dimen/margin_normal"
+                                      android:gravity="center"
+                                      android:orientation="horizontal">
+
+                            <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="35dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginRight="2dp"
+                                    android:text="Start working date :"
+                                    android:gravity="center_vertical"
+                                    android:textSize="@dimen/text_small_size"
+                                    android:fontFamily="@font/custom_regular"/>
+                            <TextView
+                                    android:id="@+id/startWokingDatePicker"
+                                    android:layout_width="0dp"
+                                    android:layout_height="35dp"
+                                    android:gravity="center"
+                                    android:textSize="@dimen/text_small_size"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/custom_regular"
+                                    android:background="@drawable/bg_edittext"
+                                    android:text="dd/mm/year"
+                            ></TextView>
+
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_marginTop="@dimen/margin_small"
+                                      android:layout_height="wrap_content"
+                                      android:layout_marginRight="@dimen/margin_normal"
+                                      android:layout_marginLeft="@dimen/margin_normal"
+                                      android:gravity="center"
+                                      android:orientation="horizontal">
+
+                            <TextView android:layout_width="0dp"
+                                      android:layout_height="35dp"
+                                      android:layout_weight="1"
+                                      android:layout_marginRight="2dp"
+                                      android:text="Completion date of :"
+                                      android:gravity="center_vertical"
+                                      android:textSize="@dimen/text_small_size"
+                                      android:fontFamily="@font/custom_regular"
+                            />
+                            <TextView android:id="@+id/completionDatepicker"
+                                      android:layout_width="0dp"
+                                      android:layout_height="35dp"
+                                      android:gravity="center"
+                                      android:fontFamily="@font/custom_regular"
+                                      android:layout_weight="1"
+                                      android:background="@drawable/bg_edittext"
+                                      android:text="dd/mm/year"
+                            ></TextView>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:gravity="center"
+                                  android:layout_marginTop="@dimen/margin_large">
+
+                        <Button
+                                android:id="@+id/btn_regist_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@drawable/selector_btn_confirm_darkblue"
+                                android:text="Sign Up"
+                                android:textSize="@dimen/text_large_size"
+                                android:textColor="@color/white"
+                                android:textAllCaps="false"
+                                android:fontFamily="@font/custom_regular"
+
+                        />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+        <ImageView
+                android:id="@+id/overlapImage"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_above="@id/layoutBottom"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="-35dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/map_location"/>
+    </RelativeLayout>
+</LinearLayout>

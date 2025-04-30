@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_normal">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txt_office_location_name"
+        style="@style/Text_Bold_Medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@id/txt_office_location_distance"
+        app:layout_constraintHorizontal_weight="4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="บริษัท โตโยต้ามหานคร จำกัด" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txt_office_location_distance"
+        style="@style/Text_Bold_Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textColor="@color/text_normal_lighter"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/txt_office_location_name"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="2.3 กม." />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier_name_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="txt_office_location_name,txt_office_location_distance" />
+
+    <com.tlt.georepo.view.DrawableTextViewWidget
+        android:id="@+id/txt_office_location_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        app:iconDrawable="@drawable/ic_pin_orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barrier_name_distance"
+        app:text="@string/location_detail_address" />
+
+    <com.tlt.georepo.view.DrawableTextViewWidget
+        android:id="@+id/txt_office_location_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        app:iconDrawable="@drawable/ic_phone_orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_office_location_address"
+        app:text="@string/location_detail_tel" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/title_office_responsibility"
+        style="@style/Text_Bold_Medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="start"
+        android:text="@string/location_responsibility"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_office_location_tel" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txt_office_responsibility"
+        style="@style/Text_Bold_Medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textColor="@color/text_normal_lighter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/title_office_responsibility"
+        app:layout_constraintTop_toBottomOf="@id/title_office_responsibility"
+        tools:text="กรุงเทพ นนทบุรี ปทุมธานี สมุทรปราการ
+สมุทรสาคร" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier_location_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="txt_office_responsibility" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/office_location_direction"
+        style="@style/Text_Bold_Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:drawableStart="@drawable/ic_direction_green"
+        android:drawablePadding="4dp"
+        android:text="@string/location_direction"
+        android:textColor="@color/teal_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barrier_location_address" />
+</android.support.constraint.ConstraintLayout>

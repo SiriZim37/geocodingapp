@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:background="#3fff00ff">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView_content"
+        style="@style/MyCardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dialog_padding_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/dialog_padding_horizontal"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/layout_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_white_corner_radius"
+                android:paddingTop="@dimen/margin_12"
+                android:paddingBottom="@dimen/padding_normal">
+
+                <!--<android.support.v7.widget.AppCompatImageView-->
+                    <!--android:id="@+id/thumbnail_popup"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="200dp"-->
+                    <!--android:adjustViewBounds="true"-->
+                    <!--android:scaleType="fitCenter"-->
+                    <!--android:visibility="gone"-->
+                    <!--app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--app:layout_constraintStart_toStartOf="parent"-->
+                    <!--app:layout_constraintTop_toTopOf="parent"-->
+                    <!--app:srcCompat="@drawable/bg_placeholder"-->
+                    <!--tools:srcCompat="@drawable/bg_carpic"-->
+                    <!--tools:visibility="visible" />-->
+
+
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_normal"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_marginEnd="@dimen/margin_normal"
+                    android:fontFamily="@font/custom_bold"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_large_size"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="ได้รับงานใหม่"
+                    tools:visibility="visible" />
+
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/txt_description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_normal"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginEnd="@dimen/margin_normal"
+                    android:autoLink="phone"
+                    android:fontFamily="@font/custom_bold"
+                    android:gravity="center"
+                    android:linksClickable="true"
+                    android:text="0863642806"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/text_medium_size"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_title"
+                    tools:text="ท่านได้รับมอบหมายงานใหม่"
+                    tools:visibility="visible" />
+
+                <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/count_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#224889"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="@dimen/text_xxlarge_size"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:hint="0:00"
+                        android:layout_marginTop="@dimen/margin_12"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_description"/>
+
+
+                <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/checkbox_ignore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/custom_bold"
+                        android:text="@string/notice_dialog_text_dont_show_again"
+                        android:textColor="@color/text_normal"
+                        android:textSize="@dimen/text_medium_size"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:visibility="visible" android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toBottomOf="@+id/count_time"/>
+
+                <com.tlt.georepo.view.TLTButton
+                    android:id="@+id/btn_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="@dimen/margin_normal"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_marginEnd="@dimen/margin_normal"
+                    android:background="@drawable/selector_btn_confirm_green"
+                    android:fontFamily="@font/custom_bold"
+                    android:gravity="center"
+                    android:text="@string/notice_dialog_confirm"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/header2_text_size"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/checkbox_ignore"
+                    tools:visibility="visible" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/form_quotation_popup_btn_close"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:elevation="9dp"
+        android:paddingTop="@dimen/padding_large"
+        app:layout_constraintBottom_toTopOf="@+id/cardView_content"
+        app:layout_constraintEnd_toEndOf="@+id/cardView_content"
+        app:layout_constraintTop_toTopOf="@+id/cardView_content"
+        app:srcCompat="@drawable/ic_close_circle" />
+
+
+</android.support.constraint.ConstraintLayout>

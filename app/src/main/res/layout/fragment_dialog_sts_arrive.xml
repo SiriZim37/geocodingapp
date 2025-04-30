@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@android:color/transparent"
+                                             tools:background="#3fff00ff">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="@dimen/dialog_padding_horizontal"
+            android:layout_marginStart="@dimen/dialog_padding_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_white_corner_radius"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <com.tlt.georepo.view.TLTTextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/custom_bold"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/dil_title_status_arrive"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_large_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+                android:id="@+id/divier_title"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/unactive"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title" />
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dil_msg_status_arrive"
+                android:textColor="@color/grayText"
+                android:textSize="@dimen/text_medium_size"
+                android:gravity="center"
+                android:fontFamily="@font/custom_regular"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divier_title">
+
+        </android.support.v7.widget.AppCompatTextView>
+
+
+
+        <android.support.v7.widget.AppCompatImageButton
+                     android:id="@+id/btn_no"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/ic_wrong"
+                     android:fontFamily="@font/custom_bold"
+                     android:gravity="center"
+                     android:layout_marginTop="@dimen/margin_12"
+                     android:text="@string/dil_txt_no"
+                     android:textColor="@color/white"
+                     android:textSize="@dimen/text_button_size"
+                     app:layout_constraintStart_toStartOf="parent"
+                     app:layout_constraintEnd_toStartOf="@id/btn_yes"
+                     app:layout_constraintTop_toBottomOf="@id/txtQuestion" />
+
+
+        <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/btn_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_correct"
+                android:fontFamily="@font/custom_bold"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_12"
+                android:text="@string/dil_txt_yes"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_button_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btn_no"
+                app:layout_constraintTop_toBottomOf="@id/txtQuestion"/>
+
+        <com.tlt.georepo.view.TLTButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_gray"
+                android:fontFamily="@font/custom_bold"
+                android:gravity="center"
+                android:padding="8dp"
+                android:paddingEnd="30dp"
+                android:paddingStart="30dp"
+                android:text="@string/dil_txt_cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_button_size"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="@dimen/margin_12"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_no" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

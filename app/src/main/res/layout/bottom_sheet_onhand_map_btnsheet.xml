@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:id="@+id/map_bottom_sheet_view"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             app:behavior_hideable="false"
+                                             app:behavior_peekHeight="50dp"
+                                             android:paddingBottom="20dp"
+                                             android:background="@color/white"
+                                             app:layout_behavior="@string/freeze_bottom_sheet_behavior">
+
+    <com.tlt.georepo.view.TLTTextView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/txtHeadContent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableTop="@drawable/arrow_up_1"
+            android:background="@drawable/bg_toolbar_large"
+            android:textSize="@dimen/text_small_size"
+            android:fontFamily="@font/rsu_bold"
+            android:gravity="center"
+            android:text="@string/job_show_Menu"
+            android:textColor="@android:color/white" />
+
+
+    <!--<com.tlt.georepo.view.TLTButton-->
+            <!--android:id="@+id/btn_sts_depart"-->
+            <!--style="@style/Text_Bold_Large"-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="@drawable/sts_menu_job_blue"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textColor="@drawable/selector_text_normal"-->
+            <!--android:textSize="@dimen/home_content_margin_horizontal"-->
+            <!--app:layout_constraintEnd_toStartOf="@id/btn_sts_arrive"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/txtHeadContent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"/>-->
+
+    <!--<android.support.v7.widget.AppCompatTextView-->
+            <!--android:id="@+id/txtDepart"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/title_depart_menu"-->
+            <!--android:textColor="@color/darkblue"-->
+            <!--app:layout_constraintStart_toStartOf="@+id/btn_sts_depart"-->
+            <!--app:layout_constraintEnd_toEndOf="@+id/btn_sts_depart"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/btn_sts_depart"/>-->
+
+    <View
+            android:id="@+id/divider"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    <com.tlt.georepo.view.TLTButton
+            android:id="@+id/btn_sts_arrive"
+            style="@style/Text_Bold_Large"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/sts_menu_job_orange"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:textColor="@drawable/selector_text_normal"
+            android:textSize="@dimen/home_content_margin_horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtHeadContent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/divider"/>
+
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtArrive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_arrive_menu"
+            android:textSize="@dimen/text_medium_size"
+            android:fontFamily="@font/rsu_regular"
+            android:textColor="@color/darkblue"
+            app:layout_constraintStart_toStartOf="@+id/btn_sts_arrive"
+            app:layout_constraintEnd_toEndOf="@+id/btn_sts_arrive"
+            app:layout_constraintTop_toBottomOf="@+id/btn_sts_arrive"/>
+
+
+    <com.tlt.georepo.view.TLTButton
+            android:id="@+id/btn_sts_finish"
+            style="@style/Text_Bold_Large"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/sts_menu_job_green"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:textColor="@drawable/selector_text_normal"
+            android:textSize="@dimen/home_content_margin_horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/txtHeadContent"
+            app:layout_constraintStart_toEndOf="@+id/divider" android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"/>
+
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_workdone_menu"
+            android:textColor="@color/darkblue"
+            android:fontFamily="@font/rsu_regular"
+            android:textSize="@dimen/text_medium_size"
+            app:layout_constraintStart_toStartOf="@+id/btn_sts_finish"
+            app:layout_constraintEnd_toEndOf="@+id/btn_sts_finish"
+            app:layout_constraintTop_toBottomOf="@+id/btn_sts_finish"/>
+
+    <!--// Layer 2 -->
+
+    <com.tlt.georepo.view.TLTButton
+            android:id="@+id/btn_sts_cancel"
+            style="@style/Text_Bold_Large"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sts_menu_job_black_cancel"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:textColor="@drawable/selector_text_normal"
+            android:textSize="@dimen/home_content_margin_horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/txtArrive"
+            app:layout_constraintEnd_toEndOf="@+id/btn_sts_arrive"
+            app:layout_constraintStart_toStartOf="@+id/btn_sts_arrive"/>
+
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_canceled_menu"
+            android:fontFamily="@font/rsu_regular"
+            android:textColor="@color/darkblue"
+            android:textSize="@dimen/text_medium_size"
+            app:layout_constraintStart_toStartOf="@+id/btn_sts_cancel"
+            app:layout_constraintEnd_toEndOf="@+id/btn_sts_cancel"
+            app:layout_constraintTop_toBottomOf="@+id/btn_sts_cancel"/>
+
+    <!--<com.tlt.georepo.view.TLTButton-->
+            <!--android:id="@+id/btn_sts_wait"-->
+            <!--style="@style/Text_Bold_Large"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="@drawable/sts_menu_job_black_wait"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@drawable/selector_text_normal"-->
+            <!--android:textSize="@dimen/home_content_margin_horizontal"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/txtArrive"-->
+            <!--app:layout_constraintEnd_toEndOf="@+id/btn_sts_arrive"-->
+            <!--app:layout_constraintStart_toStartOf="@+id/btn_sts_arrive"/>-->
+
+    <!--<android.support.v7.widget.AppCompatTextView-->
+            <!--android:id="@+id/txtWait"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Wait"-->
+            <!--android:textColor="@color/darkblue"-->
+            <!--app:layout_constraintStart_toStartOf="@+id/btn_sts_wait"-->
+            <!--app:layout_constraintEnd_toEndOf="@+id/btn_sts_wait"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/btn_sts_wait"/>-->
+
+    <com.tlt.georepo.view.TLTButton
+            android:id="@+id/btn_sts_hold"
+            style="@style/Text_Bold_Large"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/sts_menu_job_black_hold"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@drawable/selector_text_normal"
+            android:textSize="@dimen/home_content_margin_horizontal"
+            app:layout_constraintTop_toBottomOf="@id/txtFinish"
+            app:layout_constraintEnd_toEndOf="@+id/btn_sts_finish"
+            app:layout_constraintStart_toStartOf="@+id/btn_sts_finish"/>
+
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtHold"
+            android:textSize="@dimen/text_medium_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_hold_menu"
+            android:fontFamily="@font/rsu_regular"
+            android:textColor="@color/darkblue"
+            app:layout_constraintStart_toStartOf="@+id/btn_sts_hold"
+            app:layout_constraintEnd_toEndOf="@+id/btn_sts_hold"
+            app:layout_constraintTop_toBottomOf="@+id/btn_sts_hold"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

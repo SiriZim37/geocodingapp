@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:paddingBottom="@dimen/margin_12"
+                                             android:paddingRight="16dp"
+                                             android:paddingLeft="16dp"
+                                             android:paddingTop="@dimen/margin_12"
+                                             android:background="@color/WhiteSmoke">
+
+    <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/cust_profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_user_account"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_cust_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/custom_bold"
+            android:includeFontPadding="false"
+            android:text="@string/txtCustName"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_medium_size"
+            app:layout_constraintStart_toEndOf="@id/cust_profile"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_type_rec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/custom_bold"
+            android:includeFontPadding="false"
+            android:text="@string/txtd_RECORD_TYPE"
+            android:textColor="@color/DarkRed"
+            android:textSize="@dimen/text_medium_size"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_cust_name"
+            app:layout_constraintStart_toEndOf="@+id/txt_cust_name"
+            app:layout_constraintTop_toTopOf="@+id/txt_cust_name" />
+
+
+    <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/m_idcard"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/h_idcard"
+            app:layout_constraintEnd_toStartOf="@+id/h_idcard"
+            app:layout_constraintStart_toStartOf="@+id/txt_cust_name"
+            app:layout_constraintTop_toTopOf="@+id/h_idcard"
+            app:srcCompat="@drawable/ic_id_card" />
+
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/h_idcard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/custom_bold"
+            android:gravity="left"
+            android:includeFontPadding="false"
+            android:text="@string/id_card"
+            android:textColor="@color/text_disable"
+            android:textSize="@dimen/text_small_size"
+            app:layout_constraintStart_toEndOf="@id/m_idcard"
+            app:layout_constraintTop_toBottomOf="@+id/txt_cust_name" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_id_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/custom_bold"
+            android:includeFontPadding="false"
+            android:gravity="right"
+            android:textColor="@color/text_disable"
+            android:textSize="@dimen/text_small_size"
+            android:text="1100405500606"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/h_idcard"
+            app:layout_constraintStart_toEndOf="@+id/h_idcard"
+            android:layout_marginStart="8dp"/>
+
+
+    <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/m_tel"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            app:srcCompat="@drawable/ic_phone_orange"
+            app:layout_constraintTop_toTopOf="@+id/h_tel"
+            app:layout_constraintBottom_toBottomOf="@+id/h_tel"
+            app:layout_constraintEnd_toStartOf="@+id/h_tel"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="@+id/txt_cust_name"
+    />
+
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/h_tel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/custom_bold"
+            android:includeFontPadding="false"
+            android:gravity="left"
+            android:textColor="@color/text_disable"
+            android:textSize="@dimen/text_small_size"
+            android:text="@string/mobile"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/m_tel"
+            app:layout_constraintTop_toBottomOf="@+id/txt_id_card"/>
+
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_mobile_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:fontFamily="@font/custom_bold"
+            android:includeFontPadding="false"
+            android:textColor="@color/Blue"
+            android:textSize="@dimen/text_small_size"
+            android:text="-"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/h_tel"
+            app:layout_constraintStart_toEndOf="@+id/h_tel"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+
+
+    <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/m_tel_home"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            app:srcCompat="@drawable/ic_contactus_phone"
+            app:layout_constraintTop_toTopOf="@+id/h_tel_home"
+            app:layout_constraintBottom_toBottomOf="@+id/h_tel_home"
+            app:layout_constraintEnd_toStartOf="@+id/h_tel_home"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="@+id/txt_cust_name"
+    />
+
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/h_tel_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/custom_bold"
+            android:includeFontPadding="false"
+            android:gravity="left"
+            android:textColor="@color/text_disable"
+            android:textSize="@dimen/text_small_size"
+            app:layout_constraintTop_toBottomOf="@+id/txt_mobile_phone"
+            android:text="@string/Telephone"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/m_tel_home"
+    />
+
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_mobile_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:fontFamily="@font/custom_bold"
+            android:includeFontPadding="false"
+            android:textColor="@color/Blue"
+            android:textSize="@dimen/text_small_size"
+            android:text="-"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/h_tel_home"
+            app:layout_constraintStart_toEndOf="@+id/h_tel_home"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@android:color/transparent"
+                                             tools:background="#3fff00ff">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="@dimen/dialog_padding_horizontal"
+            android:layout_marginStart="@dimen/dialog_padding_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_white_corner_radius"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.AppCompatImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_close_circle"
+                android:elevation="5dp"
+                android:id="@+id/btn_close"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <android.support.v4.widget.NestedScrollView
+                android:id="@+id/nestedscrollview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_close"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+
+                    <android.support.constraint.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="@dimen/padding_normal">
+
+                        <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/txt_company_name"
+                                style="@style/Text_Bold_Large"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:textColor="@color/black"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:text="นายเทสระบบA นามสกุลB" />
+                        <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/txt_distance"
+                                style="@style/Text_Bold_Medium"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:textColor="@color/text_normal_lighter"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/txt_company_name"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                tools:text="2.3 กม."/>
+
+                        <com.tlt.georepo.view.DrawableTextViewWidget
+                                android:id="@+id/txt_contract"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:iconDrawable="@drawable/ic_question_orange"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/txt_company_name"
+                                app:text="@string/txt_extContract" />
+
+
+                        <com.tlt.georepo.view.DrawableTextViewWidget
+                                android:id="@+id/txt_reg_no"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:iconDrawable="@drawable/ic_question_orange"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/txt_contract"
+                                app:text="@string/txt_regNo" />
+
+                        <com.tlt.georepo.view.DrawableTextViewWidget
+                                android:id="@+id/txt_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:iconDrawable="@drawable/ic_pin_orange"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/txt_reg_no"
+                                app:text="@string/location_detail_address" />
+
+
+                        <com.tlt.georepo.view.DrawableTextViewWidget
+                                android:id="@+id/txt_unpaid_amt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:iconDrawable="@drawable/ic_building_orange"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/txt_address"
+                                app:text="@string/txt_unpaid_amt" />
+
+                        <com.tlt.georepo.view.DrawableTextViewWidget
+                                android:id="@+id/txt_tel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_small"
+                                app:iconDrawable="@drawable/ic_phone_orange"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/txt_unpaid_amt"
+                                app:text="@string/location_detail_tel"/>
+
+
+                        <!--<View-->
+                                <!--android:id="@+id/divider"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="1dp"-->
+                                <!--android:layout_marginTop="@dimen/margin_normal"-->
+                                <!--android:background="@color/unactive"-->
+                                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                                <!--app:layout_constraintStart_toStartOf="parent"-->
+                                <!--app:layout_constraintTop_toBottomOf="@id/txt_tel" />-->
+
+
+                        <Space
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/margin_small"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/btnAcceptJob" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_large_height"
+    android:background="@drawable/bg_toolbar_medium">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/widget_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/widget_toolbar_navigation"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="start"
+            android:paddingTop="7dp"
+            android:paddingEnd="7dp"
+            android:paddingBottom="7dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_arrow_left" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/widget_toolbar_txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/custom_bold"
+            android:text="Title หัวเรื่อง"
+            android:textColor="@color/title_toolbar"
+            android:textSize="@dimen/title_toolbar" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/widget_toolbar_menu_right"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:paddingTop="7dp"
+            android:paddingStart="7dp"
+            android:paddingBottom="7dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_close" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/widget_toolbar_txt_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/margin_normal"
+            android:fontFamily="@font/custom_bold"
+            android:text="@string/filter_car_title"
+            android:textColor="@color/title_toolbar"
+            android:textSize="@dimen/text_medium_size"
+            android:visibility="gone" />
+    </android.support.v7.widget.Toolbar>
+</FrameLayout>

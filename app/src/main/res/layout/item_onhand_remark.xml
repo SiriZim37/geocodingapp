@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:paddingBottom="@dimen/margin_12"
+                                             android:background="@color/WhiteSmoke">
+
+    <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ic_followup"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_info" />
+
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_job_remark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:fontFamily="@font/custom_bold"
+            android:includeFontPadding="false"
+            android:textColor="@color/text_disable"
+            android:textSize="@dimen/text_medium_size"
+            android:layout_marginEnd="@dimen/margin_12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ic_followup"
+            app:layout_constraintTop_toTopOf="@id/ic_followup"
+            tools:text="ข้อมูลการติดตาม" />
+
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_job_remark_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:fontFamily="@font/custom_regular"
+            android:includeFontPadding="false"
+            android:textColor="@color/text_disable"
+            android:textSize="@dimen/text_small_size"
+            app:layout_constraintStart_toStartOf="@id/txt_job_remark"
+            app:layout_constraintTop_toBottomOf="@id/txt_job_remark"
+            tools:text="11 ก.พ.61 - 11.45 น." />
+
+
+
+</android.support.constraint.ConstraintLayout>

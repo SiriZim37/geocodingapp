@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/text_fake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_bookmark"
+        android:fontFamily="@font/custom_bold"
+        android:includeFontPadding="false"
+        android:textColor="@android:color/transparent"
+        android:textSize="@dimen/car_contract_text_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="XXX" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/text_display"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/custom_bold"
+        android:autoLink="all"
+        android:includeFontPadding="false"
+        android:textColor="@color/text_disable"
+        android:textSize="@dimen/car_contract_text_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="555555555jawdhjkwadhawhdkjawhdjkhawjkdhawjkdhjkawhdjkwahdjawhdkjhawjkdhajwkdjwdhjkawdh 555555555jawdhjkwadhawhdkjawhdjkhawjkdhawjkdhjkawhdjkwahdjawhdkjhawjkdhajwkdjwdhjkawdh 555555555jawdhjkwadhawhdkjawhdjkhawjkdhawjkdhjkawhdjkwahdjawhdkjhawjkdhajwkdjwdhjkawdh" />
+</android.support.constraint.ConstraintLayout>
